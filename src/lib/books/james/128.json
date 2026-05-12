@@ -1,0 +1,28 @@
+{
+  "index": 128,
+  "hash": "d57a0e8868b9cde870f3e3dcbbb49d258fa017211f7f61612baf1903bd3dcdb9",
+  "source-language": "Greek",
+  "sentence": "καταλαλέω ἀλλήλων ἀδελφός ὁ καταλαλέω ἀδελφός ἤ κρίνω ὁ ἀδελφός",
+  "words": [
+    "καταλαλέω",
+    "ἀλλήλων",
+    "ἀδελφός",
+    "ὁ",
+    "καταλαλέω",
+    "ἀδελφός",
+    "ἤ",
+    "κρίνω",
+    "ὁ",
+    "ἀδελφός"
+  ],
+  "word-count-original": 10,
+  "grammatical-notes": {},
+  "dictionary-meaning": {},
+  "polysemy-log": {},
+  "literal-translation": "",
+  "main-translation": "",
+  "main-translation-explanation": {},
+  "rejected-translations": [],
+  "rules-applied": [],
+  "forensic-confidence": 0
+}
