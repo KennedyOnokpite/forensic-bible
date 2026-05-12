@@ -25,7 +25,18 @@ export const load = (async ({ params, fetch }) => {
 		const textRes = await fetch(textPath);
 		const content = textRes.ok ? await textRes.text() : '';
 
-		// Fetch all units in batches to avoid overwhelming the network/server
+		// Attempt to fetch combined data first (more efficient)
+		try {
+			const combinedRes = await fetch(`/data/books/${book.slug}/combined.json`);
+			if (combinedRes.ok) {
+				const bookUnits = await combinedRes.json() as ForensicUnit[];
+				return { book, content, units: bookUnits };
+			}
+		} catch {
+			console.warn(`Combined data not available for ${book.slug}, falling back to individual units.`);
+		}
+
+		// Fetch all units in batches as fallback
 		const bookUnits: ForensicUnit[] = [];
 		const unitCount = book.unit_count || 0;
 		const BATCH_SIZE = 50;
