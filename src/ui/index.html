@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Forensic Lexicon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #c9a66b;
+            --bg: #0a0a0c;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            overflow-x: hidden;
+            background-image: url('assets/bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, transparent 0%, var(--bg) 90%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        main {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .sentence-nav {
+            display: flex;
+            align-items: center;
+            background: var(--bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            padding: 5px;
+            gap: 5px;
+        }
+
+        .sentence-nav button {
+            background: var(--glass);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .sentence-nav button:hover { background: var(--primary); color: black; }
+
+        select, input {
+            background: transparent;
+            color: white;
+            border: none;
+            padding: 8px;
+            font-family: inherit;
+            outline: none;
+        }
+
+        select { border-right: 1px solid var(--glass-border); cursor: pointer; }
+
+        .explanation-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            padding: 60px;
+            border-radius: 30px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .label {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 11px;
+            color: var(--primary);
+            margin-bottom: 25px;
+            display: block;
+            font-weight: 600;
+        }
+
+        #explanation-text {
+            font-family: 'Merriweather', serif;
+            font-size: 32px;
+            line-height: 1.7;
+            font-weight: 300;
+            color: #ffffff;
+        }
+
+        .word-stream {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .token {
+            background: rgba(201, 166, 107, 0.1);
+            border: 1px solid rgba(201, 166, 107, 0.3);
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: var(--primary);
+        }
+
+        .layer-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .layer-btn {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            color: var(--text-muted);
+            padding: 12px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .layer-btn:hover {
+            border-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .layer-btn.active {
+            background: var(--primary);
+            color: black;
+        }
+
+        .detail-panel {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px;
+            display: none;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        .detail-panel.visible { display: block; }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .dict-entry {
+            background: rgba(255,255,255,0.02);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .dict-word {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <main>
+        <header>
+            <div class="logo" style="font-weight: 700; color: var(--primary); letter-spacing: 2px;">FORENSIC LEXICON</div>
+            <div class="nav-controls">
+                <select id="book-select"></select>
+                <select id="episode-select" style="max-width: 200px; display: none;"></select>
+                <div class="sentence-nav">
+                    <button onclick="changeSentence(-1)">←</button>
+                    <input type="number" id="index-input" value="1" min="1" style="width: 50px; text-align: center;">
+                    <button onclick="changeSentence(1)">→</button>
+                </div>
+                <button id="go-btn" style="background: var(--primary); border: none; padding: 10px 20px; border-radius: 10px; cursor: pointer; font-weight: 700; font-size: 12px;">ANALYZE</button>
+            </div>
+        </header>
+
+        <section class="explanation-card">
+            <span class="label" id="episode-label">Forensic Disclosure</span>
+            <div id="explanation-text">...</div>
+            <div id="word-stream" class="word-stream"></div>
+        </section>
+
+        <section class="layer-controls">
+            <button class="layer-btn" onclick="toggleLayer('main')">Main Translation</button>
+            <button class="layer-btn" onclick="toggleLayer('literal')">Literal Rendering</button>
+            <button class="layer-btn" onclick="toggleLayer('lexicon')">Lexical Analysis</button>
+            <button class="layer-btn" onclick="toggleLayer('metadata')">Forensic Metadata</button>
+        </section>
+
+        <div id="main-panel" class="detail-panel">
+            <span class="label">Pure English Translation</span>
+            <p id="main-trans-display" style="font-size: 22px; line-height: 1.6;"></p>
+        </div>
+
+        <div id="literal-panel" class="detail-panel">
+            <span class="label">Literal Word-for-Word</span>
+            <p id="literal-display" style="font-style: italic; color: var(--text-muted); font-size: 18px;"></p>
+        </div>
+
+        <div id="lexicon-panel" class="detail-panel">
+            <span class="label">Word Registry</span>
+            <div id="lexicon-display" class="detail-grid"></div>
+        </div>
+
+        <div id="metadata-panel" class="detail-panel">
+            <span class="label">Sentence Integrity</span>
+            <p style="font-family: monospace; font-size: 13px; color: var(--primary);">SHA256: <span id="hash-display" style="color: white;"></span></p>
+            <p>Rules Triggered: <span id="rules-display"></span></p>
+            <p>Forensic Depth: <span id="iterations-display"></span> rounds</p>
+        </div>
+    </main>
+
+    <script>
+        let currentData = null;
+        let discourseMap = null;
+
+        async function init() {
+            const resp = await fetch('books.json');
+            const books = await resp.json();
+            const select = document.getElementById('book-select');
+            books.forEach(b => {
+                const opt = document.createElement('option');
+                opt.value = b.toLowerCase();
+                opt.textContent = b;
+                select.appendChild(opt);
+            });
+
+            document.getElementById('go-btn').addEventListener('click', loadSentence);
+            select.addEventListener('change', () => {
+                loadDiscourseMap();
+                loadSentence();
+            });
+            
+            document.getElementById('episode-select').addEventListener('change', (e) => {
+                if (e.target.value) {
+                    document.getElementById('index-input').value = e.target.value;
+                    loadSentence();
+                }
+            });
+
+            select.value = 'revelation';
+            await loadDiscourseMap();
+            loadSentence();
+        }
+
+        async function loadDiscourseMap() {
+            const book = document.getElementById('book-select').value;
+            const episodeSelect = document.getElementById('episode-select');
+            try {
+                const resp = await fetch(`../lib/books/${book}/discourse_map.json`);
+                if (resp.ok) {
+                    discourseMap = await resp.json();
+                    episodeSelect.innerHTML = '<option value="">Select Episode...</option>';
+                    discourseMap.episodes.forEach(ep => {
+                        const opt = document.createElement('option');
+                        opt.value = ep.range[0];
+                        opt.textContent = ep.title;
+                        episodeSelect.appendChild(opt);
+                    });
+                    episodeSelect.style.display = 'block';
+                } else {
+                    discourseMap = null;
+                    episodeSelect.style.display = 'none';
+                }
+            } catch (err) {
+                discourseMap = null;
+                episodeSelect.style.display = 'none';
+            }
+        }
+
+        function changeSentence(delta) {
+            const input = document.getElementById('index-input');
+            input.value = Math.max(1, parseInt(input.value) + delta);
+            loadSentence();
+        }
+
+        async function loadSentence() {
+            const book = document.getElementById('book-select').value;
+            const index = document.getElementById('index-input').value;
+            
+            try {
+                const resp = await fetch(`../lib/books/${book}/${index}.json`);
+                if (!resp.ok) throw new Error('Sentence Index not found');
+                
+                currentData = await resp.json();
+                render();
+            } catch (err) {
+                document.getElementById('explanation-text').textContent = "INDEX OUT OF BOUNDS: " + err.message;
+                document.getElementById('word-stream').innerHTML = '';
+            }
+        }
+
+        function render() {
+            const index = parseInt(document.getElementById('index-input').value);
+            
+            // Update Episode Label
+            const epLabel = document.getElementById('episode-label');
+            if (discourseMap) {
+                const ep = discourseMap.episodes.find(e => index >= e.range[0] && index <= e.range[1]);
+                epLabel.textContent = ep ? ep.title.toUpperCase() : "FORENSIC DISCLOSURE";
+            } else {
+                epLabel.textContent = "FORENSIC DISCLOSURE";
+            }
+
+            document.getElementById('explanation-text').textContent = currentData['main-translation-explanation'] || "PENDING FORENSIC POPULATION";
+            
+            const stream = document.getElementById('word-stream');
+            stream.innerHTML = '';
+            currentData['words'].forEach(w => {
+                const span = document.createElement('span');
+                span.className = 'token';
+                span.textContent = w;
+                stream.appendChild(span);
+            });
+
+            document.getElementById('main-trans-display').textContent = currentData['main-translation'];
+            document.getElementById('literal-display').textContent = currentData['literal-translation'];
+            document.getElementById('hash-display').textContent = currentData['hash'];
+            document.getElementById('rules-display').textContent = currentData['rules-applied'].join(', ') || "None";
+            document.getElementById('iterations-display').textContent = currentData['forensic-iterations'] || "0";
+
+            const lex = document.getElementById('lexicon-display');
+            lex.innerHTML = '';
+            for (const [w, m] of Object.entries(currentData['dictionary-meaning'])) {
+                const entry = document.createElement('div');
+                entry.className = 'dict-entry';
+                entry.innerHTML = `<div class="dict-word">${w}</div><div>${m || 'Lexical data pending...'}</div>`;
+                lex.appendChild(entry);
+            }
+            
+            document.querySelectorAll('.detail-panel').forEach(p => p.classList.remove('visible'));
+        }
+
+        function toggleLayer(layer) {
+            const p = document.getElementById(layer + '-panel');
+            const visible = p.classList.contains('visible');
+            document.querySelectorAll('.detail-panel').forEach(p => p.classList.remove('visible'));
+            if (!visible) p.classList.add('visible');
+        }
+
+        init();
+    </script>
+</body>
+</html>

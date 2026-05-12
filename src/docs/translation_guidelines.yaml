@@ -1,0 +1,554 @@
+objective: >
+  To produce an absolutely accurate, context-driven, and 100% English 
+  translation. Every nuance of the original text—including grammar, context, 
+  history, and literary structure—must be made explicit through a system of 
+  Italicized Grouping, Brackets, and Parentheses.
+
+1_Total_Contextual_Disclosure:
+  description: "The core engine of this entire translation methodology. It mandates that every single semantic layer—be it grammatical, historical, social, or theological—must be physically written out in the English text. We do not allow 'implied' meaning or 'subtext'; everything that the original author intended to communicate through the structure of their language must be made explicit to the English reader."
+  importance: "Without this rule, the English reader is at the mercy of the translator's choice of a single word. By disclosing the full context, we return the power of interpretation to the reader, allowing them to see the same 'cloud of meaning' that a first-century Greek or Hebrew speaker would have experienced instinctively. It eliminates the 'hidden' knowledge of scholars and makes it public."
+  linguistic_contrast: "Original biblical languages are 'high-context' and 'synthetic'. A single Greek verb ending can communicate person, number, tense, voice, and mood simultaneously. English is 'analytic' and requires many separate words to achieve the same precision. This rule bridges that structural gap by explicitly stating the relationships that ancient case endings and particles provided."
+  loss_if_omitted: "Translations become 'thin' and 'flat'. The reader misses the active, vibrating energy of the original relationships. For example, the difference between God's 'nature' and God's 'actions' is often hidden behind generic English nouns, leaving the reader with a shallow understanding of the Divine essence."
+  example: "*everything that God is in nature and essence was already existing the One who is the complete expression of God's mind*."
+
+2_Zero_Contextual_Drift:
+  description: "A strict prohibition against 'Dynamic Equivalence' or any translation philosophy that attempts to modernize the *ideas* of the text. We require a 100% pure semantic transfer. The translator is a forensic technician, not a co-author. No modern social, political, or theological bias is permitted to adjust the raw data of the ancient world."
+  importance: "Modern translations often 'fix' the Bible to make it more palatable (e.g., changing 'slaves' to 'servants' or 'brothers' to 'friends'). This drift creates a 'Safe Bible' that reflects modern Western values rather than the radical, often shocking, reality of the Kingdom of God. Zero Drift ensures the reader encounters the *actual* text, in all its ancient grit."
+  linguistic_contrast: "English words are 'semantic sponges' that have soaked up 2000 years of Western culture. Ancient Greek and Hebrew words were 'semantic arrows' pointed at specific, often brutal, realities. Zero Drift prevents the 'sponge' of English from drowning the 'arrow' of the original intent."
+  loss_if_omitted: "The Bible becomes a mirror of the reader's own culture rather than a window into God's mind. The 'offense' of the Gospel—which is often the catalyst for transformation—is smoothed over and lost."
+  example: "Translating 'slave' (doulos) as 'servant' to avoid modern offense, which hides the legal reality of total, forensic ownership in the ancient world."
+
+3_Pure_English_Only:
+  description: "A total ban on most loanwords and transliterations. Words like Logos, Amen, or Messiah must be fully translated into their English functional equivalents. NOTE: The names 'Jesus' and 'Christ' are explicitly exempted from this rule and are to be treated as standard English identifiers. Furthermore, the meaning of proper names should NOT be expanded in the translation, as this information is natively provided in the 'dictionary-meaning' field."
+  importance: "Loanwords create a 'linguistic bypass' where the reader feels they understand a word because it sounds familiar, while they actually lack the conceptual depth of the original."
+  linguistic_contrast: "A loanword is a failure of translation; it is a sign that the translator gave up on finding an English equivalent. Original readers didn't hear 'Logos' as a religious term; they heard it as the common word for a 'mind-reason' or 'speech-logic'."
+  loss_if_omitted: "The reader develops a 'religious vocabulary' that is divorced from real-world meaning."
+  example: "Using 'the complete expression of God's mind' instead of the Greek loanword 'Logos', and using 'Jesus Christ' without expanding their meanings (which are handled by the dictionary)."
+
+4_Modern_Basic_English:
+  description: "Mandates the use of clear, contemporary, and functional English grammar and vocabulary. We strictly prohibit 'KJV-isms' (thou, hath, ye) or any dialect that makes the text sound like a 'religious artifact'."
+  importance: "The Bible was originally written in the 'market-place' language of the people (Koine Greek) and the 'narrative' language of a nation (Biblical Hebrew). It was meant to be understood by laborers and kings alike. Modern Basic English ensures the message remains an urgent, living word rather than a historical curiosity."
+  linguistic_contrast: "Archaic English creates a 'sacred distance' that didn't exist for the original audience. By using 'thee' and 'thou', we make the Bible feel like it belongs to the past. Modern English brings the text into the reader's current 'Now'."
+  loss_if_omitted: "The text feels like a museum piece. The reader unconsciously filters the commands as 'ancient advice' rather than 'current directives'. It creates a psychological barrier to immediate application."
+  example: "Using 'you have' instead of 'thou hast'."
+
+5_Italicized_Grouping:
+  description: "A visual formatting system where multiple English words used to translate a single original word are wrapped in Italics. We use standard spaces between words and never use hyphens. This identifies a single 'semantic unit' in the original text."
+  importance: "Since we use many English words to disclose the depth of one ancient word, the reader might get lost in the 'wordiness'. Italics act as a 'container', telling the reader: 'All these words together represent just one focused idea from the original author'."
+  linguistic_contrast: "Greek and Hebrew are 'synthetic' (compressed meaning); English is 'analytic' (expanded meaning). This rule allows us to expand the meaning without cluttering the logical flow of the sentence. It identifies the 'DNA' of the original word."
+  loss_if_omitted: 'The reader becomes overwhelmed by the number of words. They lose the rhythm of the sentence and fail to see which ideas are connected, leading to a fragmented understanding of the text.'
+  example: "*the One who is the complete expression of God's mind*."
+
+6_Perfect_Word_plus_Bracket:
+  description: "When a high-fidelity, technical English word exists (like 'Propitiation' or 'Justification') but is not commonly used in daily speech, we use that word followed by a simple, functional explanation in brackets."
+  importance: "This preserves the 'Technical Precision' of the English language's deep vocabulary while ensuring the reader is never confused. It provides a 'Glossary-on-the-fly' that educates the reader as they read."
+  linguistic_contrast: "Ancient languages had technical vocabularies for law and sacrifice that were perfectly precise. Basic English often lacks these specific 'slots'. Brackets allow us to use the precise 'slot' while providing a bridge for the modern mind."
+  loss_if_omitted: "We either sacrifice precision (by using a 'dumbed down' word) or we sacrifice the reader's understanding (by using a 'hard' word without help). This rule ensures we keep both."
+  example: 'Propitiation [the act of turning away anger].'
+
+7_Ancient_Idiomatic_Expressions:
+  description: "We preserve the original ancient idiomatic expression or metaphor (to honor the author's imagery) and immediately provide the functional, practical meaning in parentheses."
+  importance: "This protects the literary integrity of the text while ensuring the reader knows *what to do*. It stops the reader from getting stuck on 'strange' ancient idioms."
+  linguistic_contrast: "Idioms and metaphors are 'culturally localized'. A Hebrew idiom for 'preparedness' (Girding loins) makes no sense to someone in jeans. By providing the functional equivalent, we bridge the 2000-year cultural gap without erasing the original author's voice."
+  loss_if_omitted: "The reader views the Bible as 'weird' or 'archaic'. They might appreciate the 'poetic' feel of 'girding loins' but they will miss the immediate call to 'prepare your mind for action'."
+  example: 'Gird up the loins of your mind (tucking in all distractions to prepare your mind for action).'
+
+8_Modern_Value_Comparison_plus_Parentheses:
+  description: 'For all ancient measurements of currency, weight, distance, or time, we provide a modern functional equivalent in parentheses.'
+  importance: "Numbers in the Bible are often meaningless to modern readers (e.g., 'ten thousand talents'). By providing modern equivalents (e.g., 'billions of dollars'), we restore the economic and physical 'Scale' of the narrative."
+  linguistic_contrast: "Ancient measurement systems were often based on human labor (a day's walk) or physical body parts (a cubit). English measurements are abstract and standardized. This rule restores the 'Human Scale' of the original units."
+  loss_if_omitted: "The economic parables of Jesus lose their 'punch'. The reader cannot feel the difference between a small debt and a massive, unpayable fortune, making the theological point abstract."
+  example: "denarius (a full day's pay for a basic laborer)."
+
+9_Verb_Aspect_Disclosure:
+  description: "Explicitly state the 'Kind of Action' (Aspect) in the translation of every verb. Disclose if an action is continuous, a one-time event, an ongoing habit, or a completed status. CRITICAL: Avoid blunt, robotic adverbs like 'continuously' if they create industrial-sounding English. Weave the aspect naturally into the verb phrasing (e.g., 'keep walking' or 'in a state of' instead of 'continuously walk')."
+  importance: "The meaning of a verse often hinges entirely on the aspect. For example, 'Do not sin' (one-time act) is different from 'Do not keep on sinning' (ongoing habit). Aspect disclosure provides the 'Instruction Manual' for the action."
+  linguistic_contrast: "English verbs are 'Tense-dominant' (Focus on *when*); Greek verbs are 'Aspect-dominant' (Focus on *how*). English simple past/present often destroys this vital distinction."
+  loss_if_omitted: 'Commands are misinterpreted. A person might feel they have failed a one-time command when the original was actually warning against a long-term habit (or vice versa).'
+  example: '*remains in a state of walking* or *keep bearing fruit*.'
+
+10_Status_Permanence_Disclosure:
+  description: "Identify when a verb or noun indicates a 'Fixed State' or 'Permanent Status' (often the Greek Perfect Tense)."
+  importance: "This is the 'Theological Anchor' for many promises. It distinguishes between a temporary feeling and a permanent legal standing with God."
+  linguistic_contrast: "The Greek Perfect Tense describes an action that happened once but has *fixed, ongoing results*. English simple tenses cannot express this 'Permanence' without extra words."
+  loss_if_omitted: 'The reader feels their standing with God is based on their current performance rather than an objective, finished legal status. It leads to spiritual instability.'
+  example: '*you are now and forever permanently fixed in the state of being clean*.'
+
+11_Agency_and_Causality:
+  description: "Explicitly disclose the 'Source of Action'. We must distinguish between a subject doing something personally, causing it to be done, or being the instrument through which it is done."
+  importance: "Correctly identifies the 'Who' and the 'Why'. It prevents the reader from assigning blame or credit to the wrong character in the narrative."
+  linguistic_contrast: "Hebrew (Hiphil stem) and Greek (Middle Voice) have dedicated grammatical 'slots' for causality that English lacks. English 'He did it' is too vague."
+  loss_if_omitted: "The reader misses the 'hidden hand' of God behind human actions, or they miss the personal responsibility of a character who 'caused' an evil even if they didn't 'do' it."
+  example: '*caused it to happen* vs. *did it personally*.'
+
+12_Collective_vs_Individual_Agency:
+  description: "Identify if a group (They/You/We) is acting as a single, unified 'Corporate Entity' or as a collection of separate individuals."
+  importance: "Ancient cultures were 'Collectivist'; we are 'Individualist'. This rule corrects our bias, showing when God is addressing a 'Nation-Soul' or a 'Church-Body' rather than just a group of individuals."
+  linguistic_contrast: "English pronouns (They/You) are ambiguous regarding 'Unity'. Hebrew and Greek grammar can signal when a group is acting 'with one heart and mind' versus just being in the same place."
+  loss_if_omitted: "Corporate promises are 'stolen' by individuals. The reader misses the profound 'Oneness' that the Bible expects from the community of believers."
+  example: '*they acted together as one unified unit*.'
+
+13_Instructional_Intent_Tone:
+  description: "Disclose the 'Tone' and 'Intensity' of every command. We must state if it is a Strong Order, a Gentle Plea, or a Sarcastic Challenge."
+  importance: "The 'Voice' of the speaker determines the 'Heart' of the command. Without tone, the Bible sounds like a list of flat rules. Tone restores the relational heat of the speaker."
+  linguistic_contrast: "Greek uses 'Moods' (Imperative, Optative, Subjunctive) and specific particles (*men*, *de*, *ge*) to show the 'Vibe' of the speaker. English text is 'emotionally silent' without these markers."
+  loss_if_omitted: "A gentle, fatherly plea from an Apostle might be read as a harsh, legalistic demand. The 'Relational Warmth' of the Kingdom is lost."
+  example: '*I strongly and authoritatively command you*.'
+
+14_Certainty_and_Mood:
+  description: "Disclose the level of grammatical 'Certainty' for every statement. We must state if an event is a Definite Fact, a Potential Possibility, or a Wished-for Desire."
+  importance: "Critical for understanding God's promises. It distinguishes between what God *will* do and what God *might* do based on our response."
+  linguistic_contrast: "Greek 'Mood' is a hard, binary grammatical distinction. Indicative = Fact; Subjunctive = Potential. English 'might/should/would' is too fuzzy and often misses the hard grammatical certainty."
+  loss_if_omitted: "Solid promises are viewed as 'maybes'. The 'Solid Rock' of the Word is softened into 'pious hopes', destroying the reader's confidence in God's reliability."
+  example: '*it will definitely and certainly happen*.'
+
+15_Level_of_Obligation:
+  description: 'Identify the *Source* of an obligation: Is it a Legal Debt, a Moral Necessity, or a Social Fittingness?'
+  importance: "Helps the reader understand 'Why' they are being told to do something. Is it because they owe it (Debt), because it's right (Moral), or because it looks good (Honor)?"
+  linguistic_contrast: "Greek has specific, non-overlapping words for 'must' (*opheilo* = legal debt; *dei* = moral necessity; *prepei* = honor-bound fittingness). English 'must' flattens all three."
+  loss_if_omitted: "The 'Legal Mechanics' of the Gospel are blurred. The difference between a 'Debt' we can't pay and a 'Duty' we choose to fulfill is lost."
+  example: '*you have a moral and honorable duty to*.'
+
+16_Degree_of_Urgency:
+  description: "Disclose the 'Now-ness' of every instruction. We must state if a command is for 'This Immediate Second' or a general instruction for the future."
+  importance: "Captures the 'Tension' of the biblical moment. Many of Jesus's commands were 'Urgency-driven'—miss the moment, and you miss the Kingdom."
+  linguistic_contrast: "The Greek 'Aorist Imperative' is the 'Start-Now' tense. English imperatives ('Go!') are timeless and don't communicate if the action is required *this second* or *starting tonight*."
+  loss_if_omitted: "The 'Crisis-nature' of the Gospel is lost. The reader views commands as 'Good advice for some day' rather than 'The Urgent Rescue of the present moment'."
+  example: '*I urgently and immediately command you to act this second*.'
+
+17_Instrument_and_Means:
+  description: "Explicitly state the 'Tool' or 'Instrument' used for an action. We must identify if someone acted with their hands, their voice, or through another person."
+  importance: "Provides 'Physical Fidelity'. It allows the reader to visualize the 'Mechanics' of a miracle or a judgment, grounding the story in physical reality."
+  linguistic_contrast: "Greek 'Dative Case' can be purely instrumental. English 'by' or 'with' can mean many things (e.g., 'by the door' vs. 'by his hand'). This rule eliminates that ambiguity."
+  loss_if_omitted: "The 'Physicality' of the text is lost. Miracles become 'magic clouds' rather than God acting through specific, disclosed physical means."
+  example: '*he struck him down with his own physical hand*.'
+
+18_Completeness_of_Action:
+  description: "Disclose if an action was done 'Once-for-all' or if it is a repeating process. This is the 'Efficiency' of the action."
+  importance: "Vital for understanding 'The Finished Work of Christ'. It distinguishes between a sacrifice that has to happen every year and a sacrifice that finished the job forever."
+  linguistic_contrast: "Greek 'Aorist' often signals 'Punctiliar' (One-shot) action. English past tense can imply a habit ('He walked' could mean he did it once or did it every day). This rule fixes that."
+  loss_if_omitted: "The reader tries to 'repeat' what is already 'finished'. It leads to legalism and a lack of assurance, as the reader misses the 'Once-for-all' finality of God's work."
+  example: '*it is totally and completely finished once and for all*.'
+
+19_Source_of_Authority:
+  description: "Whenever someone acts 'In the name of' someone else, disclose the full 'Legal Power' behind that authority."
+  importance: "Clarifies that the Apostles or Jesus are acting as 'Legal Envoys' with the full weight of the King behind them. It changes a 'religious phrase' into a 'legal power-of-attorney'."
+  linguistic_contrast: "The phrase *en to onomati* in the 1st century was a technical commercial and legal term. English readers hear it as a 'polite religious ending' to a prayer."
+  loss_if_omitted: "The 'Power' of the name is lost. The reader doesn't realize that using the 'Name' is a legal claim to the resources and reputation of the person named."
+  example: '*I act with the full authority and reputation of Jesus*.'
+
+20_Consolidated_Syntax:
+  description: "Combine possessive pronouns and small related units into natural English phrasing while preserving the disclosure. This mandates the consolidation of ancient prepositional repetitions (e.g., 'between A and between B') into natural English structures (e.g., 'separated A from B')."
+  importance: "Prevents the translation from sounding like a 'literalist robot'. It ensures that even with massive disclosure, the language remains dignified and high-quality."
+  linguistic_contrast: "Hebrew/Greek are highly efficient; our 'Total Disclosure' is very wordy. This rule provides the 'Syntactic Lube' to keep the expanded text moving smoothly."
+  loss_if_omitted: "The text becomes 'Unreadable word-salad'. The reader gets frustrated with the clunkiness and stops reading before they can benefit from the disclosure."
+  example: "Using 'separated the light from the darkness' instead of 'divided between the light and between the darkness'."
+
+21_Functional_Object_Disclosure:
+  description: 'For every ancient object (tools, buildings, rituals), we must describe *what it did* in physical terms.'
+  importance: "Bridges the 'Technological Gap'. A modern person doesn't know how a 'Lampstand' or an 'Altar' physically worked. Disclosure provides the 'Physics' of the biblical world."
+  linguistic_contrast: "Ancient nouns were 'verb-heavy'—their name told you their job. English nouns are 'label-heavy'—they just give the item a name. This rule restores the 'Action' of the object."
+  loss_if_omitted: "The reader misses the 'Utility' of the text. They see religious symbols where there were actually working physical tools, making the Bible feel 'abstract' and 'airy'."
+  example: 'winepress (the stone pit where grapes are crushed by foot to make juice).'
+
+22_Symbolic_Attire_plus_Object:
+  description: "Disclose the 'Public Declaration' behind every mention of clothing, jewelry, or specific physical items."
+  importance: "In the Bible, what you wore was your 'Public ID card'. Changing clothes was a change of legal status or social testimony. Disclosure reveals the 'Silent Testimony' of the characters."
+  linguistic_contrast: "Modern clothing is 'Personal Style'. Ancient clothing was 'Social Law'. Changing from 'Sackcloth' to 'Royal Robes' wasn't a fashion choice; it was a legal declaration of the end of mourning."
+  loss_if_omitted: "The narrative feels 'under-explained'. The reader misses the 'Silent Drama' happening through the objects on the page."
+  example: 'Sackcloth (the material worn as a public declaration of mourning).'
+
+23_Social_Identity_of_Roles:
+  description: "For every ancient title or role (Pharisee, Scribe, Centurion), provide the 'Modern Social Equivalent' and the 'Social Judgment' associated with it."
+  importance: "Reveals the 'Social Friction' in the story. A Centurion wasn't just a soldier; he was the 'Face of the Occupying Enemy'. Disclosure restores the 'Tension' of the room."
+  linguistic_contrast: "Ancient roles carried 'Visceral baggage'. English labels like 'Pharisee' are now just 'Religious words'. This rule restores the 'Judge-y' weight those words had in the 1st century."
+  loss_if_omitted: "The 'Shock' of Jesus's friendships is lost. The reader doesn't understand why people were scandalized when Jesus talked to certain 'Social Traitors'."
+  example: 'Tax Collector (a local traitor collecting money for the Roman enemy).'
+
+24_Situational_Name_Disclosure:
+  description: "Disclose the *meaning* of a name *at the exact moment* it becomes relevant to the story's crisis."
+  importance: "Ancient authors chose which names to define based on the theme. Defining the name reveals the 'Thematic Core' of the chapter."
+  linguistic_contrast: "Hebrew names are 'Active Commentary' on the person. English names are 'Passive Labels'. This rule activates the 'Commentary' built into the name."
+  loss_if_omitted: "The reader misses the 'Irony' or the 'Prophecy' hidden in the character's name. They see a random person where there was a 'Living Parable'."
+  example: 'Ichabod (the name meaning the glory has departed).'
+
+25_Intertextual_Echoes:
+  description: "Identify every time an author 'steals' language or logic from another part of the Bible and disclose the source."
+  importance: "Reveals that the Bible is a 'Symphony' where every part knows every other part. It shows the 'Internal Coherence' of the Word."
+  linguistic_contrast: "Ancient writers assumed a 'Biblically Saturated' audience. Modern readers are 'Biblically Illiterate' by comparison. This rule 'Plugs in' the modern reader to the ancient network of ideas."
+  loss_if_omitted: "The reader misses the 'Layers'. They see a simple sentence where the original author was actually 'Triggering' a whole chapter of the Torah in the reader's mind."
+  example: '*(using the exact words from Isaiah chapter 53)*.'
+
+26_Prophetic_Fulfillment:
+  description: "When an event happens 'to fulfill' a prophecy, disclose the 'Divine Architecture'—the fact that this was an intentional, non-accidental plan from eternity."
+  importance: "Proves that the story isn't just 'history'—it is 'Design'. It transforms a series of events into a 'Divine Masterpiece'."
+  linguistic_contrast: "The Greek *hina plerothe* is a 'Purpose Clause' with massive weight. English 'so it happened' sounds accidental. Disclosure restores the 'Architectural Intent'."
+  loss_if_omitted: "Jesus seems like a 'lucky' character rather than the 'Calculated Fulfillment' of 4000 years of planning. The reader's awe at God's sovereignty is diminished."
+  example: '*(specifically to fulfill what the prophet Isaiah predicted)*.'
+
+27_RESERVED_FOR_FUTURE_USE:
+  description: "This rule (formerly 'Proper Name Meaning') has been decommissioned. Forensic data for proper names is now exclusively handled by the 'dictionary-meaning' field to prevent translation bloat."
+
+28_Disciplinary_Context:
+  description: "Identify and disclose the 'Professional Field' from which a word or metaphor is drawn—whether it be the Courtroom (Forensic), the Battlefield (Military), the Market (Commercial), or the Temple (Ceremonial)."
+  importance: "The Bible was not written in 'Holy Language'; it was written in 'Work Language'. Identifying the discipline restores the 'Real World Precision' of the text. It shows that God's truth applies to the actual mechanics of human life, not just 'religious feelings'."
+  linguistic_contrast: "Biblical languages use technical professional terms for spiritual truths. English often translates these with 'soft religious words' that blur the professional edge. This rule re-sharpens that edge."
+  loss_if_omitted: "The Bible becomes 'Spiritually Abstract'. Words like 'Justification' become a feeling of being 'right with God' instead of a 'Final Verdict in a Supreme Courtroom'. The forensic mechanics of salvation are lost."
+  example: "Using 'opponent in a legal lawsuit' for the Greek *antidikos*."
+
+29_Geographical_Orientation:
+  description: "Explicitly disclose the precise elevation, cardinal direction (North, South, East, West), or topographical nuance mentioned in the text (e.g., 'going up' to Jerusalem, 'going down' to the Jordan, or journeying 'Eastward' away from Eden)."
+  importance: "Geography in the Bible is 'Theological Map-making'. 'Going Up' to the City of God is a spiritual ascent as much as a physical one. Disclosing these nuances grounds the story in a physical, verifiable reality while capturing the 'Ascent/Descent' motifs of the author."
+  linguistic_contrast: "Hebrew and Greek have specific verbs for elevation-based motion. English generic verbs ('go', 'travel') ignore elevation. This rule restores the 'Vertical Dimension' of the biblical world."
+  loss_if_omitted: "The text feels 'Location-less'. The reader misses the physical effort of the journeys and the 'High-Ground' status of certain locations, making the narrative feel like it's happening in a vacuum."
+  example: '*traveled upward toward the high elevation of Jerusalem*.'
+
+30_Contextual_Targeting_and_Bridging:
+  description: "When an original broad-domain word carries multiple meanings (e.g., *Ruach* as Spirit/Wind/Breath), translate ONLY the primary physical or grammatical target intended by the immediate context. If the author is deliberately using a double-entendre (pun), use a single English 'Bridging Phrase' (e.g., 'the invisible breath') instead of listing all definitions."
+  importance: "Ancient authors expected the immediate context to activate the correct facet of a broad-domain word. This rule prevents 'word salad' and respects the author's primary target, while providing a pure English solution for deliberate prophetic or poetic puns."
+  linguistic_contrast: "Previous translation methods forced either a 'loss of meaning' (by picking the wrong facet) or 'word salad' (by listing them all). Contextual Targeting honors the precision of the specific sentence, and Bridging Phrases honor intentional Hebrew/Greek wordplay without adding bracketed commentary."
+  loss_if_omitted: 'The translation becomes bloated with bracketed definitions that interrupt the narrative flow, or it completely misses the majestic double-meaning of passages like Ezekiel 37 and John 3.'
+  example: "Translating *Ruach* simply as 'wind' in a storm, but using 'the invisible breath' in John 3:8 to bridge the pun between wind and Spirit."
+
+31_Divine_Time_vs_Human_Time:
+  description: "Explicitly distinguish between 'Chronological Time' (Chronos) and 'Opportune Divine Time' (Kairos) within the translation."
+  importance: "God does not act on a clock; He acts on a 'Season'. Distinguishing these shows the reader when God is 'Stepping into Time' with a specific, appointed purpose. it highlights the 'Sovereignty of Timing' in the biblical narrative."
+  linguistic_contrast: "Greek has two distinct, non-overlapping words for time. English has only one ('Time'). This rule fixes a massive structural failure in the English language."
+  loss_if_omitted: "God's actions seem random. The reader misses the 'Appointed Nature' of events like the birth or death of Jesus, viewing them as mere 'historical occurrences' rather than 'Divine Appointments'."
+  example: '*Time (the appointed and perfect divine moment)*.'
+
+32_Legal_Status_of_the_Subject:
+  description: "Identify and disclose the precise 'Legal Status' of a person under ancient law—distinguishing between a slave (Doulos), a hired servant (Misthios), a minor child (Nepios), and a legal heir (Huios)."
+  importance: "The Gospel is a story of 'Status Migration'. We move from being 'Slaves' to being 'Heirs'. If the reader doesn't know the 'Legal Rights' of each status, they cannot understand the magnitude of the change."
+  linguistic_contrast: "English relationship words ('son', 'servant') are emotional/social. Biblical status words were 'Forensic/Legal'. This rule restores the 'Contractual Weight' of the relationship."
+  loss_if_omitted: "The 'Rights' of the believer are lost. The reader thinks of being a 'Son of God' as a nice feeling, rather than a 'Legal Claim to the Full Inheritance of the Universe'. It makes the Gospel a metaphor instead of a fact."
+  example: '*Son (the legal heir with full inheritance rights)*.'
+
+33_Eyewitness_vs_Reported_Speech:
+  description: "Disclose whether a speaker is providing 'Firsthand Eyewitness Testimony' or 'Reported Hearsay'. We must identify the 'Chain of Evidence'."
+  importance: "The Bible's claim to truth is based on 'Eye-witness Fidelity'. Identifying when an author says 'I saw this' vs. 'I heard this' validates the historical reliability of the text for a skeptical modern mind."
+  linguistic_contrast: "Greek has specific markers and particles to signal 'Reported Speech' vs. 'Direct Observation'. English often flattens both into a generic 'He said'. This rule restores the 'Evidentiary Grade' of the text."
+  loss_if_omitted: "The 'Clarity of the Evidence' is blurred. The reader cannot distinguish between the primary sources (The Apostles) and secondary reports, weakening the historical 'Weight' of the Gospel."
+  example: '*I personally witnessed this with my own eyes*.'
+
+34_Intensity_of_Sacredness:
+  description: "Identify and disclose the 'Sacred Status' of an object or person—is it 'Holy' (Hagios - set apart for God) or 'Common' (Koinos - part of the secular world)?"
+  importance: "The ancient world was divided into 'Sacred' and 'Profane'. This rule reveals the 'Threshold of Access' to God. It shows what is 'Safe' and what is 'Dangerous' in the presence of the Almighty."
+  linguistic_contrast: "English 'Holy' has been reduced to a synonym for 'Good' or 'Pious'. Original 'Holiness' was a 'Functional Separation' from the common world. This rule restores the 'Binary Status' of holiness."
+  loss_if_omitted: "The 'Reverence' of the text is lost. The reader treats God and His things with the same familiarity as common things, missing the 'Weight' and the 'Fear of the Lord' that the original category of 'Holy' enforced."
+  example: '*Holy (entirely set apart for God Himself)*.'
+
+35_Direction_of_Address:
+  description: "Explicitly state if a character is 'Speaking to Themselves' (Internal Monologue) or addressing an external audience."
+  importance: "Reveals the 'Internal Architecture' of a character. It allows the reader to see the 'Self-talk' and the 'Soul-struggle' of characters like the Psalmist or the Prophet. It turns the Bible into a 'Window into the Human Soul'."
+  linguistic_contrast: "Greek and Hebrew use markers like 'Said in his heart' to indicate internal thought. English often translates this as 'Thought' or just 'Said'. This rule captures the 'Active Speech' of the internal world."
+  loss_if_omitted: "The reader misses the 'Internal Dialogue'. They see only the external actions of characters, losing the 'Psychological Depth' and the 'Spiritual Motives' that the author intended to disclose."
+  example: '*he spoke inwardly to his own soul*.'
+
+36_Wisdom_vs_Practical_Insight:
+  description: "Distinguish between 'Deep, Philosophical Wisdom' (Sophia) and 'Practical, Street-smart Prudence' (Phronesis) within the text."
+  importance: "Shows that God values both 'Abstract Truth' and 'Practical Living'. It reveals that being 'Wise' includes both knowing God's nature and knowing how to handle money, relationships, and time."
+  linguistic_contrast: "Greek has several distinct, non-overlapping words for wisdom. English flattens all of them into 'Wisdom'. This rule restores the 'Multifaceted Intellectual Life' of the Bible."
+  loss_if_omitted: "The reader develops a 'One-dimensional Wisdom'. They might think the Bible only cares about 'Head-knowledge', missing the 'Practical Brilliance' required for the Kingdom of God."
+  example: '*Wisdom (the deep philosophical and divine understanding)*.'
+
+37_Life_Type_Differentiation:
+  description: "Explicitly distinguish between 'Physical/Natural Life' (Bios/Psyche) and 'Eternal/Divine Life' (Zoe) whenever the word 'Life' appears."
+  importance: "The central promise of the Bible is the gift of a *new kind of life* (Zoe), not just a longer version of our current life. This rule highlights the 'Supernatural Nature' of the believer's existence."
+  linguistic_contrast: "Greek has three words for life; English has one. This is a catastrophic failure of the English language that leads to massive theological confusion. This rule provides the 'Life-ID' for the text."
+  loss_if_omitted: "The reader thinks 'Eternal Life' is just a natural soul that doesn't die. They miss the fact that they have received a *Different Species* of life—the uncreated life of God Himself."
+  example: '*Life (the eternal divine life of God)*.'
+
+38_Community_vs_Individual:
+  description: "Always disclose if the pronoun 'You' is Singular (addressing one person) or Plural (addressing the whole community together)."
+  importance: "The 'Individualist Bias' of the West leads readers to take promises made to the 'Whole Body' as personal gifts for themselves. This rule corrects that bias, showing the 'Corporate Responsibility' of the believer."
+  linguistic_contrast: "English 'You' is completely ambiguous. Greek and Hebrew have strict, binary distinctions between 'One' and 'Many'. This rule 'Un-masks' the identity of the audience."
+  loss_if_omitted: "The 'Collective Unity' of the Church is destroyed. The reader sees the Bible as a 'Self-help book for me' rather than a 'Manifesto for the People of God'. It fosters spiritual narcissism."
+  example: '*all of you together as one body*.'
+
+39_Identity_of_the_We_and_Us:
+  description: "Identify and disclose exactly who is included in the 'We'—does it refer to the Apostles exclusively, or to the entire community of believers?"
+  importance: "Critical for understanding 'Apostolic Authority'. If the 'We' who 'saw the Glory' refers only to the Apostles, it validates their unique testimony. If it refers to all, it validates our shared experience. The reader must know 'Who is Speaking'."
+  linguistic_contrast: "English 'We' is the most ambiguous pronoun in the language. Greek grammar allows for precise tracking of 'Antecedent Identity'. This rule provides the 'Identification Tag' for the pronouns."
+  loss_if_omitted: "The 'Authority of the Word' is diluted. The reader might try to claim experiences or authorities (like 'writing scripture') that were intended only for the foundational 'We' of the Apostles."
+  example: '*we the apostles personally*.'
+
+40_Intimacy_and_Relationship_Tone:
+  description: "Identify and disclose the 'Relational Heat' between speakers—distinguishing between 'Formal Social Respect', 'Brotherly Love', and 'Fatherly Intimacy'."
+  importance: "The Bible is a 'Relational Book'. The tone of an address reveals the 'Heart of God'. A command from a 'Father' (Abba) has a different weight than a command from a 'King' (Basileus). Tone reveals the 'Dynamic of the Conversation'."
+  linguistic_contrast: "Original languages use specific 'Intimacy-markers' (like the 'Abba' vs. 'Pater' distinction) and word order to show affection. English flattened 'You' and 'Father' lose this 'Heat'. This rule 'Re-heats' the text."
+  loss_if_omitted: "God sounds like a 'Cold Bureaucrat'. The reader misses the 'Warmth' and the 'Personal Tenderness' that the authors went to great lengths to communicate through their grammar."
+  example: '*you my dearly loved friend*.'
+
+41_Gender_Scope_Disclosure:
+  description: "Explicitly identify when 'Brothers' (Adelphoi) refers strictly to 'Male Siblings' vs. the 'Universal Family of Believers' (Brothers and Sisters)."
+  importance: "Clarifies the 'Scope of the Call'. It ensures that women see themselves as full and equal recipients of the message while preserving those rare moments where a command is intended specifically for men."
+  linguistic_contrast: "Biblical languages use 'Masculine Plural' as a default 'Inclusive' category. Modern English 'Brothers' is increasingly read as 'Exclusive'. This rule restores the 'Universal Reach' of the original intent."
+  loss_if_omitted: "Women feel 'Secondary' to the text. Half of the Church feels they are reading someone else's mail. It creates an artificial barrier between the reader and the Word of God."
+  example: '*brothers and sisters*.'
+
+42_Intensity_Grading:
+  description: "Disclose the 'Grade of Intensity' for every superlative or emphatic word—state if it is 'Extreme', 'Overflowing', or 'Absolute'."
+  importance: "Captures the 'Volume' and 'Frequency' of the author's passion. It shows when the author is 'Shouting' truth to get the reader's attention. It restores the 'High-Energy' of the original text."
+  linguistic_contrast: "Hebrew uses 'Repetition' (Holy, Holy, Holy) or 'Intensive Verb Stems' (Piel) to show volume. English uses weak adverbs ('very', 'truly'). This rule 'Turns up the Volume' on the English text."
+  loss_if_omitted: "The text sounds 'Moderate' and 'Reasonable'. The reader misses the 'Wild Intensity' and the 'Total Commitment' required by the Gospel, making the Christian life seem like a 'nice hobby' instead of a 'consumed life'."
+  example: '*full complete and personal knowledge*.'
+
+43_Emotional_Intensity_Pathos:
+  description: "Identify and disclose the 'Visceral/Physical' nature of emotions described—explicitly stating when an emotion 'Moves the Bowels' or 'Breaks the Heart'."
+  importance: "Ancient people felt emotions in their *body*, not just their head. Disclosing the physical nature of 'Compassion' (Splanchnizomai) shows the reader that God's love is a 'Physical Aches' for humanity, not just a 'pious thought'."
+  linguistic_contrast: "Original emotional words were 'Visceral and Physical'. English equivalents ('Compassion', 'Pity') are sterile, Latin-root words that feel disconnected from the body. This rule 'Re-embodies' the emotions of the text."
+  loss_if_omitted: "The 'Pathos' of God is lost. The reader sees God as an 'Unfeeling Mind' rather than a 'Grieving Father' whose internal organs literally ache for His children."
+  example: '*deep visceral gut wrenching pity*.'
+
+44_Honor_and_Shame_Context:
+  description: "Identify and disclose the 'Social Currency' of every interaction—is an action intended to 'Increase Public Honor' or 'Inflict Public Shame'?"
+  importance: "The ancient world ran on 'Social Reputation' (Glory/Honor) rather than 'Internal Guilt'. This rule reveals the 'Public Price' a person paid to follow Jesus. It shows the 'Social Death' required by the Cross."
+  linguistic_contrast: "Original languages have a binary 'Honor/Shame' vocabulary. English uses 'Glory' or 'Sin', which misses the *public, social* nature of the standing. This rule restores the 'Social Stakes' of the narrative."
+  loss_if_omitted: "The 'Scandal' of the Gospel is lost. The reader doesn't understand why being 'Spit upon' or 'Crucified' was a catastrophe that destroyed a person's entire lineage and future."
+  example: '*radiant honor and high public reputation*.'
+
+45_Temple_and_Ceremonial_Context:
+  description: "Identify and disclose technical 'Ritual/Temple Verbs'—distinguishing between 'Common Service' and 'Sacred Priestly Service' (Latreuo)."
+  importance: "The New Testament describes the Christian life as a 'Sacred Liturgy'. This rule reveals that every act of obedience is a 'Sacred Offering' in the Temple of God. It turns 'Daily life' into 'Sacred Ritual'."
+  linguistic_contrast: "Original languages have distinct vocabularies for 'Work' and 'Ritual'. English uses 'Service' or 'Work' for both. This rule 'Restores the Priestliness' of the believer's life."
+  loss_if_omitted: "The 'Sacredness' of the Christian life is lost. The reader views their service to God as a 'job' or a 'task' rather than a 'High-Priestly Act of worship' in the presence of the Almighty."
+  example: '*perform sacred and ceremonial service to God*.'
+
+46_Social_Scandal_and_Taboo:
+  description: "Explicitly disclose when a character is 'Breaking a Social Taboo' or committing a 'Scandalous Act' according to 1st-century norms."
+  importance: "Jesus was a 'Scandalous figure'. Disclosing the taboos (like talking to a Samaritan woman or touching a leper) restores the 'Shock and Awe' of His ministry. It shows the 'Radical Border-crossing' of the Kingdom."
+  linguistic_contrast: "Social taboos are 'Invisible' to modern readers because our taboos are different. This rule provides the 'Cultural Sensitivity' needed to feel the 'Gasp in the room' when Jesus acts."
+  loss_if_omitted: "Jesus seems 'safe' and 'nice'. The reader misses the 'Subversive Power' of the Gospel, which was specifically designed to shatter the social and religious walls of the ancient world."
+  example: '*eating with sinners (an action that was shocking to religious leaders)*.'
+
+47_Anthropological_Disclosure:
+  description: "Explicitly distinguish between the 'Physical Body' (Soma) and the 'Corruptible Sinful Nature' (Sarx) whenever the word 'Flesh' or 'Body' appears."
+  importance: "The most common source of heresy is confusing the 'Physical Body' (which is good) with the 'Sinful Nature' (which is bad). This rule provides the 'Anthropological Blueprint' for the reader to understand *where* sin lives."
+  linguistic_contrast: "Greek has two distinct words (*Soma/Sarx*). English uses 'Body' and 'Flesh' interchangeably, leading to the false idea that physical matter is inherently evil. This rule 'Cleans the Lens' of biblical anthropology."
+  loss_if_omitted: "The reader develops a 'Hated of the Body'. They might try to 'starve' their physical body to fix a spiritual 'Sarx' problem. It leads to asceticism and a misunderstanding of the Resurrection."
+  example: '*flesh (the sinful and corruptible human nature)*.'
+
+48_Status_Permanence_Disclosure:
+  description: "Identify and disclose when a status is 'Finished and Fixed' (Greek Perfect Tense), particularly regarding salvation, cleansing, or belonging."
+  importance: "This is the 'Finality Rule'. It tells the reader: 'This happened in the past, and it can *never* be un-done.' It provides the 'Once-for-all' security of the Gospel."
+  linguistic_contrast: "English simple past ('He cleaned') doesn't say if you are *still* clean. Greek Perfect ('He has permanently cleaned') does. This rule 'Locks' the results of God's work in the text."
+  loss_if_omitted: "The reader lives in 'Spiritual Fear'. They feel they have to 're-do' their salvation or cleansing every day because they don't see the 'Fixed Status' in the English text."
+  example: '*you are now and forever permanently fixed in the state of being clean*.'
+
+49_Patronage_Relationship_Disclosure:
+  description: "Identify the 'Patron/Client' social structure behind terms like 'Grace' (Charis), 'Gift' (Dorea), and 'Faith' (Pistis)."
+  importance: "In the 1st century, 'Grace' was the technical term for a 'High-ranking Patron' providing resources to an 'Inferior Client' who owed total loyalty in return. Disclosure reveals that Grace is a 'Binding Relationship', not just a 'Free Sample'."
+  linguistic_contrast: "Modern English 'Grace' is a 'Pious feeling'. Ancient 'Grace' was a 'Social Contract'. This rule 'Restores the Social Weight' of our relationship with God as our Ultimate Patron."
+  loss_if_omitted: "The reader misses the 'Expectation of Loyalty'. They take God's 'Grace' as a free gift that requires nothing from them, missing the 'Binding Mutual Allegiance' that was built into the 1st-century word."
+  example: '*Grace (the generous and unearned provision of a high-ranking Patron toward a Client who can never repay it)*.'
+
+50_Ancient_Hospitality_Laws:
+  description: "Identify and disclose when an action is governed by the 'Sacred Law of Hospitality'—the binding duty to protect and provide for a guest."
+  importance: "Hospitality was the 'Life-support system' of the ancient world. Disclosing these laws explains why certain actions (like washing feet or protecting a stranger) were viewed as 'Mandatory Legal Duties' rather than just being 'nice'."
+  linguistic_contrast: "Original languages have a vocabulary of 'Sacred Duty' (*Philoxenia*) that English flattens into 'Hospitality'. This rule restores the 'Life-or-death Gravity' of the host/guest dynamic."
+  loss_if_omitted: "The reader misses the 'High Stakes'. They don't understand why a host would risk their life for a stranger, making the biblical narratives seem 'exaggerated' or 'strange' rather than 'Legally mandatory'."
+  example: '*hospitality (performing the sacred and legally-binding duty of a host to protect a guest at any cost)*.'
+
+51_Facial_and_Body_Gesture_Disclosure:
+  description: "Explicitly identify the 'Legal or Social Message' behind every physical gesture mentioned (e.g., beating the breast, tearing robes, falling on the face)."
+  importance: "Ancient people spoke with their bodies as much as their voices. Gestures were 'Formal Legal Declarations'—tearing a robe was a formal charge of blasphemy. Disclosure reveals the 'Silent Drama' and the 'Legal weight' of the characters' actions."
+  linguistic_contrast: "Modern Westerners view gestures as 'Personal Emotional Expressions'. Ancient gestures were 'Public Code'. This rule 'Decodes' the physical actions for the reader, showing the social and legal impact of every movement."
+  loss_if_omitted: "The reader sees 'weird' or 'dramatic' people doing strange things without understanding *why*. They miss the 'Formal Logic' of the narrative and the serious consequences of these physical declarations."
+  example: '*beat his breast (the physical gesture of deep and agonizing internal sorrow and self-judgment)*.'
+
+52_Logical_Linkage_The_Structural_Therefore:
+  description: "Identify and disclose the 'Structural Weight' of logical connectors like 'Therefore' (Oun) or 'Because' (Gar)—explicitly stating the 'Chain of Command' between a truth and its result."
+  importance: "The Bible is a 'Logical Fortress'. Truths (Indicatives) are the foundation for commands (Imperatives). Disclosure reveals that a command is not a random suggestion, but the 'Unavoidable Legal Result' of a previous eternal truth."
+  linguistic_contrast: "Greek logical particles are 'Weighty Structural Bolts'. English 'so' or 'for' are light-weight fillers. This rule 'Re-tightens' the logical bolts of the argument, showing the 'Unbreakable Link' between what God says and what we do."
+  loss_if_omitted: "The Bible feels like a list of random advice. The reader misses the 'Inescapable Logic' of the Gospel, leading to a shallow 'Moralism' rather than a deep 'Theological Obedience' based on reality."
+  example: '*Therefore (because of the massive and eternal truth I have just explained to you, it is now logically mandatory that...)*.'
+
+53_Forgiveness_as_Economic_Debt:
+  description: "Explicitly disclose when 'Forgiveness' (Aphesis) is the technical, legal cancellation of an economic debt-bond."
+  importance: "Reveals that Sin is not just 'bad behavior'; it is a 'Legal Debt' that must be forensically canceled. It ground salvation in 'Economic Reality', showing that someone had to 'Pay the Bill' for our release."
+  linguistic_contrast: "Greek *Aphesis* is a technical financial term used in the marketplace. English 'Forgiveness' has been 'Psychologized' into a merely emotional 'letting go' of anger. This rule 'Re-forensicizes' our salvation."
+  loss_if_omitted: "The 'Substitutionary' nature of the Cross is blurred. The reader thinks God just 'decided' to be nice, missing the legal reality that the 'Bond' was forensically torn up and the debt 'Paid in Full'."
+  example: '*Forgiveness [the legal and forensic cancellation of a debt that you were absolutely and legally required to pay]*.'
+
+54_Master_Disciple_Relationship_Model:
+  description: "Identify and disclose the 'Rabbinic/Apprentice' dynamic behind the word 'Follow'—where the disciple is expected to replicate the Master's entire life."
+  importance: "Following Jesus is not a 'mental agreement'; it is an 'Apprenticeship in Being'. Disclosure reveals that the goal of the Christian life is the 'Total Replication' of the character of Christ in the believer."
+  linguistic_contrast: "The Greek *Mathetes* (Disciple) was an 'Apprentice' who lived with a Master to learn a trade through imitation. English 'Student' or 'Follower' is academic or observational. This rule restores the 'Life-on-Life Replication' requirement."
+  loss_if_omitted: "Christianity becomes a 'Classroom'. The reader thinks the goal is to *know* things about Jesus, rather than to *be* like Jesus. It produces 'informed observers' instead of 'transformed apprentices'."
+  example: '*Follow me (leaving your current life to become my apprentice in order to replicate my nature in yourself)*.'
+
+55_Theophanic_Phenomenon_Disclosure:
+  description: "Identify and disclose when physical events (Clouds, Fire, Thunder) are the 'Physical Vehicle' for God's Heavy Presence (Shekinah)."
+  importance: "Grounds 'God's Arrival' in the physical senses. It distinguishes between a common storm and the 'Arrival of the King'. Disclosure reveals the 'Heavy Weight' of God's presence entering the material world."
+  linguistic_contrast: "Biblical languages use specific markers to show when a 'Cloud' is a 'Theophanic Vehicle'. English just sees 'weather'. This rule 'Activates' the physical elements of the story as carriers of the Divine Glory."
+  loss_if_omitted: "The reader sees 'special effects' or 'nature' and misses the 'Person of God'. The narrative feels 'mythical' or 'metaphorical' rather than a terrifying physical encounter with the Living God."
+  example: '*Cloud (the physical manifestation of the heavy and radiant presence of God Himself)*.'
+
+56_Suffix_of_Endearment_Diminutives:
+  description: "Identify and disclose when a word suffix (Diminutive) indicates extreme affection, tenderness, or 'Smallness of Endearment'."
+  importance: "Reveals the 'Tenderness of the Father's Heart'. It shows that the Apostles weren't just lecturing; they were 'Cooing' over their spiritual children. It restores the 'Deep Emotional Warmth' of the Epistles."
+  linguistic_contrast: "Greek Diminutives (suffixes like *-ion*) change the 'Vibe' of a word into a term of endearment. English has no such suffix and must use adverbs. This rule 'Translates the Emotion' hidden in the grammar."
+  loss_if_omitted: "The Bible sounds 'Cold and Formal'. The reader misses the 'Warm, Paternal Embrace' of the Word, making God seem like a distant 'Professor' rather than a 'Doting Father'."
+  example: '*my dearly loved and precious little children*.'
+
+57_Covenantal_Signs_and_Seals:
+  description: "Identify and disclose when a physical act (Baptism, Breaking Bread) is the 'Official Legal Seal' on a sacred covenant contract."
+  importance: "Reveals the 'Legality' of the Sacraments. It shows that these are not just 'symbolic rituals' but 'Binding Legal Signatures' that activate the resources and promises of the Covenant. It restores the 'Authority' of the ritual."
+  linguistic_contrast: "Original languages treat signs (*Semeion*) and seals (*Sphragis*) as forensic markers. English 'Symbol' sounds optional and empty. This rule 'Re-fills' the symbols with 'Legal Power'."
+  loss_if_omitted: "The reader views the Church's acts as 'traditions'. They miss the 'Legal Reality' that they have been 'Sealed' and 'Marked' as God's property, leading to a lack of assurance and identity."
+  example: '*Baptism (the official and public seal of your entrance into the sacred and binding covenant agreement)*.'
+
+58_Plainness_of_Speech_Parrhesia:
+  description: "Identify and disclose the 'Dangerous Social Boldness' (Parrhesia) behind a speaker's words."
+  importance: "Captures the 'Risk' of the Gospel. Disclosure reveals that the Apostles weren't just 'talking'; they were using a specific type of 'Fearless Public Testimony' that was a direct challenge to the powers of the world."
+  linguistic_contrast: "Greek *Parrhesia* was a technical term for the 'right of free speech' that carried the risk of death. English 'Boldness' is a personality trait. This rule 'Restores the Danger' and the 'Political Weight' of the testimony."
+  loss_if_omitted: "The 'Edge' of the Gospel is lost. The reader misses the 'Revolutionary Character' of the early Church, viewing them as 'pious talkers' rather than 'bold subverters of the social order'."
+  example: '*spoke with absolute and dangerous public boldness*.'
+
+59_Ancestral_and_Lineage_Weight:
+  description: "Identify and disclose the 'Lineage Weight' behind terms like 'Father' or 'Son'—showing the legal and spiritual responsibility of the entire ancestral line."
+  importance: "Ancient identity was 'Vertical' (through time), not just 'Horizontal' (current feelings). Disclosure reveals that a person's actions carried the honor or shame of their *entire history*. It explains the 'Ancestral Intensity' of the Bible."
+  linguistic_contrast: "Modern English 'Father' refers to a nuclear family unit. Biblical 'Father' (*Ab*) refers to the 'Legal Source and Representative of the entire Lineage'. This rule 'Verticalizes' the reader's perspective."
+  loss_if_omitted: "The 'Lineage Logic' of the Bible is lost. The reader misses why God deals with people based on their fathers, or why an 'Ancestral Sin' was a catastrophe for the whole family. It makes God's actions seem 'unfair' rather than 'Covenantal'."
+  example: '*Father (the ancestral source and legal head of your entire spiritual and physical lineage)*.'
+
+60_Cognate_Accusative_Emphasis_by_Repetition:
+  description: "Identify and disclose when a verb and its noun are used together (e.g., 'I have desired with desire') to show 'Overflowing and Absolute Intensity'."
+  importance: "This is the 'Saturation Rule'. It shows that an action was not just 'done', but was 'done with every ounce of the person's being'. It restores the 'Super-intense Passion' of the speaker."
+  linguistic_contrast: "English uses adverbs ('really', 'greatly'). Original languages use the 'Noun of the Action' to show that the action is 'overflowing its container'. This rule 'Restores the Overflow' to the English text."
+  loss_if_omitted: "The 'Singularity of Focus' is lost. The reader misses the 'Absolute, All-consuming Passion' of Jesus or the Prophets, making their words seem 'mild' or 'moderate' when they were actually 'white-hot'."
+  example: '*intensely and passionately desired with all my heart*.'
+
+61_Ancient_Nature_and_Animal_Symbolism:
+  description: "Identify and disclose the 'Archetypal and Spiritual Code' behind mentions of nature and animals (Hyssop, Cedars, Lions, Wormwood)."
+  importance: "The Bible uses the physical world as a 'Spiritual Alphabet'. Disclosing the code allows the reader to 'Read the World' as the original audience did. It turns 'scenery' into 'Divine Commentary'."
+  linguistic_contrast: "Modern readers see 'biology'. Ancient readers saw 'Theology'. A Lion wasn't just a cat; it was the 'King of Authority' or the 'Terror of Judgment'. This rule 'De-biologizes' and 'Re-theologizes' the physical world."
+  loss_if_omitted: "The reader misses the 'Secret Messages' hidden in the setting. They see random details where the author was actually 'triggering' deep spiritual archetypes that provide the key to the passage's meaning."
+  example: '*Hyssop (the plant used as a sacred tool for the sprinkling of blood and ritual cleansing)*.'
+
+62_Honorifics_and_Social_Hierarchy:
+  description: "Identify and disclose the 'Precise Social Level' of every title or honorific address—distinguishing between 'Sir', 'Master', and 'Absolute Deity'."
+  importance: "The title 'Lord' (*Kyrios*) can mean anything from 'Sir' to 'Jehovah'. Disclosure reveals the 'Specific Relational Dynamic' of the moment. It identifies exactly *who* the speaker thinks they are talking to."
+  linguistic_contrast: "English 'Lord' is a 'semantic bucket' that catches everything. Original languages have 'Precise Tiers' of address. This rule 'Sifts the Bucket', providing the exact 'Tier of Honor' intended by the speaker."
+  loss_if_omitted: "The 'Identity of Jesus' is blurred. The reader might think a character is confessing Jesus as God, when they were only addressing Him with 'polite social respect' (or vice versa), distorting the narrative arc."
+  example: '*Lord (addressing you with the highest possible honor as absolute Deity)*.'
+
+63_Channel_vs_Source_Prepositional_Agency:
+  description: "Identify and disclose whether an actor is the 'Originating Source' (Ek) or the 'Instrumental Channel' (Dia) of an action."
+  importance: "The core of Biblical Theology is that 'All things are FROM God (Source) and THROUGH Christ (Channel)'. Disclosure reveals the 'Divine Chain of Command', preventing the reader from confusing the 'Originator' with the 'Instrument'."
+  linguistic_contrast: "English 'by' or 'from' is often a 'mushy' preposition that can mean either source or channel. Greek prepositions are 'Mathematically precise' about the flow of power. This rule 'Discloses the Flow'."
+  loss_if_omitted: "The reader 'flattens' the Trinity and the Agency of the Church. They miss the 'Delegated Power' model of the Bible, leading to a confusion about who is responsible for miracles and transformation."
+  example: '*through [as the physical channel and instrument used by God]*.'
+
+64_Conditional_Reality_The_Three_Types_of_If:
+  description: "Identify and disclose the 'Reality-Grade' of every 'If' statement—Fact (I assume this is true), Potential (This might happen), or Impossible (This never happened)."
+  importance: "Many 'If' statements in the Bible (e.g., 'If you are the Son of God') are actually 'Since' statements (Fact). Disclosure reveals the 'Assumed Reality' of the speaker, providing the 'Logical Foundation' for the verse."
+  linguistic_contrast: "English 'If' is a 'Maybe'. Greek has four distinct 'Condition Classes' that define the *reality* of the premise. This rule 'Hardens the If', showing when an 'If' is actually a 'Certainty'."
+  loss_if_omitted: "God's conditions seem 'fickle' or 'uncertain'. The reader misses the 'Solid Ground' of many conditional promises, viewing them as 'pious hopes' rather than 'Logical certainties based on facts'."
+  example: '*If (and I am assuming this as a definite fact)*.'
+
+65_Genitive_Directionality_Source_vs_Objective:
+  description: "Identify and disclose the 'Direction of Flow' in a genitive phrase—is it 'God's Love for us' (Source) or 'Our Love for God' (Objective)?"
+  importance: "Clarifies the 'Active Power' of the verse. Is the power coming from God to us, or from us to God? Disclosure identifies the 'Source of the Energy' in the sentence, providing the key to the verse's meaning."
+  linguistic_contrast: "English 'of' is a 'two-way street'—it doesn't tell you the direction. Greek cases and context almost always define the 'Flow'. This rule 'Draws the Arrow' of direction in the text."
+  loss_if_omitted: "The 'Gospel Flow' is reversed. The reader might think they are being commanded to love God (a burden) when the text is actually promising God's love to them (a gift). It turns the Gospel back into Law."
+  example: '*Love (which is the love that God Himself has and gives away)*.'
+
+66_Hendiadys_Double_Word_Unity:
+  description: "Identify and disclose when two words (e.g., 'Grace and Truth') are a 'Hendiadys' describing a single, unified 'Super-Concept'."
+  importance: "Prevents the reader from 'splitting' a single divine reality into two separate, lesser ideas. It reveals the 'Unity and Depth' of the original concept, showing how two nouns create a 'Three-Dimensional' truth."
+  linguistic_contrast: "English sees an 'Addition' (A + B). Original languages used 'Hendiadys' to create a 'Single Unit' (A-B). This rule 'Re-welds' the two words into their original 'Single Unit' of meaning."
+  loss_if_omitted: "The 'Profound Unity' of divine concepts is lost. The reader focuses on two separate 'items' and misses the 'Unified Nature' of God's character (e.g., that His Grace *is* Truthful and His Truth *is* Gracious)."
+  example: "*Grace and Truth (the single unified reality of God's truthful and generous favor)*."
+
+67_Ancient_Monetary_Scale_of_Wealth:
+  description: "Identify and disclose the 'Economic Shock' of ancient currency—stating the relative value in terms of 'Generational Labor' or 'Billionaire Wealth'."
+  importance: "Restores the 'Social Impact' of the parables. Disclosure reveals that a 'Talent' wasn't just a 'coin'—it was 'Billion-dollar wealth'. It restores the 'Staggering Scale' of God's forgiveness and our debt."
+  linguistic_contrast: "English 'Talent' or 'Mite' are 'dead words' with zero economic energy. Ancient readers saw 'The Wealth of a City' or 'The last cent of a starving widow'. This rule 'Re-monetizes' the Bible with 'Economic Energy'."
+  loss_if_omitted: "The parables lose their 'Shock'. The reader misses the 'Absurdity' of God's generosity or the 'Tragedy' of a small-minded debt, making the teaching feel 'mild' and 'theoretical'."
+  example: '*Talent (a massive and staggering amount of money representing twenty years of labor for a common man)*.'
+
+68_Polysemy_Resolution_Disclosure:
+  description: 'When a word has multiple valid meanings (Polysemy), use a comprehensive phrase, clause, or sentence woven directly into the text to express all the valid meanings simultaneously, ensuring no valid meaning is lost.'
+  importance: "Provides 'Linguistic Transparency' without relying on clinical footnotes. It allows the reader to experience the full 'Cloud of Meaning' of the original word in a single, powerful English expression."
+  linguistic_contrast: 'Translators usually pick one meaning and discard the rest. This rule forces the translator to build an English sentence large enough to hold all the valid facets of the original word.'
+  loss_if_omitted: "The reader is 'blinded' to the depth of the original vocabulary. They think every word has one simple English 'match', missing the 'Semantic Richness' of the original languages."
+  example: "Translating 'Kosmos' as *the physical earth and its corrupt social systems* rather than picking just one."
+
+69_Verbal_Inspiration_Granularity:
+  description: "Strictly preserve the exact grammatical number (Singular vs. Plural) or tiny particles of the original text, especially when a theological argument hinges on it. Do not use English uncountable nouns (like 'offspring') if it destroys the singular/plural distinction."
+  importance: "Proves that 'Every Jot and Tittle' matters. It shows the reader that the Bible is 'Atomic'—the truth goes down to the very smallest particle of the language. It restores a 'High View of Scripture'."
+  linguistic_contrast: "Broad translations focus on 'Main ideas' and often use uncountable nouns that blur the grammar. This rule forces the use of precise, countable English nouns to perfectly align with the original 'Micro-details'."
+  loss_if_omitted: "The reader misses the 'Precision' of the Word, and massive theological arguments (like Paul's argument in Galatians 3) collapse completely in English because the grammatical math no longer works."
+  example: "Translating *sperma* functionally as 'single descendant' vs 'descendants', rather than using the uncountable 'offspring' or the archaic 'seed'."
+
+70_Optimal_Bridging_Phrase_Precision:
+  description: 'When using an English phrase to translate a single ancient word (for polysemy, idiom, or theological depth), every single English word in that phrase must be forensically audited to ensure it is the absolute optimal choice. Do not use loose filler words.'
+  importance: "Prevents 'Translational Bloat'. Just because we are expanding a word into a phrase doesn't mean we can be sloppy. Every English word used must perfectly map the exact boundaries of the original meaning—adding nothing and removing nothing."
+  linguistic_contrast: "Dynamic equivalent translations often use 'loose phrases' to explain a concept. This rule mandates 'Surgical Phrasing'—where the expanded English phrase is just as precise and tight as the original single Greek/Hebrew word."
+  loss_if_omitted: "The translation becomes wordy and inaccurate. The reader receives a 'vague approximation' of the concept rather than a razor-sharp English equivalent, compromising the forensic integrity of the entire project."
+  example: "Carefully choosing 'destitute beggars' over 'very poor people' to exactly match the extreme boundaries of *ptochos*."
+
+71_Biological_vs_Forensic_Sonship:
+  description: "When the word 'Son' (Huios/Ben) is used theologically or forensically, translate it strictly as 'the Supreme Heir' or 'the Exact Representation' rather than 'Son'. Remove the English biological baggage."
+  importance: "The English word 'Son' strictly implies biological reproduction. This creates massive theological confusion when applied to God. Biblical 'Sonship' is a legal title of absolute inheritance, authority, and exact shared nature."
+  linguistic_contrast: "Ancient readers understood 'Son of God' as a royal, legal title. Modern readers hear 'God had a baby'. This rule fixes the biological distortion."
+  loss_if_omitted: 'The reader fundamentally misunderstands the Trinity and their own adoption, thinking in terms of biological reproduction rather than absolute legal inheritance and exact representation.'
+  example: "Translating 'Son of God' as 'the Supreme Heir and exact representation of God' instead of 'Son'."
+
+72_Cognitive_Center_Realignment:
+  description: "Never translate 'Leb' or 'Kardia' as 'Heart' unless referring to the physical organ. Translate it functionally as 'the central command center', 'the core of your mind and will', or 'the seat of decision'."
+  importance: "The modern English 'Heart' is the seat of irrational emotion. The biblical 'Heart' is the exact opposite—it is the seat of logic, intellect, and willpower."
+  linguistic_contrast: "Western culture separated mind (logic) and heart (emotion). The ancient world unified them in the 'Leb/Kardia'. Translating it as 'Heart' imports 18th-century emotionalism into the Bible."
+  loss_if_omitted: "The reader thinks God is commanding them to 'feel' more, when He is actually commanding them to 'think' and 'decide' with their intellect. It creates an emotionally driven, unstable faith."
+  example: "Translating 'guard your heart' as 'guard the central command center of your mind and will'."
+
+73_Forensic_Theological_Boundary:
+  description: "Strictly prohibit the addition of anthropomorphic biological filler (e.g., 'with His own eyes', 'with His own hands') when translating God's actions, unless the original ancient text explicitly uses those physical body-part terms. Every added word must describe the forensic or functional reality, not the translator's imagination."
+  importance: "Maintains the anthropological and theological distinction between God as Spirit and human physical mechanics. Prevents 'Theological Hallucinations' that distort the nature of the Divine."
+  linguistic_contrast: "Ancient idioms often attribute agency to the person Himself. Translators often 'flesh this out' with body parts. This rule forces the engine to stick to the pure forensic agency."
+  loss_if_omitted: "The reader receives a 'Hallucinated Bible' where God has a physical body and eyes that are not present in the original DNA of the text."
+  example: "Using 'God Himself saw' or 'God directly observed' instead of 'God saw with His own eyes'."
+
+74_Conjunctive_Chain_Precision:
+  description: "Identify and disclose the precise logical function of every conjunction (Hebrew: וְ Waw; Greek: καί, δέ, ἀλλά, γάρ, οὖν, ὅτι). These words do NOT all mean 'and'. They carry precise meanings: adversative ('but'), explanatory ('for'), inferential ('therefore'), continuative ('now'), or contrastive ('however'). Flattening them all to 'and' is a primary source of interpretive drift."
+  importance: "The conjunctions are the 'Ligaments' of the argument. They tell the reader exactly HOW the next statement relates to the previous one — whether it confirms, contradicts, explains, or concludes it. Without precise conjunctions, the entire logical chain collapses."
+  linguistic_contrast: "Greek has a rich, non-overlapping conjunction system. Hebrew Waw is highly versatile and must be resolved by context. English 'and' is the laziest, lowest-precision translation of any conjunction — it implies continuation when the author may have intended contrast."
+  loss_if_omitted: "Arguments become lists instead of logic. The reader cannot follow the Apostle's reasoning because the 'connecting tissue' of the argument has been amputated."
+  example: "Translating δέ as 'but' or 'now' when it signals a narrative shift, not merely 'and'."
+
+75_Absence_of_Article_Significance:
+  description: "Explicitly disclose when a Greek noun appears WITHOUT the definite article (anarthrous), especially when its presence or absence carries theological weight. The absence of the article does not make a noun indefinite ('a'); it often signals qualitative force ('what God is in nature') rather than identity ('the God')."
+  importance: 'The most famous theological battleground in the New Testament (John 1:1c — θεὸς ἦν ὁ λόγος) hinges entirely on the presence and absence of the article. Ignoring article usage can reverse the meaning of a sentence.'
+  linguistic_contrast: "English has no grammatical category for 'qualitative force'. We must choose 'the', 'a', or zero article. Greek uses anarthrous nouns to highlight the nature or character of something, not merely its identity."
+  loss_if_omitted: 'Theological statements become identity claims where the author intended qualitative descriptions, or vice versa. The forensic precision of Greek grammar is destroyed.'
+  example: "John 1:1c — 'and what God is in nature and essence, the Word also was' rather than the ambiguous 'and the Word was God' or the heretical 'a god'."
+
+76_Word_Order_Emphasis_Hyperbaton:
+  description: 'Identify and disclose when a word appears in an abnormal position in the sentence for rhetorical emphasis. In Greek, the first position in a clause carries the highest stress. In Hebrew, fronting a word before the verb creates contrastive or topical emphasis. The English translation must find a way to honor this stress — through italics, word placement, or an explicit disclosure marker.'
+  importance: "Word order is the original author's 'Volume Knob'. When Paul writes 'God's love' with the genitive first, he is shouting the word 'God'. Ignoring word order produces a translation that is grammatically correct but rhetorically flat."
+  linguistic_contrast: 'English word order is largely fixed (Subject-Verb-Object). Greek and Hebrew have far more flexible word order, allowing the author to emphasize any element by moving it. This flexibility is a primary vehicle for passion and stress in the original.'
+  loss_if_omitted: 'The emotional and theological emphasis of the original author is completely erased. All statements sound equally important, flattening the passionate, argument-driven style of Paul or the dramatic narrative of Moses.'
+  example: "If a Greek clause fronts the object for emphasis, reflect this in the English: 'It is THIS that God loved' rather than 'God loved this'."
+
+77_Resumptive_Pronoun_Disclosure:
+  description: "Identify and disclose when a relative clause uses a resumptive pronoun to re-identify the subject — creating a 'doubled subject' structure (e.g., 'the one who — he shall be'). This construction intensifies the identity of the subject and must not be silently collapsed into a simple relative clause."
+  importance: "Resumptive pronouns are used by the author to make the subject unmistakably clear and to add rhetorical weight. Their collapse into a simple 'who' clause removes both the clarity and the emphasis the author intended."
+  linguistic_contrast: 'Biblical Hebrew frequently uses resumptive pronouns in relative clauses. Koine Greek also uses this construction for rhetorical stress. English relative clauses have no equivalent structure — the resumptive pronoun must be rendered through disclosure.'
+  loss_if_omitted: 'The double-identification of a subject (which is often a Messianic or Divine identity marker) is lost. The reader receives a vague relative clause where the original author was making an unmistakable declaration.'
+  example: "Rendering as 'the one concerning whom — it is He who...' rather than simply 'the one who...'"
+
+78_Hapax_Legomenon_Flag:
+  description: "When a word appears only once in all of canonical Scripture (a hapax legomenon), this fact MUST be disclosed in the 'grammatical-notes' or 'dictionary-meaning' field. The chosen translation must be marked as tentative unless corroborated by other ancient sources (LXX, cognate languages, early manuscripts). Never translate a hapax with the same confidence as a word with 500 occurrences."
+  importance: 'A hapax has no internal biblical calibration data. Its meaning is determined solely by etymology, cognate languages, or ancient translations. This means the forensic confidence in any hapax translation is inherently lower and must be disclosed to the reader.'
+  linguistic_contrast: 'Standard translations render hapax words with the same typographic confidence as common words. This conceals from the reader that the lexicographers are making an educated guess based on limited data.'
+  loss_if_omitted: "The reader trusts the translation of a hapax with the same certainty as a word like 'God' or 'love' — not knowing that scholars have debated its meaning for 2000 years and have no internal biblical evidence to settle the question."
+  example: "HAPAX FLAG: This word (עַלְמוּת, almut — Psalm 9 title) appears only once in Scripture. Chosen rendering 'according to the soprano voice' is based on cognate evidence but remains tentative."
+
+79_Semantic_Range_Boundary:
+  description: "For every word entry in 'dictionary-meaning', explicitly state the MINIMUM boundary (what this word can NEVER mean) and the MAXIMUM boundary (the furthest extent of its possible meaning). Then state the CHOSEN boundary for this specific context and the reason. This creates a three-part entry: NEVER / MAXIMUM / CHOSEN."
+  importance: 'Without range boundaries, a translator can unconsciously push a word toward the extreme of its range to fit a theological preference. This rule forces a documented, auditable choice within a set of defined limits — preventing semantic smuggling.'
+  linguistic_contrast: "Standard lexicons list possible meanings but do not force the translator to declare what is excluded. This creates a 'permission slip' for importing unwarranted meanings. Boundary declaration makes the exclusion as deliberate as the inclusion."
+  loss_if_omitted: "Translators unconsciously use the extreme end of a word's range when the context only warrants the mild end. Over time, this accumulates into systematic theological drift — adding implications the author never intended."
+  example: "For Greek 'πίστις' (pistis): NEVER means 'blind belief without evidence'. MAXIMUM means 'total, covenantal, exclusive loyalty'. CHOSEN for this context: 'trusting conviction based on evidence' — because context is apologetic, not covenantal."

@@ -1,0 +1,35 @@
+# Forensic Bible Project .gitignore
+
+# Logs and Audits
+*.log
+forensic_audit_report.json
+unique_words.txt
+hebrew_tokens.txt
+greek_tokens.txt
+normalized_tokens.txt
+
+# SvelteKit
+.svelte-kit
+.env
+.env.*
+!.env.example
+
+# Temporary Files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# UI Assets (Optional: remove if you want to track them)
+# src/ui/assets/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Node Dependencies
+node_modules/
+# package-lock.json is usually tracked, but keeping user preference if they intended to ignore it. 
+# However, for fresh push, tracking it is better for Vercel.
+# I will un-ignore it.
+# package-lock.json
