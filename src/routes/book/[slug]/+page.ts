@@ -25,24 +25,27 @@ export const load = (async ({ params, fetch }) => {
 		const textRes = await fetch(textPath);
 		const content = textRes.ok ? await textRes.text() : '';
 
-		// Fetch all units sequentially based on unit_count
+		// Fetch all units in batches to avoid overwhelming the network/server
 		const bookUnits: ForensicUnit[] = [];
 		const unitCount = book.unit_count || 0;
+		const BATCH_SIZE = 50;
 
-		// We use Promise.all with chunks or sequential fetch to avoid overwhelming the browser
-		// but since it's SSR/Prerendering on Vercel, we can do it efficiently.
-		const unitPromises = [];
-		for (let i = 1; i <= unitCount; i++) {
-			unitPromises.push(
-				fetch(`/data/books/${book.slug}/${i}.json`).then((res) => {
-					if (!res.ok) throw new Error(`Failed to fetch unit ${i}`);
-					return res.json() as Promise<ForensicUnit>;
-				})
+		for (let i = 1; i <= unitCount; i += BATCH_SIZE) {
+			const chunk = Array.from(
+				{ length: Math.min(BATCH_SIZE, unitCount - i + 1) },
+				(_, j) => i + j
 			);
+			
+			const results = await Promise.all(
+				chunk.map(id => 
+					fetch(`/data/books/${book.slug}/${id}.json`).then(res => {
+						if (!res.ok) throw new Error(`Failed to fetch unit ${id}`);
+						return res.json() as Promise<ForensicUnit>;
+					})
+				)
+			);
+			bookUnits.push(...results);
 		}
-
-		const results = await Promise.all(unitPromises);
-		bookUnits.push(...results);
 
 		return { book, content, units: bookUnits };
 	} catch (err) {

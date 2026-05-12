@@ -1,12 +1,15 @@
 <script lang="ts">
-	import { playText, isPlaying, currentPlayingIndex, stopPlayback } from '$lib/stores/audioStore';
+	import { audioStore } from '$lib/stores/audioStore.svelte';
 	import type { ForensicUnit } from '$lib/types';
 	import { resolve } from '$app/paths';
 	import ForensicText from '$lib/ForensicText.svelte';
+	import AudioPlayer from '$lib/AudioPlayer.svelte';
+	import { onMount } from 'svelte';
 
 	let { data } = $props();
 	let viewMode = $state('english');
 
+	// ... [RULE_NAMES remains same] ...
 	const RULE_NAMES: Record<number, string> = {
 		1: 'Total Contextual Disclosure', 2: 'Zero Contextual Drift', 3: 'Pure English Only',
 		4: 'Modern Basic English', 5: 'Italicized Grouping', 6: 'Perfect Word + Bracket',
@@ -50,14 +53,49 @@
 
 	function handlePlay(unit: ForensicUnit, lang: string) {
 		const text = lang === 'en' ? unit['main-translation'] : unit.sentence;
-		const speechLang = lang === 'en' ? 'en-US' : (data.book.language === 'Greek' ? 'el-GR' : 'he-IL');
-		if ($currentPlayingIndex === unit.index && $isPlaying) {
-			stopPlayback();
+		
+		let speechLang = 'en-US';
+		if (lang !== 'en') {
+			const sourceLang = unit['source-language'] || data.book.language;
+			if (sourceLang === 'Greek') speechLang = 'el-GR';
+			else if (sourceLang === 'Hebrew') speechLang = 'he-IL';
+			else if (sourceLang === 'Aramaic') speechLang = 'arc';
+		}
+		
+		if (audioStore.currentUnitIndex === unit.index && audioStore.isPlaying) {
+			audioStore.stopPlayback();
 		} else {
-			currentPlayingIndex.set(unit.index);
-			playText(text, speechLang);
+			audioStore.playText(text, unit.index, speechLang);
 		}
 	}
+
+	$effect(() => {
+		if (audioStore.currentUnitIndex) {
+			const el = document.getElementById(`unit-${audioStore.currentUnitIndex}`);
+			if (el) {
+				el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+			}
+		}
+	});
+
+	onMount(() => {
+		const handleEnded = (e: Event) => {
+			const customEvent = e as CustomEvent<{ index: number }>;
+			if (audioStore.continuous) {
+				const currentIndex = customEvent.detail.index;
+				const nextUnit = data.units.find(u => u.index === currentIndex + 1);
+				if (nextUnit) {
+					// We need to know if we were playing 'en' or 'orig'
+					// For continuous, we default to the current active language mode
+					const langMode = audioStore.currentText === nextUnit.sentence ? 'orig' : 'en';
+					handlePlay(nextUnit, langMode);
+				}
+			}
+		};
+
+		window.addEventListener('audio-unit-ended', handleEnded);
+		return () => window.removeEventListener('audio-unit-ended', handleEnded);
+	});
 
 	function getExplanationEntries(exp: Record<string, string> | string | null | undefined): [string, string][] {
 		if (!exp || typeof exp === 'string') return exp ? [['Note', exp]] : [];
@@ -141,7 +179,11 @@
 			<div class="content-view sota-units">
 				{#if data.units && data.units.length > 0}
 					{#each data.units as unit (unit.index)}
-						<section class="unit-card" id="unit-{unit.index}">
+						<section 
+							class="unit-card" 
+							class:playing={audioStore.currentUnitIndex === unit.index}
+							id="unit-{unit.index}"
+						>
 							<div class="unit-header">
 								<div class="unit-meta">
 									<span class="unit-index">UNIT {unit.index}</span>
@@ -154,6 +196,7 @@
 								<div class="audio-controls">
 									<button 
 										class="audio-btn original" 
+										class:active={audioStore.currentUnitIndex === unit.index && audioStore.isPlaying && audioStore.currentText === unit.sentence}
 										onclick={() => handlePlay(unit, 'orig')}
 										title="Play Original"
 									>
@@ -165,6 +208,7 @@
 									</button>
 									<button 
 										class="audio-btn main" 
+										class:active={audioStore.currentUnitIndex === unit.index && audioStore.isPlaying && audioStore.currentText === unit['main-translation']}
 										onclick={() => handlePlay(unit, 'en')}
 										title="Play Translation"
 									>
@@ -321,6 +365,8 @@
 			</div>
 		{/if}
 	</article>
+
+	<AudioPlayer />
 </div>
 
 <style>
@@ -419,6 +465,12 @@
 		border-color: rgba(197, 160, 89, 0.2);
 	}
 
+	.unit-card.playing {
+		border-color: var(--accent-gold);
+		background: rgba(197, 160, 89, 0.08);
+		box-shadow: 0 0 30px rgba(197, 160, 89, 0.1);
+	}
+
 	.unit-header {
 		display: flex;
 		justify-content: space-between;
@@ -504,9 +556,10 @@
 		transition: all 0.2s;
 	}
 
-	.audio-btn:hover {
+	.audio-btn:hover, .audio-btn.active {
 		background: rgba(255, 255, 255, 0.1);
 		border-color: var(--accent-gold);
+		color: var(--accent-gold);
 	}
 
 	.main-translation {
