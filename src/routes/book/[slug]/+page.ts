@@ -3,23 +3,9 @@ import booksRaw from '$lib/books.json';
 import type { PageLoad } from './$types';
 import type { ForensicUnit, BookMetadata } from '$lib/types';
 
-const books = booksRaw as BookMetadata[];
+const books = booksRaw as (BookMetadata & { unit_count?: number })[];
 
-// Vite requires static glob patterns at build time.
-// We glob ALL unit files across ALL books once, then filter client-side by slug.
-// This is the correct pattern for filesystem-driven SvelteKit apps.
-// To keep the build memory sane, we use `import.meta.glob` with `lazy: true`
-// so modules are only loaded on demand, not bundled eagerly.
-
-const texts = import.meta.glob('/src/lib/books/**/*.txt', {
-	query: '?raw',
-	import: 'default',
-	eager: false
-});
-
-const unitFiles = import.meta.glob('/src/lib/books/**/*.json', { eager: false });
-
-export const load = (async ({ params }) => {
+export const load = (async ({ params, fetch }) => {
 	const book = books.find((b) => b.slug.toLowerCase() === params.slug.toLowerCase());
 
 	if (!book) {
@@ -32,30 +18,31 @@ export const load = (async ({ params }) => {
 		: book.slug === 'revelation' ? 'Re_Greek.txt'
 		: `${book.name.replace(/\s/g, '_')}_${book.language === 'Hebrew' ? 'Hebrew' : 'Greek'}.txt`;
 
-	const textPath = `/src/lib/books/${book.slug}/${textFilename}`;
-	const loadText = texts[textPath];
+	const textPath = `/data/books/${book.slug}/${textFilename}`;
 
 	try {
-		const content = loadText ? ((await loadText()) as string) : '';
+		// Fetch text content
+		const textRes = await fetch(textPath);
+		const content = textRes.ok ? await textRes.text() : '';
 
-		// Filter to only numeric unit files for this book
+		// Fetch all units sequentially based on unit_count
 		const bookUnits: ForensicUnit[] = [];
-		const relevantFiles = Object.entries(unitFiles)
-			.filter(([path]) => {
-				if (!path.startsWith(`/src/lib/books/${book.slug}/`)) return false;
-				const filename = path.split('/').pop() ?? '';
-				return /^\d+\.json$/.test(filename);
-			})
-			.sort((a, b) => {
-				const idA = parseInt(a[0].split('/').pop()!.replace('.json', ''));
-				const idB = parseInt(b[0].split('/').pop()!.replace('.json', ''));
-				return idA - idB;
-			});
+		const unitCount = book.unit_count || 0;
 
-		for (const [, loader] of relevantFiles) {
-			const unitModule = (await loader()) as { default: ForensicUnit };
-			bookUnits.push(unitModule.default);
+		// We use Promise.all with chunks or sequential fetch to avoid overwhelming the browser
+		// but since it's SSR/Prerendering on Vercel, we can do it efficiently.
+		const unitPromises = [];
+		for (let i = 1; i <= unitCount; i++) {
+			unitPromises.push(
+				fetch(`/data/books/${book.slug}/${i}.json`).then((res) => {
+					if (!res.ok) throw new Error(`Failed to fetch unit ${i}`);
+					return res.json() as Promise<ForensicUnit>;
+				})
+			);
 		}
+
+		const results = await Promise.all(unitPromises);
+		bookUnits.push(...results);
 
 		return { book, content, units: bookUnits };
 	} catch (err) {
