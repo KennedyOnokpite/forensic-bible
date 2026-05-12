@@ -1,0 +1,28 @@
+{
+  "index": 1234,
+  "hash": "0e0d2f77c8226b21b1b6de43f6c8999591dd42d8a9c0560f0dbb8c7cf3713e4f",
+  "source-language": "Hebrew",
+  "sentence": "עֲגָבִ֤ים בְּ/פִי/הֶם֙ הֵ֣מָּה עֹשִׂ֔ים אַחֲרֵ֥י בִצְעָ֖/ם לִבָּ֥/ם הֹלֵֽךְ וְ/הִנְּ/ךָ֤ לָ/הֶם֙",
+  "words": [
+    "עֲגָבִ֤ים",
+    "בְּ/פִי/הֶם֙",
+    "הֵ֣מָּה",
+    "עֹשִׂ֔ים",
+    "אַחֲרֵ֥י",
+    "בִצְעָ֖/ם",
+    "לִבָּ֥/ם",
+    "הֹלֵֽךְ",
+    "וְ/הִנְּ/ךָ֤",
+    "לָ/הֶם֙"
+  ],
+  "word-count-original": 10,
+  "grammatical-notes": {},
+  "dictionary-meaning": {},
+  "polysemy-log": {},
+  "literal-translation": "",
+  "main-translation": "",
+  "main-translation-explanation": {},
+  "rejected-translations": [],
+  "rules-applied": [],
+  "forensic-confidence": 0
+}
