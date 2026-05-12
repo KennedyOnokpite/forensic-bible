@@ -1,0 +1,28 @@
+{
+  "index": 1234,
+  "hash": "7f4face3f392b6e1c812fcae9415b82b28e56eb22971d8c441bfd85ebfb058a2",
+  "source-language": "Greek",
+  "sentence": "ὅτι σύ εἰμί καί ὁ ἐμός πᾶς σός εἰμί καί",
+  "words": [
+    "ὅτι",
+    "σύ",
+    "εἰμί",
+    "καί",
+    "ὁ",
+    "ἐμός",
+    "πᾶς",
+    "σός",
+    "εἰμί",
+    "καί"
+  ],
+  "word-count-original": 10,
+  "grammatical-notes": {},
+  "dictionary-meaning": {},
+  "polysemy-log": {},
+  "literal-translation": "",
+  "main-translation": "",
+  "main-translation-explanation": {},
+  "rejected-translations": [],
+  "rules-applied": [],
+  "forensic-confidence": 0
+}

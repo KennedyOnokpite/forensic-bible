@@ -1,0 +1,28 @@
+{
+  "index": 123,
+  "hash": "b87fb13150d44badb5acd733ce1691d66f6fdb83947edc41a533d5dbc5649c7a",
+  "source-language": "Greek",
+  "sentence": "αὐτός ὁ σημεῖον ὅς ποιέω αὐτός δέ Ἰησοῦς οὐ πιστεύω",
+  "words": [
+    "αὐτός",
+    "ὁ",
+    "σημεῖον",
+    "ὅς",
+    "ποιέω",
+    "αὐτός",
+    "δέ",
+    "Ἰησοῦς",
+    "οὐ",
+    "πιστεύω"
+  ],
+  "word-count-original": 10,
+  "grammatical-notes": {},
+  "dictionary-meaning": {},
+  "polysemy-log": {},
+  "literal-translation": "",
+  "main-translation": "",
+  "main-translation-explanation": {},
+  "rejected-translations": [],
+  "rules-applied": [],
+  "forensic-confidence": 0
+}

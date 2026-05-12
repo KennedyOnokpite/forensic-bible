@@ -1,0 +1,28 @@
+{
+  "index": 1234,
+  "hash": "bf8bf7ffe11dc37da2a5d9f6374d5179dee589ec82da2864c6f3c496f2af5603",
+  "source-language": "Greek",
+  "sentence": "ὁ ὦμος αὐτός χαίρω καί ἔρχομαι εἰς ὁ οἶκος συγκαλέω",
+  "words": [
+    "ὁ",
+    "ὦμος",
+    "αὐτός",
+    "χαίρω",
+    "καί",
+    "ἔρχομαι",
+    "εἰς",
+    "ὁ",
+    "οἶκος",
+    "συγκαλέω"
+  ],
+  "word-count-original": 10,
+  "grammatical-notes": {},
+  "dictionary-meaning": {},
+  "polysemy-log": {},
+  "literal-translation": "",
+  "main-translation": "",
+  "main-translation-explanation": {},
+  "rejected-translations": [],
+  "rules-applied": [],
+  "forensic-confidence": 0
+}

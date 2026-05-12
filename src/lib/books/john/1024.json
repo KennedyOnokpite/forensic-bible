@@ -1,0 +1,28 @@
+{
+  "index": 1024,
+  "hash": "9930a54f089998ea67998281faf5a7a485eaf6e1a0e35eb8c78a637c70e65840",
+  "source-language": "Greek",
+  "sentence": "ἐγώ βλέπω εἰς ἀλλήλων ὁ μαθητής ἀπορέω περί τίς λέγω",
+  "words": [
+    "ἐγώ",
+    "βλέπω",
+    "εἰς",
+    "ἀλλήλων",
+    "ὁ",
+    "μαθητής",
+    "ἀπορέω",
+    "περί",
+    "τίς",
+    "λέγω"
+  ],
+  "word-count-original": 10,
+  "grammatical-notes": {},
+  "dictionary-meaning": {},
+  "polysemy-log": {},
+  "literal-translation": "",
+  "main-translation": "",
+  "main-translation-explanation": {},
+  "rejected-translations": [],
+  "rules-applied": [],
+  "forensic-confidence": 0
+}
