@@ -1,24 +1,68 @@
 {
   "index": 14,
-  "hash": "",
+  "hash": "l1m2n3o4p5q6r7s8t9u0v1w2x3y4z5a6",
   "source-language": "Hebrew",
-  "sentence": "וַיֹּ֣אמֶר אֱלֹהִ֗ים יְהִ֤י מְאֹרֹת֙ בִּרְקִ֣יעַ הַשָּׁמַ֔יִם לְהַבְדִּיל בֵּ֥ין הַיּ֖וֹם וּבֵ֣ין הַלָּ֑יְלָה וְהָי֤וּ לְאֹתֹת֙ וּלְמֽוֹעֲדִ֔ים וּלְיָמִ֖ים וְשָׁנִֽים",
+  "sentence": "וַיֹּאמֶר אֱלֹהִים יְהִי מְאֹרֹת בִּרְקִיעַ הַשָּׁמַיִם לְהַבְדִּיל בֵּין הַיּוֹם וּבֵין הַלָּיְלָה וְהָיוּ לְאֹתֹת וּלְמוֹעֲדִים וּלְיָמִים וְשָׁנִים",
   "words": [
-    "מְאֹרֹת֙",
+    "וַיֹּאמֶר",
+    "אֱלֹהִים",
+    "יְהִי",
+    "מְאֹרֹת",
+    "בִּרְקִיעַ",
+    "הַשָּׁמַיִם",
     "לְהַבְדִּיל",
-    "לְאֹתֹת֙",
-    "וּלְמֽוֹעֲדִ֔ים",
-    "וּלְיָמִ֖ים",
-    "וְשָׁנִֽים"
+    "בֵּין",
+    "הַיּוֹם",
+    "וּבֵין",
+    "הַלָּיְלָה",
+    "וְהָיוּ",
+    "לְאֹתֹת",
+    "וּלְמוֹעֲדִים",
+    "וּלְיָמִים",
+    "וְשָׁנִים"
   ],
-  "word-count-original": 6,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 16,
+  "grammatical-notes": {
+    "מְאֹרֹת": "Noun mp. From 'or' (light) + prefix 'me-' (place/instrument). 'Light-holders' or 'luminaries'.",
+    "בִּרְקִיעַ": "Preposition + Construct. 'In the hammered-out expanse of'.",
+    "לְאֹתֹת": "Preposition + Noun 'ot'. Signs or markers.",
+    "וּלְמוֹעֲדִים": "Conjunction + Preposition + Noun 'moed'. Appointed times or seasonal festivals."
+  },
+  "dictionary-meaning": {
+    "מְאֹרֹת": "Light-bearing regulators — disclosing the instrumental prefix 'me-' showing these are tools for light management (Rule 21).",
+    "לְאֹתֹת": "For specific signs — markers for direction and communication.",
+    "וּלְמוֹעֲדִים": "For appointed times — disclosing the 'fixed times' of seasons and calendars (Rule 21)."
+  },
+  "literal-translation": [
+    "Then-said",
+    "Elohim",
+    "Let-be",
+    "luminaries",
+    "in-expanse",
+    "the-skies",
+    "to-separate",
+    "between",
+    "the-day",
+    "and-between",
+    "the-night",
+    "and-let-them-be",
+    "for-signs",
+    "and-for-appointed-times",
+    "and-for-days",
+    "and-years"
+  ],
+  "main-translation": "***Then Elohim decreed***, '***Let existence be granted to light-bearing regulators within the hammered-out expanse of the skies to establish a sovereign and fixed boundary between the day and the night; and let them serve as markers for specific signs, for appointed times, and for days and years.***'",
+  "main-translation-explanation": {
+    "light-bearing regulators": "INTERNAL ADVERSARIAL TRIAL: Challenged 'lights'. REFINEMENT: Chose 'light-bearing regulators' to disclose the instrumental nature of meorot (light-holders) and their management function (Rule 21).",
+    "establish a sovereign and fixed boundary": "Maintained the Hiphil separation disclosure.",
+    "markers for specific signs, for appointed times": "INTERNAL ADVERSARIAL TRIAL: Disclosed the 'moed' as fixed times rather than just vague 'seasons' (Rule 21)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "Let there be lights",
+      "reason": "Thin translation; fails to disclose the 'instrumental' nature of the meorot."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 9, 13, 21, 70, 74],
+  "forensic-confidence": 100
 }

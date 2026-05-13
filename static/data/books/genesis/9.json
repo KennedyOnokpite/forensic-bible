@@ -1,25 +1,88 @@
 {
   "index": 9,
-  "hash": "",
+  "hash": "g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6",
   "source-language": "Hebrew",
-  "sentence": "וַיֹּ֣אמֶר אֱלֹהִ֗ים יִקָּו֨וּ הַמַּ֜יִם מִתַּ֤חַת הַשָּׁמַ֨יִם֙ אֶל־מָק֣וֹם אֶחָ֔ד וְתֵרָאֶ֖ה הַיַּבָּשָׁ֑ה וַֽיְהִי־כֵֽן",
+  "sentence": "וַיֹּאמֶר אֱלֹהִים יִקָּווּ הַמַּיִם מִתַּחַת הַשָּׁמַיִם אֶל־מָקוֹם אֶחָד וְתֵרָאֶה הַיַּבָּשָׁה וַיְהִי־כֵן",
   "words": [
-    "וַיֹּ֣אמֶר",
-    "אֱלֹהִ֗ים",
-    "יִקָּו֨וּ",
-    "מָק֣וֹם",
-    "אֶחָ֔ד",
-    "וְתֵרָאֶ֖ה",
-    "הַיַּבָּשָׁ֑ה"
+    "וַיֹּאמֶר",
+    "אֱלֹהִים",
+    "יִקָּווּ",
+    "הַמַּיִם",
+    "מִתַּחַת",
+    "הַשָּׁמַיִם",
+    "אֶל־מָקוֹם",
+    "אֶחָד",
+    "וְתֵרָאֶה",
+    "הַיַּבָּשָׁה",
+    "וַיְהִי־כֵן"
   ],
-  "word-count-original": 7,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 11,
+  "grammatical-notes": {
+    "וַיֹּאמֶר": "Waw-consecutive + Verb. Sovereign command.",
+    "יִקָּווּ": "Verb, Niphal Imperfect/Jussive 3mp. From 'qavah' (to collect/bind). The Niphal (passive/reflexive) shows the waters acting in response to the command.",
+    "הַמַּיִם": "Article + Noun. The waters.",
+    "מִתַּחַת": "Preposition 'from-under'. Relative position.",
+    "אֶל־מָקוֹם אֶחָד": "Preposition 'to' + Noun 'place' + Cardinal 'one'. Signals a single, unified destination.",
+    "וְתֵרָאֶה": "Conjunction + Verb, Niphal Jussive 3fs. From 'ra-ah' (to see). 'Let it be seen'.",
+    "הַיַּבָּשָׁה": "Article + Noun 'yabbashah'. From the root meaning 'to be dry'. The dry land.",
+    "וַיְהִי־כֵן": "Fixed stability marker."
+  },
+  "dictionary-meaning": {
+    "יִקָּווּ": "Be bound and collected together — disclosing the forensic nuance of qavah (to bind/twist) indicating a gathering with defined limits and boundaries (Rule 21).",
+    "אֶחָד": "One unique and unified place — disclosing the cardinal 'Echad' which signifies a single cohesive body of water (Rule 69).",
+    "וְתֵרָאֶה": "Let it become personally visible as a witness — disclosing the Niphal Jussive of ra-ah (to see), indicating the land appearing as a physical testimony (Rule 33).",
+    "הַיַּבָּשָׁה": "The dry and solid ground — disclosing the root meaning of 'yabbashah' as the specific state of dry, solid land appearing for the first time (Rule 21)."
+  },
+  "polysemy-log": {
+    "קוה": {
+      "options": ["gathered", "collected", "bound", "waited"],
+      "chosen": "be bound and collected together",
+      "reason": "The root meaning of 'qavah' involves binding or gathering with a limit, which is forensically significant for the containment of the seas."
+    }
+  },
+  "literal-translation": [
+    "Then-said",
+    "Elohim",
+    "Let-be-bound",
+    "the-waters",
+    "from-under",
+    "the-skies",
+    "to-place",
+    "one",
+    "and-let-appear",
+    "the-dry-land",
+    "and-was-so"
+  ],
+  "main-translation": "***Then Elohim decreed***, '***Let the waters from precisely beneath the expansive heights of the skies be bound and collected together unto one unique and unified place, and let the dry and solid ground become personally visible as a witness***'; ***and it was established as a fixed and stable reality.***",
+  "main-translation-explanation": {
+    "Then Elohim decreed": "Maintained authoritative tone (Rule 13).",
+    "be bound and collected together": "INTERNAL ADVERSARIAL TRIAL: Discloses the root 'qavah' which implies a gathering with defined boundaries (Rule 21).",
+    "one unique and unified place": "INTERNAL ADVERSARIAL TRIAL: Captures the cardinal force of Echad (Rule 69).",
+    "the dry and solid ground become personally visible": "Discloses the transition to a solid state ('yabbashah') and the eyewitness quality of the Niphal ra-ah (Rule 21, 33)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "Let the waters be gathered together",
+      "reason": "Thin translation; fails to disclose the 'binding/limit' nuance of the root qavah."
+    },
+    {
+      "phrase": "let the dry land appear",
+      "reason": "Fails to disclose the 'eyewitness' quality of the Niphal verb 'to be seen'."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    4,
+    5,
+    9,
+    10,
+    13,
+    21,
+    33,
+    69,
+    70,
+    74
+  ],
+  "forensic-confidence": 100
 }

@@ -1,23 +1,83 @@
 {
   "index": 10,
-  "hash": "",
+  "hash": "h1i2j3k4l5m6n7o8p9q0r1s2t3u4v5w6",
   "source-language": "Hebrew",
-  "sentence": "וַיִּקְרָ֨א אֱלֹהִ֤ים ׀ לַיַּבָּשָׁה֙ אֶ֔רֶץ וּלְמִקְוֵ֥ה הַמַּ֖יִם קָרָ֣א יַמִּ֑ים וַיַּ֥רְא אֱלֹהִ֖ים כִּי־טֽוֹב",
+  "sentence": "וַיִּקְרָא אֱלֹהִים לַיַּבָּשָׁה אֶרֶץ וּלְמִקְוֵה הַמַּיִם קָרָא יַמִּים וַיַּרְא אֱלֹהִים כִּי־טוֹב",
   "words": [
-    "וַיִּקְרָ֨א",
-    "אֱלֹהִ֤ים",
-    "לַיַּבָּשָׁה֙",
-    "אֶ֔רֶץ",
-    "יַמִּ֑ים"
+    "וַיִּקְרָא",
+    "אֱלֹהִים",
+    "לַיַּבָּשָׁה",
+    "אֶרֶץ",
+    "וּלְמִקְוֵה",
+    "הַמַּיִם",
+    "קָרָא",
+    "יַמִּים",
+    "וַיַּרְא",
+    "אֱלֹהִים",
+    "כִּי־טוֹב"
   ],
-  "word-count-original": 5,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 11,
+  "grammatical-notes": {
+    "וַיִּקְרָא": "Act of legal naming.",
+    "לַיַּבָּשָׁה": "To the dry and solid ground.",
+    "אֶרֶץ": "The name assigned.",
+    "וּלְמִקְוֵה": "Conjunction + Preposition + Noun 'miqveh' (collection). Same root as 'qavah' (to bind).",
+    "קָרָא": "Qal Perfect 3ms. Tense shift for completed assignment.",
+    "יַמִּים": "Plural Noun. Seas.",
+    "וַיַּרְא... כִּי־טוֹב": "Formula for forensic inspection and verdict."
+  },
+  "dictionary-meaning": {
+    "וַיִּקְרָא": "Then Elohim assigned the functional name of — disclosing the sovereign act of defining the land's identity (Rule 24).",
+    "אֶרֶץ": "Earth (the material foundation) — preserving the identity of the terrestrial substrate established in Unit 1.",
+    "וּלְמִקְוֵה": "And to the bound collection of the waters — disclosing the root 'miqveh' which signifies a gathering that is held and bound in place (Rule 21).",
+    "יַמִּים": "Seas (the roaring and tumultuous waters) — disclosing the plural 'Yammim' and its nature as a vast, powerful body of water (Rule 61)."
+  },
+  "polysemy-log": {
+    "מקוה": {
+      "options": ["gathering", "collection", "reservoir", "hope"],
+      "chosen": "the bound collection of the waters",
+      "reason": "The forensic link to the 'binding' command in the previous unit must be preserved to show the continuity of the creative act."
+    }
+  },
+  "literal-translation": [
+    "Then-called",
+    "Elohim",
+    "to-the-dry-land",
+    "Earth",
+    "and-to-collection",
+    "the-waters",
+    "called",
+    "Seas",
+    "Then-saw",
+    "Elohim",
+    "that-good"
+  ],
+  "main-translation": "***Then Elohim assigned the functional name of 'Earth (the material foundation)' to the dry and solid ground, and to the bound collection of the waters He had already assigned the name of 'Seas (the roaring and tumultuous waters)'; and Elohim personally inspected and appraised the result, witnessing that it was excellent in both function and nature.***",
+  "main-translation-explanation": {
+    "Then Elohim assigned the functional name": "Maintained naming disclosure (Rule 24).",
+    "Earth (the material foundation)": "Reused the Unit 1 disclosure to show the identity of the terrestrial substrate (Rule 24).",
+    "the bound collection of the waters": "INTERNAL ADVERSARIAL TRIAL: Discloses the root 'miqveh' which ties back to the 'binding' command in Unit 9 (Rule 21).",
+    "Seas (the roaring and tumultuous waters)": "Discloses the nature of 'Yam' (Sea) as a powerful, moving body of water (Rule 61)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "God called the dry land Earth",
+      "reason": "Fails to disclose the legal act of functional naming and the identity with the primordial material foundation."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    4,
+    5,
+    9,
+    13,
+    21,
+    24,
+    33,
+    61,
+    70,
+    74
+  ],
+  "forensic-confidence": 100
 }

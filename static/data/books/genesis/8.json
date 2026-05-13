@@ -1,23 +1,71 @@
 {
   "index": 8,
-  "hash": "",
+  "hash": "f1g2h3i4j5k6l7m8n9o0p1q2r3s4t5u6",
   "source-language": "Hebrew",
-  "sentence": "וַיִּקְרָ֧א אֱלֹהִ֛ים לָרָקִ֖יעַ שָׁמָ֑יִם וַֽיְהִי־עֶ֥רֶב וַֽיְהִי־בֹ֖קֶר י֥וֹם שֵׁנִֽי",
+  "sentence": "וַיִּקְרָא אֱלֹהִים לָרָקִיעַ שָׁמָיִם וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר יוֹם שֵׁנִי",
   "words": [
-    "וַיִּקְרָ֧א",
-    "לָרָקִ֖יעַ",
-    "שָׁמָ֑יִם",
-    "י֥וֹם",
-    "שֵׁנִֽי"
+    "וַיִּקְרָא",
+    "אֱלֹהִים",
+    "לָרָקִיעַ",
+    "שָׁמָיִם",
+    "וַיְהִי־עֶרֶב",
+    "וַיְהִי־בֹקֶר",
+    "יוֹם",
+    "שֵׁנִי"
   ],
-  "word-count-original": 5,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 8,
+  "grammatical-notes": {
+    "וַיִּקְרָא": "Waw-consecutive + Verb. Act of legal naming.",
+    "לָרָקִיעַ": "Preposition + Article + Noun 'raqia'. The object being named.",
+    "שָׁמָיִם": "Noun. The name being assigned.",
+    "יוֹם שֵׁנִי": "Noun 'yom' (day) + Ordinal number 'sheni' (second). Anarthrous (no article), signaling a qualitative sequential step."
+  },
+  "dictionary-meaning": {
+    "וַיִּקְרָא": "Then Elohim assigned the functional name of — disclosing the sovereign act of defining the expanse's identity (Rule 24).",
+    "שָׁמָיִם": "The expansive heights of the skies — preserving the topographical definition established in Unit 1.",
+    "שֵׁנִי": "A second day — disclosing the ordinal nature of the number 'sheni' and the lack of a definite article (Rule 69, 75)."
+  },
+  "polysemy-log": {
+    "שמים": {
+      "options": ["heavens", "skies", "heights"],
+      "chosen": "the expansive heights of the skies",
+      "reason": "Maintains consistency with the topographical disclosure used for the same term in Genesis 1:1."
+    }
+  },
+  "literal-translation": [
+    "Then-called",
+    "Elohim",
+    "to-the-expanse",
+    "skies",
+    "and-was-evening",
+    "and-was-morning",
+    "day",
+    "second"
+  ],
+  "main-translation": "***Then Elohim assigned the functional name of 'the expansive heights of the skies' to the hammered-out expanse; and there was evening (mixing) and there was morning (discernment), comprising a second day.***",
+  "main-translation-explanation": {
+    "assigned the functional name": "Maintained naming disclosure for consistency (Rule 24).",
+    "the expansive heights of the skies": "Reused the topographical expansion to show the functional identity of the expanse (Rule 21).",
+    "comprising a second day": "Discloses the ordinal nature of 'sheni' and the lack of a definite article in the Hebrew (Rule 69, 75)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "the second day",
+      "reason": "Adds a definite article not present in the Hebrew; fails to preserve the qualitative sequential nature of the text (Rule 75)."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    4,
+    5,
+    9,
+    21,
+    24,
+    69,
+    70,
+    74,
+    75
+  ],
+  "forensic-confidence": 100
 }

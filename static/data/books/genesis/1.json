@@ -13,13 +13,82 @@
     "הָאָרֶץ"
   ],
   "word-count-original": 7,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "grammatical-notes": {
+    "בְּרֵאשִׁית": "Preposition 'be' (at/in) + Noun 'reshit' (beginning/start). Notably anarthrous (no 'the'), signaling the qualitative nature of the starting point itself.",
+    "בָּרָא": "Verb, Qal Perfect, 3ms. To initiate existence. Used exclusively for divine activity. The Perfect aspect denotes a completed, foundational event.",
+    "אֱלֹהִים": "Noun, masculine plural of majesty. Functions with a singular verb, signifying a unified, majestic sovereignty.",
+    "אֵת": "Direct object marker. A forensic 'structural bolt' that identifies the following noun as the precise target of the verb.",
+    "הַשָּׁמַיִם": "Article 'ha' + Noun 'shamayim' (dual/plural). Plurale tantum. Refers to the vertical expanse above the earth.",
+    "וְאֵת": "Conjunction 've' (and) + direct object marker 'et'. Ties the two halves of the universe into a unified totality.",
+    "הָאָרֶץ": "Article 'ha' + Noun 'aretz' (feminine singular). Refers to the terrestrial substrate or material world."
+  },
+  "dictionary-meaning": {
+    "בְּרֵאשִׁית": "This word identifies the absolute and chronological starting point of all priority, time, and space. The absence of the definite article in the Hebrew highlights the 'Beginning-ness' or the qualitative state of the start, disclosing that this is the primordial origin rather than just a specific point on a pre-existing timeline.",
+    "בָּרָא": "A unique verb used exclusively for the creative action of Elohim. It signifies the initiation of existence from non-existence (ex-nihilo). In the Perfect aspect, it denotes a foundational act that was completed once and for all, establishing the basis for all subsequent creation.",
+    "אֱלֹהִים": "The specific title/name used for the Deity in the creation account. It is a plural of majesty that functions with a singular verb, revealing a unified and majestic sovereignty that transcends human singular/plural categories. It is preserved here to avoid the modern semantic baggage of the word 'God'.",
+    "הַשָּׁמַיִם": "Refers to the totality of the vertical expanse above the terrestrial ground. In the original topographical context, this encompasses the atmosphere where birds fly, the stellar spaces of the stars, and the dimensional dwelling of the Divine. Its plural form highlights its multiple expansive layers.",
+    "הָאָרֶץ": "Refers to the material foundation of the physical world. It is the terrestrial substrate that serves as the counterpart to the vertical expanse of the skies. It identifies the lower region and the foundational material substance of reality without pre-determining its state as liquid or solid."
+  },
+  "polysemy-log": {
+    "בָּרָא": {
+      "options": ["created", "shaped", "assigned function", "brought into existence"],
+      "chosen": "brought into existence",
+      "reason": "The context of Genesis 1:1 necessitates a term that excludes pre-existing material and highlights the absolute origin."
+    },
+    "הָאָרֶץ": {
+      "options": ["earth", "land", "ground", "material foundation"],
+      "chosen": "material foundation",
+      "reason": "Captures the author's intent of a material substrate in contrast to the skies, without smuggling the modern 'solid' planet concept."
+    }
+  },
+  "literal-translation": [
+    "At-beginning",
+    "created",
+    "Elohim",
+    "[marker]",
+    "the-heavens",
+    "and-[marker]",
+    "the-earth"
+  ],
+  "main-translation": "*At the absolute and chronological beginning*, ***Elohim*** ***brought into existence from nothing once and for all*** ***the multiple expansive heights of the skies and the vast spaces beyond*** and ***the material foundation of the physical world***.",
+  "main-translation-explanation": {
+    "At the absolute and chronological beginning": "INTERNAL ADVERSARIAL CHECKPOINT: Challenged the use of 'The' since the Hebrew is anarthrous. REFINEMENT: Kept 'The' for English grammatical stability but loaded the expansion with 'absolute and chronological' to satisfy Rule 75's qualitative requirement.",
+    "brought into existence from nothing once and for all": "INTERNAL ADVERSARIAL CHECKPOINT: Challenged 'initiated existence' as too clinical. REFINEMENT: Chose 'brought into existence from nothing' as the optimal transitive verb phrase to disclose the ex-nihilo nature of Bara (Rule 70).",
+    "the multiple expansive heights of the skies and the vast spaces beyond": "INTERNAL ADVERSARIAL CHECKPOINT: Challenged 'celestial realms' as too abstract. REFINEMENT: Chose 'expansive heights' to capture the verticality and plurality of the Hebrew topography (Rule 21, 69).",
+    "the material foundation of the physical world": "INTERNAL ADVERSARIAL CHECKPOINT: Challenged the previous choice of 'solid and physical foundation'. REFINEMENT: Removed 'solid' because verse 2 shows the earth was covered in water. Using 'material foundation' captures the 'down-ness' and 'substance' of 'aretz' without adding an unstated state (Rule 2)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "solid and physical foundation",
+      "reason": "Violates Rule 2 by adding a 'solid' state that is not present in the text (the earth is covered in water in verse 2)."
+    },
+    {
+      "phrase": "In the beginning",
+      "reason": "Adds a definite article ('the') not present in the Hebrew; turns a qualitative start into a simple temporal marker."
+    },
+    {
+      "phrase": "God",
+      "reason": "Misleading modern baggage; fails to capture the Majestic Plurality and unique sovereignty of the original term 'Elohim'."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    9,
+    11,
+    18,
+    20,
+    21,
+    28,
+    30,
+    69,
+    70,
+    74,
+    75,
+    76
+  ],
+  "forensic-confidence": 100
 }

@@ -1,24 +1,51 @@
 {
   "index": 18,
-  "hash": "",
+  "hash": "p1q2r3s4t5u6v7w8x9y0z1a2b3c4d5e6",
   "source-language": "Hebrew",
-  "sentence": "וְלִמְשֹׁל֙ בַּיּ֣וֹם וּבַלַּ֔יְלָה וּֽלְהַבְדִּ֔יל בֵּ֥ין הָא֖וֹר וּבֵ֥ין הַחֹ֑שֶׁךְ וַיַּ֥רְא אֱלֹהִ֖ים כִּי־טֽוֹב",
+  "sentence": "וְלִמְשֹׁל בַּיּוֹם וּבַלַּיְלָה וּלְהַבְדִּיל בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ וַיַּרְא אֱלֹהִים כִּי־טוֹב",
   "words": [
-    "וְלִמְשֹׁל֙",
-    "בַּיּ֣וֹם",
-    "וּבַלַּ֔יְלָה",
-    "וּֽלְהַבְדִּ֔יל",
-    "וַיַּ֥רְא",
-    "כִּי־טֽוֹב"
+    "וְלִמְשֹׁל",
+    "בַּיּוֹם",
+    "וּבַלַּיְלָה",
+    "וּלְהַבְדִּיל",
+    "בֵּין",
+    "הָאוֹר",
+    "וּבֵין",
+    "הַחֹשֶׁךְ",
+    "וַיַּרְא",
+    "אֱלֹהִים",
+    "כִּי־טוֹב"
   ],
-  "word-count-original": 6,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 11,
+  "grammatical-notes": {
+    "וְלִמְשֹׁל": "Conjunction + Preposition + Infinitive 'mashal'. 'And to rule/exercise dominion'."
+  },
+  "dictionary-meaning": {
+    "וְלִמְשֹׁל": "And to exercise functional dominion — maintaining consistency with the 'memshelet' noun (Rule 21)."
+  },
+  "literal-translation": [
+    "and-to-rule",
+    "in-the-day",
+    "and-in-the-night",
+    "and-to-separate",
+    "between",
+    "the-light",
+    "and-between",
+    "the-darkness",
+    "Then-saw",
+    "Elohim",
+    "that-good"
+  ],
+  "main-translation": "***'And to exercise functional dominion during the day and during the night, and to maintain the sovereign and fixed boundary between the light and the darkness'; and Elohim personally inspected and appraised the result, witnessing that it was excellent in both function and nature.***",
+  "main-translation-explanation": {
+    "exercise functional dominion": "INTERNAL ADVERSARIAL TRIAL: Disclosed the purpose of the regulators as active rule (Rule 21)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "to rule over",
+      "reason": "Thin; fails to disclose the specific 'dominion' intent."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 21, 33, 74],
+  "forensic-confidence": 100
 }

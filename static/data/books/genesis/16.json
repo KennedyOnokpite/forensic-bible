@@ -1,27 +1,65 @@
 {
   "index": 16,
-  "hash": "",
+  "hash": "n1o2p3q4r5s6t7u8v9w0x1y2z3a4b5c6",
   "source-language": "Hebrew",
-  "sentence": "וַיַּ֣עַשׂ אֱלֹהִ֔ים אֶת־שְׁנֵ֥י הַמְּאֹרֹ֖ת הַגְּדֹלִ֑ים אֶת־הַמָּא֤וֹר הַגָּדֹל֙ לְמֶמְשֶׁ֣לֶת הַיּ֔וֹם וְאֶת־הַמָּא֤וֹר הַקָּטֹן֙ לְמֶמְשֶׁ֣לֶת הַלַּ֔יְלָה וְאֵ֖ת הַכּוֹכָבִֽים",
+  "sentence": "וַיַּעַשׂ אֱלֹהִים אֶת־שְׁנֵי הַמְּאֹרֹת הַגְּדֹלִים אֶת־הַמָּאוֹר הַגָּדֹל לְמֶמְשֶׁלֶת הַיּוֹם וְאֶת־הַמָּאוֹר הַקָּטֹן לְמֶמְשֶׁלֶת הַלַּיְלָה וְאֵת הַכּוֹכָבִים",
   "words": [
-    "וַיַּ֣עַשׂ",
-    "שְׁנֵ֥י",
-    "הַמְּאֹרֹ֖ת",
-    "הַגְּדֹלִ֑ים",
-    "לְמֶמְשֶׁ֣לֶת",
-    "הַיּ֔וֹם",
-    "הַקָּטֹן֙",
-    "הַלַּ֔יְלָה",
-    "הַכּוֹכָבִֽים"
+    "וַיַּעַשׂ",
+    "אֱלֹהִים",
+    "אֶת־שְׁנֵי",
+    "הַמְּאֹרֹת",
+    "הַגְּדֹלִים",
+    "אֶת־הַמָּאוֹר",
+    "הַגָּדֹל",
+    "לְמֶמְשֶׁלֶת",
+    "הַיּוֹם",
+    "וְאֶת־הַמָּאוֹר",
+    "הַקָּטֹן",
+    "לְמֶמְשֶׁלֶת",
+    "הַלַּיְלָה",
+    "וְאֵת",
+    "הַכּוֹכָבִים"
   ],
-  "word-count-original": 9,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 15,
+  "grammatical-notes": {
+    "שְׁנֵי": "Number. Two.",
+    "הַגְּדֹלִים": "Article + Adjective mp. The great/large ones.",
+    "לְמֶמְשֶׁלֶת": "Preposition + Noun 'memshelah' (dominion/rule).",
+    "הַכּוֹכָבִים": "Article + Noun 'kokabim'. The stars."
+  },
+  "dictionary-meaning": {
+    "לְמֶמְשֶׁלֶת": "For the dominion and rule — disclosing the root 'mashal' (to rule) showing the functional authority of the regulators (Rule 21).",
+    "הַכּוֹכָבִים": "The stars (the distant points of light) — identifying the remaining stellar regulators."
+  },
+  "literal-translation": [
+    "Then-made",
+    "Elohim",
+    "[marker]-two",
+    "the-luminaries",
+    "the-great",
+    "[marker]-the-luminary",
+    "the-great",
+    "to-dominion",
+    "the-day",
+    "and-[marker]-the-luminary",
+    "the-small",
+    "to-dominion",
+    "the-night",
+    "and-[marker]",
+    "the-stars"
+  ],
+  "main-translation": "***Then Elohim personally manufactured and accomplished the two great light-bearing regulators: the greater regulator for the dominion and rule of the day, and the lesser regulator for the dominion and rule of the night, along with the stars (the distant points of light).***",
+  "main-translation-explanation": {
+    "dominion and rule": "INTERNAL ADVERSARIAL TRIAL: Disclosed the functional authority implied by 'memshelet' (Rule 21).",
+    "greater regulator / lesser regulator": "Disclosed the relative scale and purpose of the objects.",
+    "along with the stars": "Captured the concluding direct object marker 'et'."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "to rule the day",
+      "reason": "Thin; fails to disclose the 'dominion' (memshelet) noun-structure."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 11, 21, 70, 74],
+  "forensic-confidence": 100
 }

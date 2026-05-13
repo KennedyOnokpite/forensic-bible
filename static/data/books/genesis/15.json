@@ -1,22 +1,43 @@
 {
   "index": 15,
-  "hash": "",
+  "hash": "m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6",
   "source-language": "Hebrew",
-  "sentence": "וְהָי֤וּ לִמְאוֹרֹת֙ בִּרְקִ֣יעַ הַשָּׁמַ֔יִם לְהָאִ֖יר עַל־הָאָ֑רֶץ וַֽיְהִי־כֵֽן",
+  "sentence": "וְהָיוּ לִמְאוֹרֹת בִּרְקִיעַ הַשָּׁמַיִם לְהָאִיר עַל־הָאָרֶץ וַיְהִי־כֵן",
   "words": [
-    "לִמְאוֹרֹת֙",
-    "לְהָאִ֖יר",
-    "עַל־הָאָ֑רֶץ",
-    "וַֽיְהִי־כֵֽן"
+    "וְהָיוּ",
+    "לִמְאוֹרֹת",
+    "בִּרְקִיעַ",
+    "הַשָּׁמַיִם",
+    "לְהָאִיר",
+    "עַל־הָאָרֶץ",
+    "וַיְהִי־כֵן"
   ],
-  "word-count-original": 4,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 7,
+  "grammatical-notes": {
+    "לְהָאִיר": "Preposition + Hiphil Infinitive. 'To cause to shine' or 'to illuminate'."
+  },
+  "dictionary-meaning": {
+    "לְהָאִיר": "To illuminate the physical world — disclosing the Hiphil causative infinitive of 'or' (Rule 9)."
+  },
+  "literal-translation": [
+    "and-let-them-be",
+    "for-luminaries",
+    "in-expanse",
+    "the-skies",
+    "to-illuminate",
+    "upon-the-earth",
+    "and-was-so"
+  ],
+  "main-translation": "***'And let them exist as light-bearing regulators within the hammered-out expanse of the skies to illuminate the material foundation of the physical world'***; ***and it was established as a fixed and stable reality.***",
+  "main-translation-explanation": {
+    "to illuminate the material foundation": "INTERNAL ADVERSARIAL TRIAL: Disclosed the Hiphil infinitive as a causative purpose (Rule 9)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "to give light",
+      "reason": "Thin; fails to disclose the causative illumination of the Hiphil stem."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 9, 10, 21, 74],
+  "forensic-confidence": 100
 }

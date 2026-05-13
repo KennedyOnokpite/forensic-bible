@@ -1,24 +1,70 @@
 {
   "index": 20,
-  "hash": "",
+  "hash": "r1s2t4u5v6w7x8y9z0a1b2c3d4e5f6g7",
   "source-language": "Hebrew",
-  "sentence": "וַיֹּ֣אמֶר אֱלֹהִ֗ים יִשְׁרְצ֣וּ הַמַּ֔יִם שֶׁ֖רֶץ נֶ֣פֶשׁ חַיָּ֑ה וְעוֹף֙ יְעוֹפֵ֣ף עַל־הָאָ֔רֶץ עַל־פְּנֵ֖י רְקִ֥יעַ הַשָּׁמָֽיִם",
+  "sentence": "וַיֹּאמֶר אֱלֹהִים יִשְׁרְצוּ הַמַּיִם שֶׁרֶץ נֶפֶשׁ חַיָּה וְעוֹף יְעוֹפֵף עַל־הָאָרֶץ עַל־פְּנֵי רְקִיעַ הַשָּׁמָיִם",
   "words": [
-    "יִשְׁרְצ֣וּ",
-    "שֶׁ֖רֶץ",
-    "נֶ֣פֶשׁ",
-    "חַיָּ֑ה",
-    "וְעוֹף֙",
-    "יְעוֹפֵ֣ף"
+    "וַיֹּאמֶר",
+    "אֱלֹהִים",
+    "יִשְׁרְצוּ",
+    "הַמַּיִם",
+    "שֶׁרֶץ",
+    "נֶפֶשׁ",
+    "חַיָּה",
+    "וְעוֹף",
+    "יְעוֹפֵף",
+    "עַל־הָאָרֶץ",
+    "עַל־פְּנֵי",
+    "רְקִיעַ",
+    "הַשָּׁמָיִם"
   ],
-  "word-count-original": 6,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 13,
+  "grammatical-notes": {
+    "יִשְׁרְצוּ": "Verb, Qal Imperfect 3mp. From 'sharatz' (to swarm/teem).",
+    "שֶׁרֶץ": "Noun. Swarming life.",
+    "נֶפֶשׁ חַיָּה": "Noun + Adjective. 'Living soul' or 'living creature'.",
+    "יְעוֹפֵף": "Verb, Polel Imperfect 3ms. From 'uph' (to fly). The Polel stem indicates intense or repetitive flight."
+  },
+  "dictionary-meaning": {
+    "יִשְׁרְצוּ": "Swarm with an abundance of swarming life — disclosing the repetitive 'verb-noun' pairing showing the intense density of life (Rule 21).",
+    "נֶפֶשׁ חַיָּה": "Living and breathing creatures — disclosing the 'Nephesh' as a biological, breathing entity (Rule 21).",
+    "יְעוֹפֵף": "Fly with intense and repetitive flight — disclosing the Polel stem's intensive force (Rule 9)."
+  },
+  "polysemy-log": {
+    "שרץ": {
+      "options": ["swarm", "bring forth", "teem"],
+      "chosen": "swarm with an abundance of swarming life",
+      "reason": "Captures the dense, moving population of the waters intended by the author."
+    }
+  },
+  "literal-translation": [
+    "Then-said",
+    "Elohim",
+    "Let-swarm",
+    "the-waters",
+    "swarming",
+    "soul",
+    "living",
+    "and-flying-thing",
+    "let-it-fly",
+    "upon-the-earth",
+    "upon-face",
+    "expanse",
+    "the-skies"
+  ],
+  "main-translation": "***Then Elohim decreed***, '***Let the waters swarm with an abundance of swarming life—living and breathing creatures; and let flying creatures fly with intense and repetitive flight above the ground, across the very face of the hammered-out expanse of the skies.***'",
+  "main-translation-explanation": {
+    "swarm with an abundance of swarming life": "INTERNAL ADVERSARIAL TRIAL: Disclosed the 'Sharatz' repetition which indicates a massive density of life (Rule 21).",
+    "living and breathing creatures": "Disclosed 'Nephesh Chayah' as a biological, breathing entity (Rule 21).",
+    "fly with intense and repetitive flight": "INTERNAL ADVERSARIAL TRIAL: Disclosed the Polel stem of 'uph' showing the active, soaring nature of the flight (Rule 9).",
+    "very face of the hammered-out expanse": "Maintained topographical consistency."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "bring forth abundantly",
+      "reason": "Thin; fails to disclose the specific 'swarming' and 'breathing' nature of the life."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 9, 13, 21, 70, 74],
+  "forensic-confidence": 100
 }

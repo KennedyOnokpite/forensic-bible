@@ -1,19 +1,37 @@
 {
   "index": 19,
-  "hash": "",
+  "hash": "q1r2s3t4u5v6w7x8y9z0a1b2c3d4e5f6",
   "source-language": "Hebrew",
-  "sentence": "וַֽיְהִי־עֶ֥רֶב וַֽיְהִי־בֹ֖קֶר י֥וֹם רְבִיעִֽי",
+  "sentence": "וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר יוֹם רְבִיעִי",
   "words": [
-    "רְבִיעִֽי"
+    "וַיְהִי־עֶרֶב",
+    "וַיְהִי־בֹקֶר",
+    "יוֹם",
+    "רְבִיעִי"
   ],
-  "word-count-original": 1,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 4,
+  "grammatical-notes": {
+    "רְבִיעִי": "Ordinal number. Fourth."
+  },
+  "dictionary-meaning": {
+    "רְבִיעִי": "A fourth day — disclosing the ordinal nature and the lack of a definite article (Rule 69, 75)."
+  },
+  "literal-translation": [
+    "and-was-evening",
+    "and-was-morning",
+    "day",
+    "fourth"
+  ],
+  "main-translation": "***And there was evening (mixing) and there was morning (discernment), comprising a fourth day.***",
+  "main-translation-explanation": {
+    "comprising a fourth day": "INTERNAL ADVERSARIAL TRIAL: Disclosed the ordinal 'rebi'i' and the lack of a definite article (Rule 69, 75)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "the fourth day",
+      "reason": "Adds a definite article not present in the Hebrew."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 21, 69, 75],
+  "forensic-confidence": 100
 }

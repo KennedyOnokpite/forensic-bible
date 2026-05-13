@@ -1,29 +1,88 @@
 {
   "index": 5,
-  "hash": "",
+  "hash": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
   "source-language": "Hebrew",
-  "sentence": "וַיִּקְרָ֨א אֱלֹהִ֤ים ׀ לָאוֹר֙ י֔וֹם וְלַחֹ֖שֶׁךְ קָ֣רָא לָ֑יְלָה וַֽיְהִי־עֶ֥רֶב וַֽיְהִי־בֹ֖קֶר י֥וֹם אֶחָֽד",
+  "sentence": "וַיִּקְרָא אֱלֹהִים לָאוֹר יוֹם וְלַחֹשֶׁךְ קָרָא לָיְלָה וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר יוֹם אֶחָד",
   "words": [
-    "וַיִּקְרָ֨א",
-    "אֱלֹהִ֤ים",
-    "לָאוֹר֙",
-    "י֔וֹם",
-    "וְלַחֹ֖שֶׁךְ",
-    "קָ֣רָא",
-    "לָ֑יְלָה",
-    "וַֽיְהִי־עֶ֥רֶב",
-    "וַֽיְהִי־בֹ֖קֶר",
-    "י֥וֹם",
-    "אֶחָֽד"
+    "וַיִּקְרָא",
+    "אֱלֹהִים",
+    "לָאוֹר",
+    "יוֹם",
+    "וְלַחֹשֶׁךְ",
+    "קָרָא",
+    "לָיְלָה",
+    "וַיְהִי־עֶרֶב",
+    "וַיְהִי־בֹקֶר",
+    "יוֹם",
+    "אֶחָד"
   ],
   "word-count-original": 11,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "grammatical-notes": {
+    "וַיִּקְרָא": "Conjunction 'va' (waw-consecutive) + Verb 'yiqra' (Qal Imperfect 3ms). Sequential act of naming and defining.",
+    "לָאוֹר": "Preposition 'la' (to) + Article + Noun 'or' (light).",
+    "יוֹם": "Noun. Day.",
+    "וְלַחֹשֶׁךְ": "Conjunction + Preposition 'la' + Noun 'choshech' (darkness).",
+    "קָרָא": "Verb, Qal Perfect 3ms. Shift to the Perfect aspect indicates a fixed, completed state of naming.",
+    "לָיְלָה": "Noun. Night.",
+    "וַיְהִי־עֶרֶב": "Waw-consecutive + Verb + Noun 'erev' (evening). Root 'arab' (to mix).",
+    "וַיְהִי־בֹקֶר": "Waw-consecutive + Verb + Noun 'boqer' (morning). Root 'baqar' (to discern).",
+    "אֶחָד": "Adjective/Number. One (cardinal). Signals a unique and unified totality."
+  },
+  "dictionary-meaning": {
+    "וַיִּקְרָא": "Then Elohim assigned the functional name of — disclosing the sovereign and legal act of defining identity (Rule 24).",
+    "קָרָא": "He had already assigned the name of — disclosing the shift to the Perfect aspect indicating a completed assignment (Rule 9).",
+    "עֶרֶב": "Evening (the period of mixing and transition) — disclosing the functional state of obscured boundaries (Rule 21).",
+    "בֹּקֶר": "Morning (the period of discernment and clarity) — disclosing the functional state of returning order (Rule 21).",
+    "אֶחָד": "Day one (one unique and unified day) — disclosing the cardinal 'One' (Echad) which signifies the unification of the period (Rule 69)."
+  },
+  "polysemy-log": {
+    "קרא": {
+      "options": ["called", "named", "assigned name"],
+      "chosen": "assigned the functional name of",
+      "reason": "Naming in the Hebrew creation context is an act of sovereign dominion and legal definition."
+    }
+  },
+  "literal-translation": [
+    "Then-called",
+    "Elohim",
+    "to-the-light",
+    "Day",
+    "and-to-the-darkness",
+    "called",
+    "Night",
+    "and-was-evening",
+    "and-was-morning",
+    "day",
+    "one"
+  ],
+  "main-translation": "***Then Elohim assigned the functional name of 'Day' to the light, and to the darkness He had already assigned the name of 'Night'***; ***and there was evening (the period of mixing and transition) and there was morning (the period of discernment and clarity), comprising day one (one unique and unified day).***",
+  "main-translation-explanation": {
+    "Then Elohim assigned the functional name": "INTERNAL ADVERSARIAL TRIAL: Discloses the legal dominion and functional definition inherent in naming (Rule 24).",
+    "He had already assigned the name of": "INTERNAL ADVERSARIAL TRIAL: Discloses the shift to the Perfect aspect 'Qara', indicating a fixed, completed assignment (Rule 9).",
+    "evening (mixing) / morning (discernment)": "Discloses the functional roots of the words to show the author's logic of visibility (Rule 21).",
+    "comprising day one": "Restored the cardinal 'One' (Echad) to disclose the unique and unified nature of the day (Rule 69)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "the first day",
+      "reason": "Uses an ordinal number ('first') when the text uses a cardinal number ('one'), masking the uniqueness of the day."
+    },
+    {
+      "phrase": "called the light Day",
+      "reason": "Too thin; fails to disclose the legal act of defining function (Rule 24)."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    4,
+    5,
+    9,
+    21,
+    24,
+    69,
+    70,
+    74
+  ],
+  "forensic-confidence": 100
 }

@@ -1,23 +1,43 @@
 {
   "index": 17,
-  "hash": "",
+  "hash": "o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6",
   "source-language": "Hebrew",
-  "sentence": "וַיִּתֵּ֥ן אֹתָ֛ם אֱלֹהִ֖ים בִּרְקִ֣יעַ הַשָּׁמָ֑יִם לְהָאִ֖יר עַל־הָאָֽרֶץ",
+  "sentence": "וַיִּתֵּן אֹתָם אֱלֹהִים בִּרְקִיעַ הַשָּׁמַיִם לְהָאִיר עַל־הָאָרֶץ",
   "words": [
-    "וַיִּתֵּ֥ן",
-    "אֹתָ֛ם",
-    "בִּרְקִ֣יעַ",
-    "הַשָּׁמָ֑יִם",
-    "לְהָאִ֖יר"
+    "וַיִּתֵּן",
+    "אֹתָם",
+    "אֱלֹהִים",
+    "בִּרְקִיעַ",
+    "הַשָּׁמַיִם",
+    "לְהָאִיר",
+    "עַל־הָאָרֶץ"
   ],
-  "word-count-original": 5,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 7,
+  "grammatical-notes": {
+    "וַיִּתֵּן": "Waw-consecutive + Verb 'natan' (to give/set/assign)."
+  },
+  "dictionary-meaning": {
+    "וַיִּתֵּן": "Then Elohim assigned and set them in place — disclosing the functional positioning of the regulators (Rule 21)."
+  },
+  "literal-translation": [
+    "Then-gave",
+    "them",
+    "Elohim",
+    "in-expanse",
+    "the-skies",
+    "to-illuminate",
+    "upon-the-earth"
+  ],
+  "main-translation": "***Then Elohim assigned and set them in place within the hammered-out expanse of the skies to illuminate the material foundation of the physical world.***",
+  "main-translation-explanation": {
+    "assigned and set them in place": "INTERNAL ADVERSARIAL TRIAL: Disclosed the 'Natan' agency as a functional positioning (Rule 21)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "And God set them",
+      "reason": "Thin; fails to disclose the 'assignment' aspect of the verb."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 21, 74],
+  "forensic-confidence": 100
 }

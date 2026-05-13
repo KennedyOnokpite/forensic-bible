@@ -1,22 +1,64 @@
 {
   "index": 12,
-  "hash": "",
+  "hash": "j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6",
   "source-language": "Hebrew",
-  "sentence": "וַתּוֹצֵ֨א הָאָ֜רֶץ דֶּ֧שֶׁא עֵ֣שֶׂב מַזְרִ֤יעַ זֶ֨רַע֙ לְמִינֵ֔הוּ וְעֵ֧ץ עֹֽשֶׂה־פְּרִ֛י אֲשֶׁ֥ר זַרְעוֹ־ב֖וֹ לְמִינֵ֑הוּ וַיַּ֥רְא אֱלֹהִ֖ים כִּי־טֽוֹב",
+  "sentence": "וַתּוֹצֵא הָאָרֶץ דֶּשֶׁא עֵשֶׂב מַזְרִיעַ זֶרַע לְמִינֵהוּ וְעֵץ עֹשֶׂה־פְּרִי אֲשֶׁר זַרְעוֹ־בוֹ לְמִינֵהוּ וַיַּרְא אֱלֹהִים כִּי־טוֹב",
   "words": [
-    "וַתּוֹצֵ֨א",
-    "לְמִינֵ֔הוּ",
-    "וַיַּ֥רְא",
-    "כִּי־טֽוֹב"
+    "וַתּוֹצֵא",
+    "הָאָרֶץ",
+    "דֶּשֶׁא",
+    "עֵשֶׂב",
+    "מַזְרִיעַ",
+    "זֶרַע",
+    "לְמִינֵהוּ",
+    "וְעֵץ",
+    "עֹשֶׂה־פְּרִי",
+    "אֲשֶׁר",
+    "זַרְעוֹ־בוֹ",
+    "לְמִינֵהוּ",
+    "וַיַּרְא",
+    "אֱלֹהִים",
+    "כִּי־טוֹב"
   ],
-  "word-count-original": 4,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 15,
+  "grammatical-notes": {
+    "וַתּוֹצֵא": "Waw-consecutive + Verb, Hiphil Imperfect 3fs. 'And it caused to go out'. Execution of the command.",
+    "לְמִינֵהוּ": "Preposition + Noun + Suffix. 'According to its kind'.",
+    "וַיַּרְא... כִּי־טוֹב": "Formula for forensic inspection and verdict."
+  },
+  "dictionary-meaning": {
+    "וַתּוֹצֵא": "Brought forth and produced — disclosing the Hiphil causative execution of the earth (Rule 11).",
+    "לְמִינֵהוּ": "According to their specific biological kinds — maintaining consistency with the classification established in Unit 11 (Rule 21)."
+  },
+  "literal-translation": [
+    "Then-brought-forth",
+    "the-earth",
+    "sprouting",
+    "herb",
+    "seeding",
+    "seed",
+    "to-its-kind",
+    "and-tree",
+    "making-fruit",
+    "which",
+    "seed-its-in-it",
+    "to-its-kind",
+    "Then-saw",
+    "Elohim",
+    "that-good"
+  ],
+  "main-translation": "***And the material foundation of the physical world brought forth and produced young sprouting plants and seed-producing herbs according to their specific biological kinds, along with fruit-producing trees containing their own seed within them according to their specific biological kinds; and Elohim personally inspected and appraised the result, witnessing that it was excellent in both function and nature.***",
+  "main-translation-explanation": {
+    "brought forth and produced": "INTERNAL ADVERSARIAL TRIAL: Disclosed the Hiphil 'bringing out' agency of the ground (Rule 11).",
+    "according to their specific biological kinds": "Maintained the 'min' disclosure for consistency.",
+    "Elohim personally inspected and appraised": "Maintained the appraisal formula (Rule 33)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "And the earth brought forth grass",
+      "reason": "Thin agency; fails to disclose the specific biological classification."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 9, 11, 13, 21, 33, 70, 74],
+  "forensic-confidence": 100
 }

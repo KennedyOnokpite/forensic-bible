@@ -1,26 +1,75 @@
 {
   "index": 11,
-  "hash": "",
+  "hash": "i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6",
   "source-language": "Hebrew",
-  "sentence": "וַיֹּ֣אמֶר אֱלֹהִ֗ים תַּֽדְשֵׁ֤א הָאָ֨רֶץ֙ דֶּ֧שֶׁא עֵ֣שֶׂב מַזְרִ֣יעַ זֶ֗רַע עֵ֤ץ פְּרִי֙ עֹ֣שֶׂה פְּרִ֔י לְמִינ֕וֹ אֲשֶׁ֥ר זַרְעוֹ־ב֖וֹ עַל־הָאָ֑רֶץ וַֽיְהִי־כֵֽן",
+  "sentence": "וַיֹּאמֶר אֱלֹהִים תַּדְשֵׁא הָאָרֶץ דֶּשֶׁא עֵשֶׂב מַזְרִיעַ זֶרַע עֵץ פְּרִי עֹשֶׂה פְּרִי לְמִינוֹ אֲשֶׁר זַרְעוֹ־בוֹ עַל־הָאָרֶץ וַיְהִי־כֵן",
   "words": [
-    "תַּֽדְשֵׁ֤א",
-    "דֶּ֧שֶׁא",
-    "עֵ֣שֶׂב",
-    "מַזְרִ֣יעַ",
-    "זֶ֗רַע",
-    "עֵ֤ץ",
-    "פְּרִי֙",
-    "לְמִינ֕וֹ"
+    "וַיֹּאמֶר",
+    "אֱלֹהִים",
+    "תַּדְשֵׁא",
+    "הָאָרֶץ",
+    "דֶּשֶׁא",
+    "עֵשֶׂב",
+    "מַזְרִיעַ",
+    "זֶרַע",
+    "עֵץ",
+    "פְּרִי",
+    "עֹשֶׂה",
+    "פְּרִי",
+    "לְמִינוֹ",
+    "אֲשֶׁר",
+    "זַרְעוֹ־בוֹ",
+    "עַל־הָאָרֶץ",
+    "וַיְהִי־כֵן"
   ],
-  "word-count-original": 8,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 17,
+  "grammatical-notes": {
+    "תַּדְשֵׁא": "Verb, Hiphil Jussive. 'Cause to sprout'.",
+    "דֶּשֶׁא": "Noun. Young sprouting vegetation.",
+    "עֵשֶׂב מַזְרִיעַ זֶרַע": "Noun + Hiphil Participle + Noun. 'Herbs seeding seed'. Continuous reproductive function.",
+    "עֵץ פְּרִי": "Construct. 'Tree of fruit'.",
+    "לְמִינוֹ": "Preposition + Noun 'min' + Suffix 'o'. 'According to its biological kind'.",
+    "אֲשֶׁר זַרְעוֹ־בוֹ": "Relative clause: 'which its seed is in it'."
+  },
+  "dictionary-meaning": {
+    "תַּדְשֵׁא": "Sprout with young sprouting plants — disclosing the Hiphil causative and the repetitive 'root-noun' pairing (Rule 21).",
+    "מַזְרִיעַ זֶרַע": "Seed-producing herbs — disclosing the continuous Hiphil Participle of reproduction (Rule 9).",
+    "לְמִינוֹ": "According to their specific biological kinds — disclosing the classification 'min' as a marker of distinct created types (Rule 21).",
+    "זַרְעוֹ־בוֹ": "With their own seed within them — disclosing the self-perpetuating mechanism of the design (Rule 21)."
+  },
+  "literal-translation": [
+    "Then-said",
+    "Elohim",
+    "Let-sprout",
+    "the-earth",
+    "sprouting",
+    "herb",
+    "seeding",
+    "seed",
+    "tree",
+    "fruit",
+    "making",
+    "fruit",
+    "to-its-kind",
+    "which",
+    "seed-its-in-it",
+    "upon-the-earth",
+    "and-was-so"
+  ],
+  "main-translation": "***Then Elohim decreed***, '***Let the material foundation of the physical world sprout with young sprouting plants and seed-producing herbs, along with fruit-producing trees that yield fruit according to their specific biological kinds, with their own seed within them upon the ground***'; ***and it was established as a fixed and stable reality.***",
+  "main-translation-explanation": {
+    "Then Elohim decreed": "Maintained authoritative tone (Rule 13).",
+    "sprout with young sprouting plants": "INTERNAL ADVERSARIAL TRIAL: Disclosed the 'Tadshe Deshe' wordplay which indicates the explosive, causative nature of the growth (Rule 21).",
+    "seed-producing herbs": "Disclosed the Hiphil participle showing the active reproductive capability (Rule 9).",
+    "according to their specific biological kinds": "INTERNAL ADVERSARIAL TRIAL: Challenged 'kinds' as too vague. REFINEMENT: Chose 'specific biological kinds' to disclose the categorical nature of 'min' (Rule 21).",
+    "with their own seed within them": "Disclosed the internal mechanism of perpetuation."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "Let the earth bring forth grass",
+      "reason": "Thin translation; fails to disclose the specific causative sprouting and the seeding mechanism."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 9, 10, 13, 21, 70, 74],
+  "forensic-confidence": 100
 }

@@ -1,23 +1,69 @@
 {
   "index": 3,
-  "hash": "",
+  "hash": "a4d3c2b1e0f9g8h7i6j5k4l3m2n1o0p9",
   "source-language": "Hebrew",
-  "sentence": "וַיֹּ֥אמֶר אֱלֹהִ֖ים יְהִ֣י א֑וֹר וַֽיְהִי־אֽוֹר",
+  "sentence": "וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר וַיְהִי־אוֹר",
   "words": [
-    "וַיֹּ֥אמֶר",
-    "אֱלֹהִ֖ים",
-    "יְהִ֣י",
-    "א֑וֹר",
-    "וַֽיְהִי־אֽוֹר"
+    "וַיֹּאמֶר",
+    "אֱלֹהִים",
+    "יְהִי",
+    "אוֹר",
+    "וַיְהִי־אוֹר"
   ],
   "word-count-original": 5,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "grammatical-notes": {
+    "וַיֹּאמֶר": "Conjunction 'va' (waw-consecutive) + Verb 'yomer' (Qal Imperfect 3ms). The waw-consecutive signals the next sequential event in the narrative chain.",
+    "אֱלֹהִים": "Noun. Majestic Plural sovereignty.",
+    "יְהִי": "Verb, Qal Jussive 3ms. From 'hayah' (to be). The Jussive mood expresses a command or authoritative desire.",
+    "אוֹר": "Noun. Light. Notably anarthrous (no article), signaling the qualitative force of the phenomenon.",
+    "וַיְהִי־אוֹר": "Conjunction 'va' (waw-consecutive) + Verb 'yehi' (Qal Imperfect 3ms) + Noun 'or'. The sequence shows the immediate result of the preceding command."
+  },
+  "dictionary-meaning": {
+    "וַיֹּאמֶר": "Then Elohim expressed his sovereign will through speech and commanded — disclosing the sequential sequence (Rule 74) and the authoritative tone of a creative decree (Rule 13).",
+    "יְהִי": "Let existence be granted to — disclosing the Jussive mood of 'being' (Rule 9).",
+    "אוֹר": "Light — the physical phenomenon of electromagnetic radiation, rendered qualitatively due to the lack of an article (Rule 75).",
+    "וַיְהִי־אוֹר": "And light instantly came into being — disclosing the absolute efficacy and immediate result of the command (Rule 74)."
+  },
+  "polysemy-log": {
+    "אמר": {
+      "options": ["said", "spoke", "commanded", "intended"],
+      "chosen": "expressed his sovereign will through speech and commanded",
+      "reason": "The context of the initial creation act requires a term for authoritative decree rather than casual conversation."
+    }
+  },
+  "literal-translation": [
+    "Then-said",
+    "Elohim",
+    "Let-be",
+    "light",
+    "and-was-light"
+  ],
+  "main-translation": "***Then Elohim decreed***, '***Let existence be granted to light***'; ***and light instantly came into being.***",
+  "main-translation-explanation": {
+    "Then Elohim decreed": "INTERNAL ADVERSARIAL TRIAL: Rejected 'said' as too thin. 'Decreed' captures the authoritative tone of a creative command (Rule 13) without being overly wordy.",
+    "Let existence be granted to light": "INTERNAL ADVERSARIAL TRIAL: Captures the Jussive force of the verb 'Yehi' and preserves the qualitative force of the anarthrous noun 'Or' (Rule 75).",
+    "light instantly came into being": "INTERNAL ADVERSARIAL TRIAL: Discloses the efficacious result of the Waw-consecutive sequence (Rule 74)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "God said",
+      "reason": "Thin agency and masks the authoritative command tone of the Hebrew."
+    },
+    {
+      "phrase": "Let there be light",
+      "reason": "Traditional rendering that fails to disclose the specific 'Granting of Existence' implied by the Jussive 'Yehi'."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    4,
+    5,
+    9,
+    13,
+    70,
+    74,
+    75
+  ],
+  "forensic-confidence": 100
 }

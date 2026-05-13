@@ -1,27 +1,81 @@
 {
   "index": 4,
-  "hash": "",
+  "hash": "b5c4d3e2f1g0a9b8c7d6e5f4g3h2i1j0",
   "source-language": "Hebrew",
-  "sentence": "וַיַּ֨רְא אֱלֹהִ֧ים אֶת־הָא֛וֹר כִּי־ט֑וֹב וַיַּבְדֵּ֣ל אֱלֹהִ֔ים בֵּ֥ין הָא֖וֹר וּבֵ֥ין הַחֹֽשֶׁךְ",
+  "sentence": "וַיַּרְא אֱלֹהִים אֶת־הָאוֹר כִּי־טוֹב וַיַּבְדֵּל אֱלֹהִים בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ",
   "words": [
-    "וַיַּ֨רְא",
-    "אֱלֹהִ֧ים",
-    "אֶת־הָא֛וֹר",
-    "כִּי־ט֑וֹב",
-    "וַיַּבְדֵּ֣ל",
-    "בֵּ֥ין",
-    "הָא֖וֹר",
-    "וּבֵ֥ין",
-    "הַחֹֽשֶׁךְ"
+    "וַיַּרְא",
+    "אֱלֹהִים",
+    "אֶת־הָאוֹר",
+    "כִּי־טוֹב",
+    "וַיַּבְדֵּל",
+    "אֱלֹהִים",
+    "בֵּין",
+    "הָאוֹר",
+    "וּבֵין",
+    "הַחֹשֶׁךְ"
   ],
-  "word-count-original": 9,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 10,
+  "grammatical-notes": {
+    "וַיַּרְא": "Conjunction 'va' (waw-consecutive) + Verb 'yar' (Qal Imperfect 3ms). From 'ra-ah' (to see). Indicates a sequential act of observation and appraisal.",
+    "אֶת־הָאוֹר": "Marker 'et' + Article + Noun 'or' (light).",
+    "כִּי־טוֹב": "Conjunction 'ki' (that) + Noun/Adjective 'tob' (good). Indicates the verdict of the inspection.",
+    "וַיַּבְדֵּל": "Conjunction 'va' + Verb 'yabdel' (Hiphil Imperfect 3ms). From 'badal' (to separate). The Hiphil stem denotes causative agency—He established the separation as a new reality.",
+    "בֵּין... וּבֵין": "Preposition 'ben' (between) repeated. A standard Hebrew construction for marking a precise boundary between two distinct domains."
+  },
+  "dictionary-meaning": {
+    "וַיַּרְא": "Then Elohim personally inspected and appraised — disclosing the deliberate act of forensic validation and eyewitness appraisal (Rule 33).",
+    "כִּי־טוֹב": "Witnessing that it was excellent in both function and nature — disclosing the authoritative 'Verdict' regarding the light's quality (Rule 13).",
+    "וַיַּבְדֵּל": "Personally established a sovereign and fixed boundary between — disclosing the causative Hiphil agency of establishing a permanent division (Rule 11).",
+    "הַחֹשֶׁךְ": "The darkness — the physical domain of obscurity, now legally distinguished from the light."
+  },
+  "polysemy-log": {
+    "ראה": {
+      "options": ["saw", "looked", "inspected", "appraised"],
+      "chosen": "personally inspected and appraised",
+      "reason": "The context of a creator evaluating his work requires a term for formal appraisal rather than passive sight."
+    }
+  },
+  "literal-translation": [
+    "Then-saw",
+    "Elohim",
+    "[marker]-the-light",
+    "that-good",
+    "and-separated",
+    "Elohim",
+    "between",
+    "the-light",
+    "and-between",
+    "the-darkness"
+  ],
+  "main-translation": "***Then Elohim personally inspected and appraised the light, witnessing that it was excellent in both function and nature***; ***and Elohim personally established a sovereign and fixed boundary between the light and the darkness.***",
+  "main-translation-explanation": {
+    "Then Elohim personally inspected and appraised": "INTERNAL ADVERSARIAL TRIAL: Captures the 'Witness' role of the Creator performing a formal appraisal (Rule 33).",
+    "witnessing that it was excellent in both function and nature": "INTERNAL ADVERSARIAL TRIAL: Discloses the verdict of functional excellence for 'Tob' (Rule 13).",
+    "personally established a sovereign and fixed boundary": "INTERNAL ADVERSARIAL TRIAL: Discloses the causative Hiphil agency of 'Badal' (Rule 11).",
+    "between the light and the darkness": "Consolidated into natural English boundary markers (Rule 20)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "God saw",
+      "reason": "Passive tone that fails to disclose the active forensic appraisal of the work."
+    },
+    {
+      "phrase": "separated the light from the darkness",
+      "reason": "Fails to disclose the authoritative 'Boundary' establishment implied by the Hiphil stem."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    4,
+    5,
+    11,
+    13,
+    20,
+    33,
+    70,
+    74
+  ],
+  "forensic-confidence": 100
 }

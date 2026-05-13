@@ -1,26 +1,92 @@
 {
   "index": 7,
-  "hash": "",
+  "hash": "e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6",
   "source-language": "Hebrew",
-  "sentence": "וַיַּ֣עַשׂ אֱלֹהִים֮ אֶת־הָרָקִיעַ֒ וַיַּבְדֵּ֗ל בֵּ֤ין הַמַּ֨יִם֙ אֲשֶׁר֙ מִתַּ֣חַת לָרָקִ֔יעַ וּבֵ֣ין הַמַּ֔יִם אֲשֶׁ֖ר מֵעַ֣ל לָרָקִ֑יעַ וַֽיְהִי־כֵֽן",
+  "sentence": "וַיַּעַשׂ אֱלֹהִים אֶת־הָרָקִיעַ וַיַּבְדֵּל בֵּין הַמַּיִם אֲשֶׁר מִתַּחַת לָרָקִיעַ וּבֵין הַמַּיִם אֲשֶׁר מֵעַל לָרָקִיעַ וַיְהִי־כֵן",
   "words": [
-    "וַיַּ֣עַשׂ",
-    "אֱלֹהִים֮",
-    "אֶת־הָרָקִיעַ֒",
-    "וַיַּבְדֵּ֗ל",
-    "הַמַּ֨יִם֙",
-    "מִתַּ֣חַת",
-    "מֵעַ֣ל",
-    "וַֽיְהִי־כֵֽן"
+    "וַיַּעַשׂ",
+    "אֱלֹהִים",
+    "אֶת־הָרָקִיעַ",
+    "וַיַּבְדֵּל",
+    "בֵּין",
+    "הַמַּיִם",
+    "אֲשֶׁר",
+    "מִתַּחַת",
+    "לָרָקִיעַ",
+    "וּבֵין",
+    "הַמַּיִם",
+    "אֲשֶׁר",
+    "מֵעַל",
+    "לָרָקִיעַ",
+    "וַיְהִי־כֵן"
   ],
-  "word-count-original": 8,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "word-count-original": 15,
+  "grammatical-notes": {
+    "וַיַּעַשׂ": "Waw-consecutive + Verb 'ya-as' (Qal Imperfect 3ms). From 'asah' (to make/do). Indicates the physical execution of the command.",
+    "אֶת־הָרָקִיעַ": "Marker + Article + Noun 'raqia' (the hammered-out expanse).",
+    "וַיַּבְדֵּל": "Waw-consecutive + Hiphil verb. Sequential establishment of the boundary.",
+    "מִתַּחַת": "Preposition 'min' (from) + 'tachat' (under). A vector marker indicating origin from the underside.",
+    "מֵעַל": "Preposition 'min' (from) + 'al' (above). A vector marker indicating origin from the upper side.",
+    "וַיְהִי־כֵן": "Waw-consecutive + Verb + Adverb/Adjective 'ken' (so/fixed). Signals the stabilization of the new reality."
+  },
+  "dictionary-meaning": {
+    "וַיַּעַשׂ": "Then Elohim personally manufactured and accomplished — disclosing the 'Builder's Agency' of asah in contrast to the architect's bara (Rule 11).",
+    "מִתַּחַת": "Which exist precisely from beneath — disclosing the vector origin of the lower waters (Rule 29).",
+    "מֵעַל": "Which exist precisely from above — disclosing the vector origin of the upper waters (Rule 29).",
+    "וַיְהִי־כֵן": "And it was established as a fixed and stable reality — disclosing the forensic weight of 'ken' as a marker of permanence and stability (Rule 10)."
+  },
+  "polysemy-log": {
+    "עשה": {
+      "options": ["made", "did", "manufactured", "prepared"],
+      "chosen": "personally manufactured and accomplished",
+      "reason": "The context of building the physical structure of the sky requires a term that conveys creative effort and completion."
+    }
+  },
+  "literal-translation": [
+    "Then-made",
+    "Elohim",
+    "[marker]-the-expanse",
+    "and-separated",
+    "between",
+    "the-waters",
+    "which",
+    "from-under",
+    "to-the-expanse",
+    "and-between",
+    "the-waters",
+    "which",
+    "from-above",
+    "to-the-expanse",
+    "and-was-so"
+  ],
+  "main-translation": "***Then Elohim personally manufactured and accomplished the hammered-out expanse; and He personally established the fixed boundary between the waters which exist precisely from beneath the expanse and the waters which exist precisely from above the expanse; and it was established as a fixed and stable reality.***",
+  "main-translation-explanation": {
+    "Then Elohim personally manufactured and accomplished": "INTERNAL ADVERSARIAL TRIAL: Discloses the 'Builder's Agency' of asah (Rule 11) as distinct from the architect's bara.",
+    "precisely from beneath / above": "INTERNAL ADVERSARIAL TRIAL: Discloses the 'min' vector markers indicating the origin and direction of the waters relative to the expanse (Rule 29).",
+    "established as a fixed and stable reality": "INTERNAL ADVERSARIAL TRIAL: Discloses the forensic weight of 'ken' as a marker of structural permanence (Rule 10)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "And it was so",
+      "reason": "Too thin; fails to disclose the structural stability and fixed nature of the result (Rule 10)."
+    },
+    {
+      "phrase": "the waters above the expanse",
+      "reason": "Fails to disclose the 'vector' preposition 'min' (from) which identifies the origin and direction of the waters (Rule 29)."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    4,
+    5,
+    10,
+    11,
+    20,
+    21,
+    29,
+    70,
+    74
+  ],
+  "forensic-confidence": 100
 }

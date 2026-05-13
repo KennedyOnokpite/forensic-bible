@@ -1,29 +1,88 @@
 {
   "index": 6,
-  "hash": "",
+  "hash": "d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6",
   "source-language": "Hebrew",
-  "sentence": "וַיֹּ֣אמֶר אֱלֹהִ֔ים יְהִ֥י רָקִ֖יעַ בְּת֣וֹךְ הַמָּ֑יִם וִיהִ֣י מַבְדִּ֔יל בֵּ֥ין מַ֖יִם לָמָּֽיִם",
+  "sentence": "וַיֹּאמֶר אֱלֹהִים יְהִי רָקִיעַ בְּתוֹךְ הַמָּיִם וִיהִי מַבְדִּיל בֵּין מַיִם לָמָיִם",
   "words": [
-    "וַיֹּ֣אמֶר",
-    "אֱלֹהִ֔ים",
-    "יְהִ֥י",
-    "רָקִ֖יעַ",
-    "בְּת֣וֹךְ",
-    "הַמָּ֑יִם",
-    "וִיהִ֣י",
-    "מַבְדִּ֔יל",
-    "בֵּ֥ין",
-    "מַ֖יִם",
-    "לָמָּֽיִם"
+    "וַיֹּאמֶר",
+    "אֱלֹהִים",
+    "יְהִי",
+    "רָקִיעַ",
+    "בְּתוֹךְ",
+    "הַמָּיִם",
+    "וִיהִי",
+    "מַבְדִּיל",
+    "בֵּין",
+    "מַיִם",
+    "לָמָיִם"
   ],
   "word-count-original": 11,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "grammatical-notes": {
+    "וַיֹּאמֶר": "Waw-consecutive + Verb. Sovereign decree.",
+    "יְהִי": "Qal Jussive. Granting of existence.",
+    "רָקִיעַ": "Noun. From 'raqa' (to hammer/beat out). An expanse or firmament.",
+    "בְּתוֹךְ": "Preposition + Noun 'tawek' (center/midst).",
+    "הַמָּיִם": "Article + Noun 'mayim' (plural). Primeval waters.",
+    "וִיהִי": "Conjunction + Qal Jussive. Command for ongoing state.",
+    "מַבְדִּיל": "Hiphil Participle. From 'badal'. 'In a state of causing separation'. Continuous causative agency.",
+    "בֵּין... לָ": "Prepositional structure for boundary marking."
+  },
+  "dictionary-meaning": {
+    "רָקִיעַ": "A hammered-out expanse (a stretched-out layer of separation) — disclosing the physical texture of a 'beaten out' sheet that provides structural separation (Rule 21).",
+    "מַבְדִּיל": "Remaining in a state of establishing a sovereign and fixed boundary — disclosing the continuous Hiphil Participle of 'badal' (Rule 9, 11).",
+    "בְּתוֹךְ": "Within the presence and center of — disclosing the positional depth of the expanse (Rule 1).",
+    "מַיִם": "Waters — the primordial material being divided. Left anarthrous in the first instance to signify the 'nature' of the fluid being separated (Rule 75)."
+  },
+  "polysemy-log": {
+    "רקיע": {
+      "options": ["expanse", "firmament", "sky", "vault"],
+      "chosen": "hammered-out expanse (a stretched-out layer of separation)",
+      "reason": "The Hebrew root 'raqa' (to beat out) necessitates a term that conveys the physical, structural 'stretched' quality of the sky."
+    }
+  },
+  "literal-translation": [
+    "Then-said",
+    "Elohim",
+    "Let-be",
+    "expanse",
+    "in-midst",
+    "the-waters",
+    "and-let-be",
+    "separating",
+    "between",
+    "waters",
+    "to-the-waters"
+  ],
+  "main-translation": "***Then Elohim decreed***, '***Let existence be granted to a hammered-out expanse (a stretched-out layer of separation) within the center of the waters, and let it remain in a state of establishing a sovereign and fixed boundary between waters and the waters.***'",
+  "main-translation-explanation": {
+    "Then Elohim decreed": "Maintained authoritative tone (Rule 13).",
+    "hammered-out expanse": "INTERNAL ADVERSARIAL TRIAL: Discloses the physical root 'raqa' (to beat out) showing the author's intent of a structural layer (Rule 21).",
+    "remain in a state of establishing a boundary": "Captures the continuous Hiphil Participle 'mabdil' (Rule 9, 11).",
+    "between waters and the waters": "Preserved the symmetrical division structure (Rule 69)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "firmament",
+      "reason": "Archaic (Rule 4) and loses the 'active stretching' meaning of the Hebrew root."
+    },
+    {
+      "phrase": "vault",
+      "reason": "Too abstract; masks the material texture of the 'beaten out' expanse."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    4,
+    5,
+    9,
+    11,
+    13,
+    21,
+    69,
+    70,
+    74,
+    75
+  ],
+  "forensic-confidence": 100
 }

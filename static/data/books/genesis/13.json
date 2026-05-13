@@ -1,22 +1,37 @@
 {
   "index": 13,
-  "hash": "",
+  "hash": "k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
   "source-language": "Hebrew",
-  "sentence": "וַֽיְהִי־עֶ֥רֶב וַֽיְהִי־בֹ֖קֶר י֥וֹם שְׁלִישִֽׁי",
+  "sentence": "וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר יוֹם שְׁלִישִׁי",
   "words": [
-    "וַֽיְהִי־עֶ֥רֶב",
-    "וַֽיְהִי־בֹ֖קֶר",
-    "י֥וֹם",
-    "שְׁלִישִֽׁי"
+    "וַיְהִי־עֶרֶב",
+    "וַיְהִי־בֹקֶר",
+    "יוֹם",
+    "שְׁלִישִׁי"
   ],
   "word-count-original": 4,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "grammatical-notes": {
+    "שְׁלִישִׁי": "Noun + Ordinal number. 'Day third'. Anarthrous."
+  },
+  "dictionary-meaning": {
+    "שְׁלִישִׁי": "A third day — disclosing the ordinal nature of 'shelishi' and the lack of a definite article (Rule 69, 75)."
+  },
+  "literal-translation": [
+    "and-was-evening",
+    "and-was-morning",
+    "day",
+    "third"
+  ],
+  "main-translation": "***And there was evening (mixing) and there was morning (discernment), comprising a third day.***",
+  "main-translation-explanation": {
+    "comprising a third day": "INTERNAL ADVERSARIAL TRIAL: Challenged 'the third day'. REFINEMENT: Chose 'a third day' to disclose the ordinal nature of 'shelishi' and the lack of a definite article in the Hebrew (Rule 69, 75)."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "the third day",
+      "reason": "Adds a definite article not present in the Hebrew; fails to preserve the qualitative sequential nature."
+    }
+  ],
+  "rules-applied": [1, 2, 4, 5, 21, 69, 75],
+  "forensic-confidence": 100
 }

@@ -1,6 +1,6 @@
 {
   "index": 2,
-  "hash": "",
+  "hash": "c76f62b489d87d46c8e5e8e89f6b5293",
   "source-language": "Hebrew",
   "sentence": "וְהָאָרֶץ הָיְתָה תֹהוּ וָבֹהוּ וְחֹשֶׁךְ עַל־פְּנֵי תְהוֹם וְרוּחַ אֱלֹהִים מְרַחֶפֶת עַל־פְּנֵי הַמָּיִם",
   "words": [
@@ -18,13 +18,73 @@
     "הַמָּיִם"
   ],
   "word-count-original": 12,
-  "grammatical-notes": {},
-  "dictionary-meaning": {},
-  "polysemy-log": {},
-  "literal-translation": "",
-  "main-translation": "",
-  "main-translation-explanation": {},
-  "rejected-translations": [],
-  "rules-applied": [],
-  "forensic-confidence": 0
+  "grammatical-notes": {
+    "וְהָאָרֶץ": "Disjunctive waw signaling a transition to the state of the earth.",
+    "הָיְתָה": "Stative perfect aspect: 'was existing in a condition'.",
+    "תֹהוּ": "Unformedness or wasteland state.",
+    "וָבֹהוּ": "Emptiness or lack of inhabitants.",
+    "תְהוֹם": "The deep, roaring primeval ocean.",
+    "וְרוּחַ": "The active breath or wind of the Deity.",
+    "מְרַחֶפֶת": "Piel Participle: intense, continuous hovering/fluttering movement."
+  },
+  "dictionary-meaning": {
+    "וְהָאָרֶץ": "Now the material foundation of the physical world — disclosing the circumstantial state of the substrate created in Unit 1.",
+    "תֹהוּ וָבֹהוּ": "A structureless and empty wasteland — disclosing the functional non-existence and lack of order at the start.",
+    "תְהוֹם": "The roaring deep — disclosing the root 'hum' (to roar) and avoiding the loanword 'abyss'.",
+    "וְרוּחַ": "The active Breath of Elohim — disclosing the physical 'ruach' (breath/wind) as the active divine presence.",
+    "מְרַחֶפֶת": "Energetically hovering — disclosing the intense Piel Participle and the eagle metaphor of fluttering/brooding."
+  },
+  "polysemy-log": {
+    "רוּחַ": {
+      "options": ["wind", "breath", "spirit"],
+      "chosen": "active Breath",
+      "reason": "Captures the physical potency of the divine presence without the modern religious baggage of 'spirit'."
+    }
+  },
+  "literal-translation": [
+    "And-the-earth",
+    "was",
+    "unformed",
+    "and-empty",
+    "and-darkness",
+    "over-presence",
+    "deep",
+    "and-Breath",
+    "Elohim",
+    "hovering",
+    "over-presence",
+    "waters"
+  ],
+  "main-translation": "***Now the material foundation of the physical world was a structureless and empty wasteland***; ***an absolute absence of light was over the surface of the roaring deep***, ***while the active Breath of Elohim was energetically hovering over the face of the waters.***",
+  "main-translation-explanation": {
+    "Now the material foundation": "INTERNAL ADVERSARIAL TRIAL: Resolved that 'Now' is the best disjunctive marker. Removed 'solid' per Unit 1 trial.",
+    "was a structureless and empty wasteland": "INTERNAL ADVERSARIAL TRIAL: Rejected 'was existing in a state of being' as robotic. Chose 'was a structureless and empty wasteland' to disclose the Tohu-wa-Bohu state with material clarity.",
+    "absolute absence of light was over the surface of the roaring deep": "INTERNAL ADVERSARIAL TRIAL: Rejected 'abyss' as a Greek loanword. Chose 'roaring deep' to capture the root 'hum'. Removed 'shrouded' as too poetic; used 'was over'.",
+    "active Breath of Elohim was energetically hovering": "INTERNAL ADVERSARIAL TRIAL: Rejected 'vibrated with energy' as weird/modern. Chose 'active Breath' and 'energetically hovering' to disclose the Piel intensity and the Ruach-metaphor with forensic precision."
+  },
+  "rejected-translations": [
+    {
+      "phrase": "abyss",
+      "reason": "Greek loanword; violates Rule 3."
+    },
+    {
+      "phrase": "spirit",
+      "reason": "Modern religious baggage; fails to disclose the physical 'breath' metaphor of the author."
+    }
+  ],
+  "rules-applied": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    9,
+    21,
+    61,
+    66,
+    68,
+    70,
+    74
+  ],
+  "forensic-confidence": 100
 }
