@@ -5,11 +5,14 @@
 	import ForensicText from '$lib/ForensicText.svelte';
 	import AudioPlayer from '$lib/AudioPlayer.svelte';
 	import { onMount } from 'svelte';
+	import { Root as CardRoot, Header as CardHeader, Content as CardContent } from '$lib/components/ui/card/index.js';
+	import { Root as TabsRoot, List as TabsList, Trigger as TabsTrigger } from '$lib/components/ui/tabs/index.js';
+	import { Button } from '$lib/components/ui/button/index.js';
+	import { Volume2, ChevronLeft, ChevronDown } from '@lucide/svelte';
 
 	let { data } = $props();
 	let viewMode = $state('english');
 
-	// ... [RULE_NAMES remains same] ...
 	const RULE_NAMES: Record<number, string> = {
 		1: 'Total Contextual Disclosure', 2: 'Zero Contextual Drift', 3: 'Pure English Only',
 		4: 'Modern Basic English', 5: 'Italicized Grouping', 6: 'Perfect Word + Bracket',
@@ -85,8 +88,6 @@
 				const currentIndex = customEvent.detail.index;
 				const nextUnit = data.units.find(u => u.index === currentIndex + 1);
 				if (nextUnit) {
-					// We need to know if we were playing 'en' or 'orig'
-					// For continuous, we default to the current active language mode
 					const langMode = audioStore.currentText === nextUnit.sentence ? 'orig' : 'en';
 					handlePlay(nextUnit, langMode);
 				}
@@ -117,52 +118,27 @@
 	<title>{data.book.name} | Forensic Biblical Explorer</title>
 </svelte:head>
 
-<div class="reading-container">
-	<nav class="top-nav">
-		<a href={resolve('/')} class="back-link">
-			<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-				<path d="M19 12H5M12 19l-7-7 7-7"/>
-			</svg>
-			<span>Library</span>
+<div class="mx-auto max-w-4xl px-6 py-12 md:py-24">
+	<nav class="mb-12 flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+		<a href={resolve('/')} class="flex items-center gap-2 text-xs font-black uppercase tracking-[0.3em] text-muted-foreground transition-colors hover:text-primary">
+			<ChevronLeft class="h-4 w-4" />
+			Library
 		</a>
 
-		<div class="jump-control">
-			<input 
-				type="number" 
-				placeholder="Jump to Unit..." 
-				min="1" 
-				max={data.units.length}
-				onkeydown={(e) => {
-					if (e.key === 'Enter') {
-						const val = (e.target as HTMLInputElement).value;
-						document.getElementById(`unit-${val}`)?.scrollIntoView({ behavior: 'smooth' });
-					}
-				}}
-			/>
-		</div>
-
-		<div class="toggle-container">
-			<button 
-				class="toggle-btn" 
-				class:active={viewMode === 'original'} 
-				onclick={() => viewMode = 'original'}
-			>
-				Original
-			</button>
-			<button 
-				class="toggle-btn" 
-				class:active={viewMode === 'english'} 
-				onclick={() => viewMode = 'english'}
-			>
-				English
-			</button>
+		<div class="flex items-center gap-4">
+			<TabsRoot value={viewMode} class="w-[200px]" onValueChange={(v) => viewMode = v}>
+				<TabsList class="grid w-full grid-cols-2 bg-white/5 border border-white/5">
+					<TabsTrigger value="english" class="text-[10px] font-black uppercase tracking-widest">English</TabsTrigger>
+					<TabsTrigger value="original" class="text-[10px] font-black uppercase tracking-widest">Original</TabsTrigger>
+				</TabsList>
+			</TabsRoot>
 		</div>
 	</nav>
 
 	<article>
-		<header>
-			<h1>{data.book.name}</h1>
-			<p class="subtitle">
+		<header class="mb-20 text-center">
+			<h1 class="mb-4 text-5xl font-black tracking-tighter text-white md:text-7xl">{data.book.name}</h1>
+			<p class="text-[10px] font-black uppercase tracking-[0.4em] text-primary">
 				{#if viewMode === 'english'}
 					Sovereign Forensic Reconstruction
 				{:else}
@@ -172,194 +148,179 @@
 		</header>
 
 		{#if viewMode === 'original'}
-			<div class="content-view original-text {data.book.language.toLowerCase()}">
-				{data.content}
+			<div class="rounded-3xl border border-white/5 bg-white/2 p-8 md:p-16">
+				<div class="original-text leading-[2.5] md:leading-[3] {data.book.language.toLowerCase()} text-2xl md:text-4xl text-center">
+					{data.content}
+				</div>
 			</div>
 		{:else}
-			<div class="content-view sota-units">
+			<div class="space-y-12">
 				{#if data.units && data.units.length > 0}
 					{#each data.units as unit (unit.index)}
-						<section 
-							class="unit-card" 
-							class:playing={audioStore.currentUnitIndex === unit.index}
+						<CardRoot 
 							id="unit-{unit.index}"
+							class="overflow-hidden border-white/5 bg-white/1 transition-all duration-500 {audioStore.currentUnitIndex === unit.index ? 'border-primary/50 bg-primary/3 ring-1 ring-primary/20' : ''}"
 						>
-							<div class="unit-header">
-								<div class="unit-meta">
-									<span class="unit-index">UNIT {unit.index}</span>
+							<CardHeader class="flex flex-row items-center justify-between border-b border-white/5 bg-white/2 px-6 py-4">
+								<div class="flex items-center gap-4">
+									<span class="text-[10px] font-black tracking-[0.2em] text-muted-foreground">UNIT {unit.index}</span>
 									{#if unit['forensic-confidence'] > 0}
-										<span class="confidence-badge" class:low={unit['forensic-confidence'] < 70} title="Forensic Confidence Score">
+										<div class="flex items-center gap-1.5 rounded-full bg-green-500/10 px-3 py-1 text-[9px] font-bold text-green-500 border border-green-500/20">
+											<div class="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse"></div>
 											{unit['forensic-confidence']}% Forensic Certainty
-										</span>
+										</div>
 									{/if}
 								</div>
-								<div class="audio-controls">
-									<button 
-										class="audio-btn original" 
-										class:active={audioStore.currentUnitIndex === unit.index && audioStore.isPlaying && audioStore.currentText === unit.sentence}
+								<div class="flex items-center gap-2">
+									<Button 
+										variant="ghost" 
+										size="sm" 
+										class="h-8 gap-2 text-[9px] font-black tracking-widest {audioStore.currentUnitIndex === unit.index && audioStore.isPlaying && audioStore.currentText === unit.sentence ? 'text-primary bg-primary/10' : 'text-muted-foreground'}"
 										onclick={() => handlePlay(unit, 'orig')}
-										title="Play Original"
 									>
-										<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-											<path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-										</svg>
-										<span>{data.book.language === 'Greek' ? 'GRK' : 'HBW'}</span>
-									</button>
-									<button 
-										class="audio-btn main" 
-										class:active={audioStore.currentUnitIndex === unit.index && audioStore.isPlaying && audioStore.currentText === unit['main-translation']}
+										<Volume2 class="h-3.5 w-3.5" />
+										{data.book.language === 'Greek' ? 'GRK' : 'HBW'}
+									</Button>
+									<Button 
+										variant="ghost" 
+										size="sm" 
+										class="h-8 gap-2 text-[9px] font-black tracking-widest {audioStore.currentUnitIndex === unit.index && audioStore.isPlaying && audioStore.currentText === unit['main-translation'] ? 'text-primary bg-primary/10' : 'text-muted-foreground'}"
 										onclick={() => handlePlay(unit, 'en')}
-										title="Play Translation"
 									>
-										<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-											<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-											<path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-										</svg>
-										<span>ENG</span>
-									</button>
+										<Volume2 class="h-3.5 w-3.5" />
+										ENG
+									</Button>
 								</div>
-								<div class="unit-nav-arrows">
-									{#if unit.index > 1}
-										<a href="#unit-{unit.index - 1}" class="nav-arrow" title="Previous Unit">
-											<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
-										</a>
-									{/if}
-									{#if unit.index < data.units.length}
-										<a href="#unit-{unit.index + 1}" class="nav-arrow" title="Next Unit">
-											<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
-										</a>
-									{/if}
+							</CardHeader>
+							<CardContent class="p-8 md:p-12">
+								<div class="mb-10">
+									<p class="text-2xl font-medium leading-relaxed text-white md:text-3xl">
+										<ForensicText text={unit['main-translation']} />
+									</p>
 								</div>
-							</div>
-
-							<div class="field-group translation">
-								<p class="main-translation"><ForensicText text={unit['main-translation']} /></p>
-								<div class="original-sentence-highlightable {data.book.language.toLowerCase()}">
+								
+								<div class="flex flex-wrap gap-2 pt-6 border-t border-white/5 {data.book.language.toLowerCase() === 'hebrew' ? 'flex-row-reverse' : ''}">
 									{#each unit.words as word, i (i)}
 										<button 
-											class="word-btn" 
-											class:active={activeWord?.unit === unit.index && activeWord?.word === word}
+											class="rounded-lg border border-white/5 px-3 py-1.5 font-greek text-lg transition-all hover:border-primary/50 hover:text-primary {activeWord?.unit === unit.index && activeWord?.word === word ? 'bg-primary text-black font-bold border-primary' : 'text-muted-foreground'}"
 											onclick={() => setActiveWord(unit.index, word)}
 										>
 											{word}
 										</button>
 									{/each}
 								</div>
-							</div>
 
-							<details class="forensic-details">
-								<summary>Forensic Metadata</summary>
-								
-								<div class="field-group">
-									<span class="field-label">LITERAL MIRROR (Interlinear)</span>
-									<div class="interlinear-table">
-										{#each unit.words as word, i (i)}
-											<div class="interlinear-pair">
-												<span class="inter-orig {data.book.language.toLowerCase()}">{word}</span>
-												<span class="inter-gloss">{Array.isArray(unit['literal-translation']) ? (unit['literal-translation'][i] || '...') : (i === 0 ? (unit['literal-translation'] || '...') : '...')}</span>
+								<div class="mt-8">
+									<details class="group">
+										<summary class="flex cursor-pointer items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors list-none">
+											<div class="h-5 w-5 rounded-full border border-white/10 flex items-center justify-center transition-transform group-open:rotate-180">
+												<ChevronDown class="h-3 w-3" />
 											</div>
-										{/each}
-									</div>
-								</div>
-
-								{#if Object.keys(unit['grammatical-notes'] || {}).length > 0}
-									<div class="field-group">
-										<span class="field-label">GRAMMATICAL DEPTH</span>
-										<div class="grammatical-grid">
-											{#each Object.entries(unit['grammatical-notes']) as [word, note], i (i)}
-												<div class="grammatical-item">
-													<span class="grammatical-word">{word}</span>
-													<span class="grammatical-note">{note}</span>
+											Forensic Metadata
+										</summary>
+										<div class="mt-8 space-y-10 border-t border-white/5 pt-8">
+											<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+												<!-- Interlinear -->
+												<div class="space-y-4">
+													<h4 class="text-[9px] font-black uppercase tracking-[0.3em] text-primary/60">Literal Mirror</h4>
+													<div class="flex flex-wrap gap-4 rounded-2xl bg-black/40 p-6 border border-white/5">
+														{#each unit.words as word, i (i)}
+															<div class="flex flex-col items-center gap-1 min-w-[50px]">
+																<span class="text-lg font-greek text-white">{word}</span>
+																<span class="text-[9px] font-bold uppercase text-primary/80">{Array.isArray(unit['literal-translation']) ? (unit['literal-translation'][i] || '...') : (i === 0 ? (unit['literal-translation'] || '...') : '...')}</span>
+															</div>
+														{/each}
+													</div>
 												</div>
-											{/each}
-										</div>
-									</div>
-								{/if}
 
-								<div class="field-group">
-									<span class="field-label">DICTIONARY CONVERGENCE</span>
-									<div class="dictionary-grid">
-										{#each Object.entries(unit['dictionary-meaning']) as [word, meaning] (word)}
-											<div 
-												class="dict-item" 
-												class:highlighted={activeWord?.unit === unit.index && activeWord?.word === word}
-												id="dict-{unit.index}-{word}"
-											>
-												<span class="dict-word">{word}</span>
-												<div class="dict-structured">
-													{#each Object.entries(parseDictEntry(String(meaning))) as [key, val], j (j)}
-														<div class="dict-row">
-															<span class="dict-key">{key}</span>
-															<span class="dict-val">{val}</span>
+												<!-- Grammatical -->
+												{#if Object.keys(unit['grammatical-notes'] || {}).length > 0}
+													<div class="space-y-4">
+														<h4 class="text-[9px] font-black uppercase tracking-[0.3em] text-primary/60">Grammatical Depth</h4>
+														<div class="grid gap-3">
+															{#each Object.entries(unit['grammatical-notes']) as [word, note] (word)}
+																<div class="flex flex-col gap-1 rounded-xl bg-white/2 p-3 border border-white/5">
+																	<span class="text-sm font-bold text-white">{word}</span>
+																	<span class="text-xs text-muted-foreground leading-relaxed">{note}</span>
+																</div>
+															{/each}
+														</div>
+													</div>
+												{/if}
+
+												<!-- Dictionary -->
+												{#if Object.keys(unit['dictionary-meaning'] || {}).length > 0}
+													<div class="space-y-4 md:col-span-2">
+														<h4 class="text-[9px] font-black uppercase tracking-[0.3em] text-primary/60">Dictionary Convergence</h4>
+														<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+															{#each Object.entries(unit['dictionary-meaning']) as [word, meaning] (word)}
+																<div class="rounded-2xl border border-white/5 bg-white/2 p-5 {activeWord?.unit === unit.index && activeWord?.word === word ? 'border-primary ring-1 ring-primary/20 bg-primary/5' : ''}">
+																	<span class="mb-4 block text-lg font-bold text-white border-b border-white/5 pb-2">{word}</span>
+																	<div class="space-y-2">
+																		{#each Object.entries(parseDictEntry(String(meaning))) as [key, val] (key)}
+																			<div class="grid grid-cols-[80px_1fr] gap-4">
+																				<span class="text-[8px] font-black uppercase tracking-widest text-primary/70">{key}</span>
+																				<span class="text-[11px] text-muted-foreground leading-tight">{val}</span>
+																			</div>
+																		{/each}
+																	</div>
+																</div>
+															{/each}
+														</div>
+													</div>
+												{/if}
+											</div>
+
+											<!-- Rules -->
+											<div class="space-y-4">
+												<h4 class="text-[9px] font-black uppercase tracking-[0.3em] text-primary/60">Forensic Rules Applied</h4>
+												<div class="flex flex-wrap gap-2">
+													{#each unit['rules-applied'] as rule (rule)}
+														<div class="rounded-lg border border-primary/20 bg-primary/5 px-3 py-1.5 text-[9px] font-black tracking-widest text-primary flex items-center gap-2" title={RULE_NAMES[rule]}>
+															<span class="opacity-50">RULE {rule}</span>
+															<span>{RULE_NAMES[rule]}</span>
 														</div>
 													{/each}
 												</div>
 											</div>
-										{/each}
-									</div>
-								</div>
 
-								<div class="field-group">
-									<span class="field-label">ADVERSARIAL CONVERGENCE</span>
-									<div class="adversarial-list">
-										{#each getExplanationEntries(unit['main-translation-explanation']) as [phrase, justification], i (i)}
-											<div class="adversarial-entry">
-												<span class="adversarial-phrase">"{phrase}"</span>
-												<span class="adversarial-reason">{justification}</span>
-											</div>
-										{/each}
-										{#if (unit['rejected-translations'] || []).length > 0}
-											<div class="rejected-section">
-												<span class="inner-label">EXPLICITLY REJECTED</span>
-												{#each unit['rejected-translations'] as rejected, i (i)}
-													<div class="rejected-entry">
-														<span class="rejected-phrase">
-															"{typeof rejected === 'object' ? rejected.phrase : rejected}"
-														</span>
-														{#if typeof rejected === 'object' && rejected.reason}
-															<span class="rejected-reason">— {rejected.reason}</span>
-														{/if}
-													</div>
-												{/each}
-											</div>
-										{/if}
-									</div>
-								</div>
-
-								{#if Object.keys(unit['polysemy-log'] || {}).length > 0}
-									<div class="field-group">
-										<span class="field-label">POLYSEMY RESOLUTION (Rule 68)</span>
-										<div class="polysemy-grid">
-											{#each Object.entries(unit['polysemy-log']) as [word, data] (word)}
-												<div class="polysemy-item">
-													<span class="polysemy-word">{word}</span>
-													<div class="polysemy-details">
-														<span class="polysemy-options">Options: {data.options?.join(', ') || '...'}</span>
-														<span class="polysemy-chosen">Chosen: <strong>{data.chosen}</strong></span>
-														<span class="polysemy-reason">Reason: {data.reason}</span>
-													</div>
+											<!-- Adversarial -->
+											<div class="space-y-4 md:col-span-2">
+												<h4 class="text-[9px] font-black uppercase tracking-[0.3em] text-primary/60">Adversarial Convergence</h4>
+												<div class="space-y-4">
+													{#each getExplanationEntries(unit['main-translation-explanation']) as [phrase, justification] (phrase)}
+														<div class="rounded-2xl bg-white/2 p-5 border border-white/5 border-l-primary/50 border-l-2">
+															<span class="block text-[11px] font-black text-primary mb-2 uppercase tracking-widest">"{phrase}"</span>
+															<p class="text-[13px] text-muted-foreground leading-relaxed italic">{justification}</p>
+														</div>
+													{/each}
+													
+													{#if (unit['rejected-translations'] || []).length > 0}
+														<div class="mt-8 space-y-4 pt-8 border-t border-white/5">
+															<span class="text-[10px] font-black uppercase tracking-[0.3em] text-red-500/70">Explicitly Rejected</span>
+															<div class="grid gap-3">
+																{#each unit['rejected-translations'] as rejected (typeof rejected === 'object' ? rejected.phrase : rejected)}
+																	<div class="text-[11px] flex flex-col md:flex-row md:items-baseline gap-2">
+																		<span class="text-red-500/50 font-bold line-through">"{typeof rejected === 'object' ? rejected.phrase : rejected}"</span>
+																		{#if typeof rejected === 'object' && rejected.reason}
+																			<span class="text-muted-foreground/60">— {rejected.reason}</span>
+																		{/if}
+																	</div>
+																{/each}
+															</div>
+														</div>
+													{/if}
 												</div>
-											{/each}
+											</div>
 										</div>
-									</div>
-								{/if}
-
-								<div class="field-group">
-									<span class="field-label">RULES APPLIED</span>
-									<div class="rules-tags">
-										{#each unit['rules-applied'] as rule (rule)}
-											<span class="rule-tag" title={RULE_NAMES[rule] ?? 'Unknown Rule'}>RULE {rule} — {RULE_NAMES[rule] ?? '?'}</span>
-										{/each}
-									</div>
+									</details>
 								</div>
-							</details>
-						</section>
+							</CardContent>
+						</CardRoot>
 					{/each}
 				{:else}
-					<div class="placeholder">
-						<p>SOTA Reconstruction for {data.book.name} is in progress.</p>
-						<p class="small">Units are currently being populated through Wave cycles.</p>
+					<div class="py-32 text-center border border-dashed border-white/10 rounded-[3rem]">
+						<p class="text-xl font-bold text-muted-foreground tracking-tighter italic">SOTA Reconstruction in progress...</p>
 					</div>
 				{/if}
 			</div>
@@ -370,430 +331,8 @@
 </div>
 
 <style>
-	:root {
-		--bg-dark: #0a0a0a;
-		--card-bg: rgba(255, 255, 255, 0.03);
-		--accent-gold: #c5a059;
-		--accent-blue: #4a90e2;
-		--text-muted: #888;
-	}
-
-	.reading-container {
-		max-width: 900px;
-		margin: 0 auto;
-		padding: 2rem;
-		font-family: 'Inter', sans-serif;
-	}
-
-	.top-nav {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 4rem;
-	}
-
-	.back-link {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		text-decoration: none;
-		color: var(--text-muted);
-		font-weight: 500;
-		transition: color 0.2s;
-	}
-
-	.toggle-container {
-		display: flex;
-		background: rgba(255, 255, 255, 0.05);
-		padding: 4px;
-		border-radius: 12px;
-		border: 1px solid rgba(255, 255, 255, 0.1);
-	}
-
-	.toggle-btn {
-		padding: 0.5rem 1.25rem;
-		border-radius: 8px;
-		border: none;
-		background: transparent;
-		color: var(--text-muted);
-		font-weight: 600;
-		cursor: pointer;
-		transition: all 0.2s;
-	}
-
-	.toggle-btn.active {
-		background: rgba(255, 255, 255, 0.1);
-		color: #fff;
-	}
-
-	header {
-		margin-bottom: 5rem;
-		text-align: center;
-	}
-
-	header h1 {
-		font-size: 4rem;
-		font-weight: 800;
-		letter-spacing: -0.05em;
-		margin: 0;
-		background: linear-gradient(to bottom, #fff, #888);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
-	.subtitle {
-		color: var(--accent-gold);
-		text-transform: uppercase;
-		font-weight: 700;
-		letter-spacing: 0.2em;
-		font-size: 0.75rem;
-		margin-top: 1rem;
-	}
-
-	.unit-card {
-		background: var(--card-bg);
-		border: 1px solid rgba(255, 255, 255, 0.05);
-		border-radius: 24px;
-		padding: 2.5rem;
-		margin-bottom: 3rem;
-		transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;
-	}
-
-	.unit-card:hover {
-		transform: translateY(-4px);
-		border-color: rgba(197, 160, 89, 0.2);
-	}
-
-	.unit-card.playing {
-		border-color: var(--accent-gold);
-		background: rgba(197, 160, 89, 0.08);
-		box-shadow: 0 0 30px rgba(197, 160, 89, 0.1);
-	}
-
-	.unit-header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 2rem;
-	}
-
-	.unit-index {
-		font-size: 0.7rem;
-		font-weight: 900;
-		color: var(--text-muted);
-		letter-spacing: 0.1em;
-		background: rgba(255, 255, 255, 0.05);
-		padding: 0.25rem 0.75rem;
-		border-radius: 100px;
-	}
-
-	.unit-meta {
-		display: flex;
-		align-items: center;
-		gap: 0.75rem;
-	}
-
-	.confidence-badge {
-		font-size: 0.6rem;
-		font-weight: 800;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		color: #4ade80;
-		background: rgba(74, 222, 128, 0.1);
-		padding: 0.25rem 0.6rem;
-		border-radius: 6px;
-		border: 1px solid rgba(74, 222, 128, 0.2);
-	}
-
-	.confidence-badge.low {
-		color: #f87171;
-		background: rgba(248, 113, 113, 0.1);
-		border-color: rgba(248, 113, 113, 0.2);
-	}
-
-	.unit-nav-arrows {
-		display: flex;
-		gap: 0.5rem;
-	}
-
-	.nav-arrow {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 28px;
-		height: 28px;
-		background: rgba(255,255,255,0.05);
-		border: 1px solid rgba(255,255,255,0.1);
-		border-radius: 6px;
-		color: var(--text-muted);
-		transition: all 0.2s;
-	}
-
-	.nav-arrow:hover {
-		background: rgba(197, 160, 89, 0.1);
-		border-color: var(--accent-gold);
-		color: var(--accent-gold);
-	}
-
-	.audio-controls {
-		display: flex;
-		gap: 0.75rem;
-	}
-
-	.audio-btn {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		background: rgba(255, 255, 255, 0.05);
-		border: 1px solid rgba(255, 255, 255, 0.1);
-		color: #fff;
-		padding: 0.4rem 0.8rem;
-		border-radius: 8px;
-		cursor: pointer;
-		font-size: 0.65rem;
-		font-weight: 700;
-		transition: all 0.2s;
-	}
-
-	.audio-btn:hover, .audio-btn.active {
-		background: rgba(255, 255, 255, 0.1);
-		border-color: var(--accent-gold);
-		color: var(--accent-gold);
-	}
-
-	.main-translation {
-		font-size: 1.6rem;
-		line-height: 1.6;
-		color: #efefef;
-		font-weight: 400;
-		margin: 0;
-	}
-
-	.main-translation :global(em) {
-		color: var(--accent-gold);
-		font-style: normal;
-		font-weight: 600;
-		border-bottom: 1px solid rgba(197, 160, 89, 0.3);
-	}
-
-	.forensic-details {
-		margin-top: 2rem;
-		padding-top: 2rem;
-		border-top: 1px solid rgba(255, 255, 255, 0.05);
-	}
-
-	.forensic-details summary {
-		font-size: 0.7rem;
-		font-weight: 700;
-		color: var(--text-muted);
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		cursor: pointer;
-		list-style: none;
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-	}
-
-	.forensic-details summary::before {
-		content: '+';
-		font-size: 1.2rem;
-		color: var(--accent-gold);
-	}
-
-	.field-group {
-		margin-top: 2rem;
-	}
-
-	.field-label {
-		display: block;
-		font-size: 0.6rem;
-		font-weight: 900;
-		color: var(--accent-gold);
-		letter-spacing: 0.15em;
-		margin-bottom: 0.75rem;
-		opacity: 0.8;
-		text-transform: uppercase;
-	}
-
-	.interlinear-table {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.75rem;
-		background: rgba(0,0,0,0.2);
-		padding: 1.5rem;
-		border-radius: 16px;
-		border: 1px solid rgba(255,255,255,0.05);
-	}
-
-	.interlinear-pair {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		min-width: 60px;
-		padding: 0.5rem;
-		border-radius: 8px;
-		transition: background 0.2s;
-	}
-
-	.interlinear-pair:hover {
-		background: rgba(255,255,255,0.05);
-	}
-
-	.inter-orig {
-		font-size: 1.1rem;
-		color: #fff;
-		margin-bottom: 0.25rem;
-	}
-
-	.inter-gloss {
-		font-size: 0.65rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		color: var(--accent-gold);
-		opacity: 0.8;
-	}
-
-	.jump-control input {
-		background: rgba(255,255,255,0.05);
-		border: 1px solid rgba(255,255,255,0.1);
-		border-radius: 8px;
-		padding: 0.4rem 0.8rem;
-		color: #fff;
-		font-size: 0.75rem;
-		width: 120px;
-		outline: none;
-		transition: border-color 0.2s;
-	}
-
-	.jump-control input:focus {
-		border-color: var(--accent-gold);
-	}
-
-	.dictionary-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-		gap: 1rem;
-	}
-
-	.dict-item {
-		background: rgba(0, 0, 0, 0.3);
-		padding: 1.25rem;
-		border-radius: 16px;
-		border: 1px solid rgba(255, 255, 255, 0.05);
-		border-left: 4px solid var(--accent-gold);
-		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	.dict-item.highlighted {
-		background: rgba(197, 160, 89, 0.1);
-		border-color: var(--accent-gold);
-		transform: scale(1.02);
-		box-shadow: 0 0 20px rgba(197, 160, 89, 0.2);
-	}
-
-	.dict-word {
-		display: block;
-		font-size: 1.2rem;
-		font-weight: 800;
-		color: #fff;
-		margin-bottom: 0.75rem;
-		border-bottom: 1px solid rgba(255,255,255,0.1);
-		padding-bottom: 0.5rem;
-	}
-
-	.dict-structured { display: flex; flex-direction: column; gap: 0.4rem; }
-	.dict-row { 
-		display: grid; 
-		grid-template-columns: 80px 1fr; 
-		gap: 1rem; 
-		align-items: baseline; 
-	}
-	.dict-key { 
-		font-size: 0.55rem; 
-		font-weight: 900; 
-		color: var(--accent-gold); 
-		letter-spacing: 0.1em; 
-		text-transform: uppercase; 
-		opacity: 0.8;
-	}
-	.dict-val { font-size: 0.75rem; color: #bbb; line-height: 1.4; }
-
-	.original-sentence-highlightable {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.4rem;
-		margin-top: 1.5rem;
-		padding-top: 1.5rem;
-		border-top: 1px solid rgba(255,255,255,0.05);
-	}
-
-	.word-btn {
-		background: transparent;
-		border: 1px solid rgba(255,255,255,0.1);
-		color: #888;
-		padding: 0.2rem 0.6rem;
-		border-radius: 6px;
-		font-size: 1rem;
-		cursor: pointer;
-		transition: all 0.2s;
-	}
-
-	.word-btn:hover {
-		background: rgba(255,255,255,0.05);
-		color: #fff;
-	}
-
-	.word-btn.active {
-		background: var(--accent-gold);
-		color: #000;
-		border-color: var(--accent-gold);
-		font-weight: 700;
-	}
-
-	.adversarial-list { display: flex; flex-direction: column; gap: 0.75rem; }
-	.adversarial-entry { background: rgba(0,0,0,0.2); border-left: 2px solid rgba(197,160,89,0.4); padding: 0.6rem 0.8rem; border-radius: 0 8px 8px 0; }
-	.adversarial-phrase { display: block; font-size: 0.78rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.25rem; }
-	.adversarial-reason { font-size: 0.72rem; color: #999; font-style: italic; line-height: 1.5; }
-
-	.rejected-section { margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1); }
-	.inner-label { font-size: 0.55rem; font-weight: 900; color: #f87171; letter-spacing: 0.1em; margin-bottom: 0.5rem; display: block; opacity: 0.7; }
-	.rejected-entry { font-size: 0.72rem; margin-bottom: 0.35rem; }
-	.rejected-phrase { color: #f87171; font-weight: 600; text-decoration: line-through; opacity: 0.8; }
-	.rejected-reason { color: #777; font-style: italic; }
-
-	.grammatical-grid, .polysemy-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
-	.grammatical-item, .polysemy-item { background: rgba(0,0,0,0.2); padding: 0.8rem; border-radius: 10px; border-left: 2px solid var(--accent-blue); }
-	.grammatical-word, .polysemy-word { display: block; font-size: 0.85rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem; }
-	.grammatical-note { font-size: 0.7rem; color: #999; line-height: 1.4; }
-	.polysemy-details { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.65rem; color: #888; }
-	.polysemy-chosen strong { color: var(--accent-gold); }
-
-	.rules-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-	.rule-tag {
-		font-size: 0.6rem;
-		font-weight: 700;
-		background: rgba(74, 144, 226, 0.08);
-		color: var(--accent-blue);
-		padding: 0.25rem 0.7rem;
-		border-radius: 4px;
-		border: 1px solid rgba(74, 144, 226, 0.2);
-		cursor: default;
-	}
-
-	.placeholder {
-		text-align: center;
-		padding: 6rem 2rem;
-		background: var(--card-bg);
-		border-radius: 32px;
-		border: 1px dashed rgba(255, 255, 255, 0.1);
-	}
-
-	.hebrew {
+	.original-text.hebrew {
 		direction: rtl;
 		font-family: 'SBL Hebrew', serif;
 	}
 </style>
-

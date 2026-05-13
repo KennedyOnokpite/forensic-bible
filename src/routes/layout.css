@@ -1,131 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+@source "../**/*.svelte";
+@source "../../src/**/*.svelte";
+@source "../../src/**/*.ts";
 
-:root {
-	--bg-primary: #0f172a;
-	--bg-secondary: #1e293b;
-	--text-primary: #f8fafc;
-	--text-secondary: #94a3b8;
-	--accent: #38bdf8;
-	--accent-hover: #0ea5e9;
-	--border: #334155;
-	--font-main: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+@theme {
+	--color-background: hsl(var(--background));
+	--color-foreground: hsl(var(--foreground));
+	--color-card: hsl(var(--card));
+	--color-card-foreground: hsl(var(--card-foreground));
+	--color-popover: hsl(var(--popover));
+	--color-popover-foreground: hsl(var(--popover-foreground));
+	--color-primary: hsl(var(--primary));
+	--color-primary-foreground: hsl(var(--primary-foreground));
+	--color-secondary: hsl(var(--secondary));
+	--color-secondary-foreground: hsl(var(--secondary-foreground));
+	--color-muted: hsl(var(--muted));
+	--color-muted-foreground: hsl(var(--muted-foreground));
+	--color-accent: hsl(var(--accent));
+	--color-accent-foreground: hsl(var(--accent-foreground));
+	--color-destructive: hsl(var(--destructive));
+	--color-destructive-foreground: hsl(var(--destructive-foreground));
+	--color-border: hsl(var(--border));
+	--color-input: hsl(var(--input));
+	--color-ring: hsl(var(--ring));
+	--radius-lg: var(--radius);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-sm: calc(var(--radius) - 4px);
+    
+    /* Biblical Fonts */
+    --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 	--font-greek: 'Gentium Plus', serif;
 	--font-hebrew: 'SBL Hebrew', 'Taamey Ashkenaz', serif;
+
+    /* Animations */
+	--animate-accordion-down: accordion-down 0.2s ease-out;
+	--animate-accordion-up: accordion-up 0.2s ease-out;
+	--animate-caret-blink: caret-blink 1.25s ease-out infinite;
+
+	@keyframes accordion-down {
+		from { height: 0; }
+		to { height: var(--bits-accordion-content-height); }
+	}
+	@keyframes accordion-up {
+		from { height: var(--bits-accordion-content-height); }
+		to { height: 0; }
+	}
+	@keyframes caret-blink {
+		0%, 70%, 100% { opacity: 1; }
+		20%, 50% { opacity: 0; }
+	}
 }
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+@layer base {
+	:root {
+		--background: 222.2 84% 4.9%;
+		--foreground: 210 40% 98%;
+		--card: 222.2 84% 4.9%;
+		--card-foreground: 210 40% 98%;
+		--popover: 222.2 84% 4.9%;
+		--popover-foreground: 210 40% 98%;
+		--primary: 45 50% 60%;
+		--primary-foreground: 222.2 47.4% 11.2%;
+		--secondary: 217.2 32.6% 17.5%;
+		--secondary-foreground: 210 40% 98%;
+		--muted: 217.2 32.6% 17.5%;
+		--muted-foreground: 215 20.2% 65.1%;
+		--accent: 217.2 32.6% 17.5%;
+		--accent-foreground: 210 40% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 40% 98%;
+		--border: 217.2 32.6% 17.5%;
+		--input: 217.2 32.6% 17.5%;
+		--ring: 45 50% 60%;
+		--radius: 0.75rem;
+	}
 }
 
-body {
-	background-color: var(--bg-primary);
-	color: var(--text-primary);
-	font-family: var(--font-main);
-	line-height: 1.6;
-	-webkit-font-smoothing: antialiased;
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+		font-family: var(--font-main);
+		-webkit-font-smoothing: antialiased;
+	}
 }
 
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
+/* Legacy Utility Classes (Preserved for compatibility) */
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 2rem;
-}
-
-.header {
-	text-align: center;
-	padding: 4rem 0 2rem;
-}
-
-.header h1 {
-	font-size: 3rem;
-	font-weight: 600;
-	margin-bottom: 1rem;
-	background: linear-gradient(to right, var(--accent), #818cf8);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.header p {
-	color: var(--text-secondary);
-	font-size: 1.2rem;
-}
-
-.book-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	gap: 1.5rem;
-	margin-top: 3rem;
-}
-
-.book-card {
-	background-color: var(--bg-secondary);
-	border: 1px solid var(--border);
-	padding: 1.5rem;
-	border-radius: 1rem;
-	transition: all 0.3s ease;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-
-.book-card:hover {
-	border-color: var(--accent);
-	transform: translateY(-4px);
-	box-shadow: 0 10px 20px -10px rgba(56, 189, 248, 0.3);
-}
-
-.book-card .name {
-	font-size: 1.1rem;
-	font-weight: 600;
-	margin-bottom: 0.5rem;
-}
-
-.book-card .lang {
-	font-size: 0.9rem;
-	color: var(--text-secondary);
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
-
-.reading-container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 4rem 2rem;
-}
-
-.original-text {
-	font-size: 1.5rem;
-	line-height: 2;
-	text-align: justify;
-}
-
-.original-text.hebrew {
-	direction: rtl;
-	font-family: var(--font-hebrew);
-}
-
-.original-text.greek {
-	font-family: var(--font-greek);
-}
-
-.back-link {
-	display: inline-flex;
-	align-items: center;
-	margin-bottom: 2rem;
-	color: var(--accent);
-	font-weight: 600;
-	transition: color 0.2s ease;
-}
-
-.back-link:hover {
-	color: var(--accent-hover);
+    @apply mx-auto max-w-[1200px] px-8;
 }

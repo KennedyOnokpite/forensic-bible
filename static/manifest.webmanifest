@@ -1,0 +1,10 @@
+{
+  "name": "Forensic Biblical Explorer",
+  "short_name": "Forensic Bible",
+  "description": "A pure, forensic reconstruction of the 66 books of the Bible.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#c5a059",
+  "icons": []
+}

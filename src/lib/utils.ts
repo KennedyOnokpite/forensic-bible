@@ -1,23 +1,13 @@
-/**
- * Sanitizes a string for use with {@html} by only allowing a whitelist of safe tags.
- * Primary targets: <em> for Rule 5, <strong> for emphasis, and <br>.
- */
-export function sanitizeForensicHtml(html: string): string {
-	if (!html) return '';
-	
-	// 1. Escape the entire string first to neutralize all tags
-	const temp = html
-		.replace(/&/g, '&amp;')
-		.replace(/</g, '&lt;')
-		.replace(/>/g, '&gt;')
-		.replace(/"/g, '&quot;')
-		.replace(/'/g, '&#039;');
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
-	// 2. Re-enable specifically whitelisted forensic tags
-	return temp
-		.replace(/&lt;em&gt;/g, '<em>')
-		.replace(/&lt;\/em&gt;/g, '</em>')
-		.replace(/&lt;strong&gt;/g, '<strong>')
-		.replace(/&lt;\/strong&gt;/g, '</strong>')
-		.replace(/&lt;br\s*\/?&gt;/g, '<br/>');
+export function cn(...inputs: ClassValue[]) {
+	return twMerge(clsx(inputs));
 }
+
+export type WithoutChild<T> = T extends { child?: unknown } ? Omit<T, "child"> : T;
+export type WithoutChildren<T> = T extends { children?: unknown } ? Omit<T, "children"> : T;
+export type WithoutChildrenOrChild<T> = WithoutChildren<WithoutChild<T>>;
+export type WithElementRef<T, U extends HTMLElement = HTMLElement> = T & {
+	ref?: U | null;
+};
